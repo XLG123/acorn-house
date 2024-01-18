@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,IACE,cACA,kBACA,cACA,oC","sources":["webpack://acorn-house/./src/styles/homePage.scss"],"sourcesContent":["#hi {\n  color: #7A9153;\n  text-align: center;\n  font-size: 3vw;\n  font-family: 'Ma Shan Zheng', cursive;\n}"],"names":[],"sourceRoot":""}
