@@ -1,0 +1,11 @@
+{
+  "name": "Acorn House Tutoring School",
+  "short_name": "Acorn House",
+  "description": "A tutoring school website",
+  "icons": [
+
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
