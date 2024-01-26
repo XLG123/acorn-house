@@ -1,0 +1,57 @@
+#nav-bar-container {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  #school-name-container {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid green;
+
+    #school-logo {
+      width: 100px;
+    }
+
+    #name-container {
+
+      text-align: center;
+
+      .school-eng-name {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    
+      .school-chn-name {
+        // color: #5A7343;
+        // text-align: center;
+        margin-top: 3px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 5px;
+      }
+    }
+  
+  }
+
+  #nav-links-container {
+    
+    border: 1px solid red;
+
+    #nav-links {
+
+      display: flex;
+      justify-content: space-evenly;
+
+      .nav-option {
+        border: 1px solid blue;
+        font-size: 20px;
+        padding: 1em;
+      }
+    }
+
+  }
+
+}
+

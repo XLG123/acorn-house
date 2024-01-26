@@ -1,13 +1,6 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-#hi {
-  color: #7A9153;
-  text-align: center;
-  font-size: 3vw;
-  font-family: "Ma Shan Zheng", cursive;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,4 +134,55 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  margin: 0 2em;
+}
+
+.eng {
+  font-family: "Open Sans", sans-serif;
+}
+
+.chn {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+#nav-bar-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#nav-bar-container #school-name-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid green;
+}
+#nav-bar-container #school-name-container #school-logo {
+  width: 100px;
+}
+#nav-bar-container #school-name-container #name-container {
+  text-align: center;
+}
+#nav-bar-container #school-name-container #name-container .school-eng-name {
+  font-size: 28px;
+  font-weight: 600;
+}
+#nav-bar-container #school-name-container #name-container .school-chn-name {
+  margin-top: 3px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+#nav-bar-container #nav-links-container {
+  border: 1px solid red;
+}
+#nav-bar-container #nav-links-container #nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav-bar-container #nav-links-container #nav-links .nav-option {
+  border: 1px solid blue;
+  font-size: 20px;
+  padding: 1em;
 }
