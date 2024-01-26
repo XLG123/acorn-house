@@ -166,12 +166,19 @@ body {
 }
 #nav-bar-container #school-name-container #name-container .school-eng-name {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #D5B389;
+}
+#nav-bar-container #school-name-container #name-container .school-eng-name span:first-child {
+  color: #5A7343;
+}
+#nav-bar-container #school-name-container #name-container .school-eng-name span:last-child {
+  color: #1D49A6;
 }
 #nav-bar-container #school-name-container #name-container .school-chn-name {
   margin-top: 3px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 5px;
 }
 #nav-bar-container #nav-links-container {
