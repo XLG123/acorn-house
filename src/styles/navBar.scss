@@ -1,7 +1,7 @@
 #nav-bar-container {
 
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
 
   #school-name-container {
 
@@ -17,6 +17,7 @@
     #name-container {
 
       text-align: center;
+      min-width: 300px;
 
       .school-eng-name {
 

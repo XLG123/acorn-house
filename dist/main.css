@@ -137,7 +137,8 @@ table {
 }
 
 body {
-  margin: 0 2em;
+  margin: 0 3em;
+  background: #def1e2;
 }
 
 .eng {
@@ -149,8 +150,8 @@ body {
 }
 
 #nav-bar-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
 }
 #nav-bar-container #school-name-container {
   display: flex;
@@ -163,6 +164,7 @@ body {
 }
 #nav-bar-container #school-name-container #name-container {
   text-align: center;
+  min-width: 300px;
 }
 #nav-bar-container #school-name-container #name-container .school-eng-name {
   font-size: 28px;
