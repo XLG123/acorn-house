@@ -82,8 +82,6 @@
         font-size: 20px;
         padding: 1em;
         border-radius: 10px;
-        background: linear-gradient(#a7dab2, #c3e6df);
-        transition: background 0.8s;
         cursor: pointer;
       }
 
@@ -97,7 +95,7 @@
 
       .nav-option:hover, 
       .nav-option:focus {
-        background: linear-gradient(#a7dab2, #7ec9ba);
+        background: linear-gradient(#a7dab2, #def1ee, #a7dab2);
       }
 
     }
@@ -106,3 +104,10 @@
 
 }
 
+@media (width > 1500px) {
+
+  #nav-bar-container {
+    padding: 0 9em;
+  }
+
+}
