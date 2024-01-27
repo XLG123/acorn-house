@@ -137,7 +137,6 @@ table {
 }
 
 body {
-  margin: 0 3em;
   background: #def1e2;
 }
 
@@ -152,12 +151,14 @@ body {
 #nav-bar-container {
   display: flex;
   justify-content: space-between;
+  padding: 0 3em;
+  background-color: #a7dab2;
 }
 #nav-bar-container #school-name-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid green;
+  cursor: pointer;
 }
 #nav-bar-container #school-name-container #school-logo {
   width: 100px;
@@ -165,33 +166,47 @@ body {
 #nav-bar-container #school-name-container #name-container {
   text-align: center;
   min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: brightness(1.3);
 }
 #nav-bar-container #school-name-container #name-container .school-eng-name {
   font-size: 28px;
   font-weight: 800;
   -webkit-text-stroke: 1px #D5B389;
 }
-#nav-bar-container #school-name-container #name-container .school-eng-name span:first-child {
+#nav-bar-container #school-name-container #name-container .school-eng-name div:first-child {
   color: #5A7343;
 }
-#nav-bar-container #school-name-container #name-container .school-eng-name span:last-child {
+#nav-bar-container #school-name-container #name-container .school-eng-name div:last-child {
   color: #1D49A6;
 }
 #nav-bar-container #school-name-container #name-container .school-chn-name {
-  margin-top: 3px;
-  font-size: 28px;
+  color: #4e643a;
+  -webkit-text-stroke: 0.2px #4e643a;
+  margin-left: 0.4em;
+  font-size: 30px;
   font-weight: 900;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+}
+#nav-bar-container #school-name-container:hover #school-logo,
+#nav-bar-container #school-name-container:focus #school-logo {
+  filter: brightness(1.05);
+}
+#nav-bar-container #school-name-container:hover #name-container,
+#nav-bar-container #school-name-container:focus #name-container {
+  filter: brightness(1.5);
 }
 #nav-bar-container #nav-links-container {
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
 }
 #nav-bar-container #nav-links-container #nav-links {
   display: flex;
   justify-content: space-evenly;
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option {
-  border: 1px solid blue;
   font-size: 20px;
   padding: 1em;
 }
