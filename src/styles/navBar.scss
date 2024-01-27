@@ -69,9 +69,9 @@
 
   #nav-links-container {
     
-    // border: 1px solid red;
     display: flex;
     align-items: center;
+    color: #1D305C;
 
     #nav-links {
 
@@ -79,10 +79,27 @@
       justify-content: space-evenly;
 
       .nav-option {
-        // border: 1px solid blue;
         font-size: 20px;
         padding: 1em;
+        border-radius: 10px;
+        background: linear-gradient(#a7dab2, #c3e6df);
+        transition: background 0.8s;
+        cursor: pointer;
       }
+
+      .nav-option:first-child {
+        margin-right: 1em;
+      }
+
+      .nav-option:last-child {
+        margin-left: 1em;
+      }
+
+      .nav-option:hover, 
+      .nav-option:focus {
+        background: linear-gradient(#a7dab2, #7ec9ba);
+      }
+
     }
 
   }
