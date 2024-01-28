@@ -229,3 +229,6 @@ body {
     padding: 0 9em;
   }
 }
+#copyright {
+  text-align: center;
+}
