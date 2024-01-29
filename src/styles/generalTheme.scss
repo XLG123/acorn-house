@@ -2,6 +2,18 @@ body {
   background: #def1e2;
 }
 
+main {
+  padding: 2em 4em;
+}
+
+@media (width > 1500px) {
+  
+  main {
+    padding: 2em 10em;
+  }
+
+}
+
 .eng {
   font-family: "Open Sans", sans-serif;
 }
