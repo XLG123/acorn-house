@@ -1,5 +1,10 @@
 About Us Title Icon Attribution
+
+* This is for the title center background
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
+
+* This is for the whole banner
+<a href="https://www.flaticon.com/free-icons/pencil" title="pencil icons">Pencil icons created by Aficons studio - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>

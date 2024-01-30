@@ -248,13 +248,17 @@ main .section-title .chn {
   }
 }
 #about-us-container {
-  border: 1px solid green;
+  border-radius: 20px;
+  background: linear-gradient(to right, #84c5b0, #e5e5c5);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #about-us-container .section-title {
   background-image: url("../src/assets/images/paper.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 8em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding-top: 3em;
   height: 5em;
 }
@@ -277,6 +281,14 @@ main .section-title .chn {
 }
 #about-us-container .about-us-content #text .chn {
   line-height: 1.5em;
+}
+#about-us-container .about-us-content #images {
+  border: 1px solid green;
+  margin-left: 1em;
+}
+
+#enrollment-container {
+  margin-top: 1em;
 }
 
 #copyright {
