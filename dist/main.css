@@ -143,6 +143,15 @@ body {
 main {
   padding: 2em 4em;
 }
+main .section-title {
+  text-align: center;
+}
+main .section-title .eng {
+  font-size: 20px;
+}
+main .section-title .chn {
+  font-size: 20px;
+}
 
 @media (width > 1500px) {
   main {
@@ -238,6 +247,38 @@ main {
     padding: 0 9em;
   }
 }
+#about-us-container {
+  border: 1px solid green;
+}
+#about-us-container .section-title {
+  background-image: url("../src/assets/images/paper.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 8em;
+  padding-top: 2.5em;
+  height: 100px;
+}
+#about-us-container .section-title .eng {
+  font-weight: bold;
+}
+#about-us-container .section-title .chn {
+  font-weight: 900;
+}
+#about-us-container .about-us-content {
+  font-size: 22px;
+  text-align: justify;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#about-us-container .about-us-content #text .eng {
+  margin-bottom: 1em;
+  line-height: 1.3em;
+}
+#about-us-container .about-us-content #text .chn {
+  line-height: 1.5em;
+}
+
 #copyright {
   text-align: center;
 }

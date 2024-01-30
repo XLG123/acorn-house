@@ -3,7 +3,22 @@ body {
 }
 
 main {
+  
   padding: 2em 4em;
+
+  .section-title {
+    text-align: center;
+
+    .eng {
+      font-size: 20px;
+    }
+
+    .chn {
+      font-size: 20px;
+    }
+
+  }
+
 }
 
 @media (width > 1500px) {

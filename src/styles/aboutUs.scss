@@ -1,0 +1,48 @@
+#about-us-container {
+
+  border: 1px solid green;
+
+  .section-title {
+
+    background-image: url('../src/assets/images/paper.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 8em;
+    padding-top: 2.5em;
+    height: 100px;
+    // border: 1px solid red;
+
+    .eng {
+      font-weight: bold;
+    }
+
+    .chn {
+      font-weight: 900;
+    }
+
+  }
+
+  .about-us-content {
+
+    font-size: 22px;
+    text-align: justify;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    #text {
+
+      .eng {
+        margin-bottom: 1em;
+        line-height: 1.3em;
+      }
+  
+      .chn {
+        line-height: 1.5em;
+      }
+
+    }
+
+  }
+
+}
