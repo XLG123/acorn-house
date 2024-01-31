@@ -9,10 +9,11 @@
 
   .section-title {
 
-    background-image: url('../src/assets/images/paper.png');
-    background-repeat: no-repeat; // no-repeat, repeat;
-    background-position: top;
-    background-size: 8em;
+    background-image: url('../src/assets/images/paper.png'), url('../src/assets/images/teacher.png'),
+    url('../src/assets/images/female.png');
+    background-repeat: no-repeat, no-repeat, no-repeat; // no-repeat, repeat;
+    background-position: top, left 40% bottom 10%, right 40% bottom 10%;
+    background-size: 8em, 4em, 4em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 3em;
