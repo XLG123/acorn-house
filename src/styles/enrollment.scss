@@ -1,5 +1,17 @@
 #enrollment-container {
 
   margin-top: 1em;
+  
+  .enrollment-content {
+    
+    div {
+      width: fit-content;
+      margin: auto auto;
+      letter-spacing: 0.2em;
+      word-spacing: 1em;
+      line-height: 1.5em;
+    }
+
+  }
 
 }

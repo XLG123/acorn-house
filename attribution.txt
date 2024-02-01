@@ -19,6 +19,8 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/female-professor" title="female-professor icons">Female-professor icons created by kerismaker - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by monkik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by FauzIDEA - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Eucalyp - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>

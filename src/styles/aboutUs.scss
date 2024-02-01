@@ -8,19 +8,23 @@
       -25px 0px 20px -20px #84c5b0;
 
   .section-title {
-
-    background-image: url('../src/assets/images/paper.png'),
-      url('../src/assets/images/male-teacher.png'),
-      url('../src/assets/images/teacher.png'),
-      url('../src/assets/images/female.png'),
-      url('../src/assets/images/teacher2.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    
+    background-image: url('../src/assets/images/about-us-paper.png'),
+      url('../src/assets/images/tutoring1.png'),
+      url('../src/assets/images/male-teacher2.png'),
+      url('../src/assets/images/male-teacher1.png'),
+      url('../src/assets/images/female-teacher1.png'),
+      url('../src/assets/images/female-teacher2.png'),
+      url('../src/assets/images/tutoring2.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top,
+      left 26% bottom 10%,
       left 33% bottom 10%,
       left 40% bottom 10%,
       right 40% bottom 10%,
-      right 33% bottom 10%;
-    background-size: 8em, 4em, 4em, 4em, 4em;
+      right 33% bottom 10%,
+      right 26% bottom 10%;
+    background-size: 8em, 4em, 4em, 4em, 4em, 4em, 3.6em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 3em;

@@ -170,7 +170,9 @@ main .section-title .chn {
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
-  background-color: #a7dab2;
+  background-color: #abd3b3;
+  position: sticky;
+  top: 0;
 }
 #nav-bar-container #school-name-container {
   display: flex;
@@ -253,10 +255,10 @@ main .section-title .chn {
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #about-us-container .section-title {
-  background-image: url("../src/assets/images/paper.png"), url("../src/assets/images/male-teacher.png"), url("../src/assets/images/teacher.png"), url("../src/assets/images/female.png"), url("../src/assets/images/teacher2.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top, left 33% bottom 10%, left 40% bottom 10%, right 40% bottom 10%, right 33% bottom 10%;
-  background-size: 8em, 4em, 4em, 4em, 4em;
+  background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/male-teacher1.png"), url("../src/assets/images/female-teacher1.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top, left 26% bottom 10%, left 33% bottom 10%, left 40% bottom 10%, right 40% bottom 10%, right 33% bottom 10%, right 26% bottom 10%;
+  background-size: 8em, 4em, 4em, 4em, 4em, 4em, 3.6em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding-top: 3em;
@@ -289,6 +291,13 @@ main .section-title .chn {
 
 #enrollment-container {
   margin-top: 1em;
+}
+#enrollment-container .enrollment-content div {
+  width: fit-content;
+  margin: auto auto;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+  line-height: 1.5em;
 }
 
 #copyright {
