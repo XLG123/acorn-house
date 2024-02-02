@@ -21,6 +21,11 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by FauzIDEA - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Eucalyp - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/acorn" title="acorn icons">Acorn icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Paul J. - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Eucalyp - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/books" title="books icons">Books icons created by popo2021 - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/subject" title="subject icons">Subject icons created by Rashad - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
