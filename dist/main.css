@@ -271,18 +271,18 @@ main .section-title .chn {
   font-weight: 900;
 }
 #about-us-container .about-us-content {
-  font-size: 22px;
+  font-size: 20px;
   text-align: justify;
   padding: 1em;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 #about-us-container .about-us-content #text .eng {
-  margin-bottom: 1em;
-  line-height: 1.3em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
 }
 #about-us-container .about-us-content #text .chn {
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 #about-us-container .about-us-content #images {
   margin-left: 1em;
@@ -309,7 +309,7 @@ main .section-title .chn {
   border-bottom-right-radius: 15px;
   background-color: #EDF6E3;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.3em 0;
 }
 #about-us-container .about-us-content #images .image-container div span {
   display: block;

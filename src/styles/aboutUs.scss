@@ -51,7 +51,7 @@
 
   .about-us-content {
 
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
     padding: 1em;
     display: grid;
@@ -60,12 +60,12 @@
     #text {
 
       .eng {
-        margin-bottom: 1em;
-        line-height: 1.3em;
+        margin-bottom: 1.5em;
+        line-height: 1.5em;
       }
   
       .chn {
-        line-height: 1.5em;
+        line-height: 1.7em;
       }
 
     }
@@ -99,7 +99,7 @@
           border-bottom-right-radius: 15px;
           background-color: #EDF6E3;
           text-align: center;
-          padding: 0.5em 0;
+          padding: 0.3em 0;
 
           span {
             display: block;
