@@ -94,11 +94,21 @@
         }
 
         div {
+
           border-bottom-left-radius: 15px;
           border-bottom-right-radius: 15px;
           background-color: #EDF6E3;
           text-align: center;
-          padding: 1em 0;
+          padding: 0.5em 0;
+
+          span {
+            display: block;
+          }
+
+          span.chn {
+            line-height: 1.85em;
+          }
+
         }
 
       }

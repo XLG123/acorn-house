@@ -309,7 +309,13 @@ main .section-title .chn {
   border-bottom-right-radius: 15px;
   background-color: #EDF6E3;
   text-align: center;
-  padding: 1em 0;
+  padding: 0.5em 0;
+}
+#about-us-container .about-us-content #images .image-container div span {
+  display: block;
+}
+#about-us-container .about-us-content #images .image-container div span.chn {
+  line-height: 1.85em;
 }
 
 #enrollment-container {
