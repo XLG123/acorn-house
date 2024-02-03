@@ -114,6 +114,14 @@
       }
 
     }
+    #images::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    #images::-webkit-scrollbar-thumb {
+      background: #EFF6E5;
+      border-radius: 20px;
+    }
 
   }
 

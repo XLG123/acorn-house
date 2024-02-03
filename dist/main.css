@@ -317,6 +317,13 @@ main .section-title .chn {
 #about-us-container .about-us-content #images .image-container div span.chn {
   line-height: 1.85em;
 }
+#about-us-container .about-us-content #images::-webkit-scrollbar {
+  height: 8px;
+}
+#about-us-container .about-us-content #images::-webkit-scrollbar-thumb {
+  background: #EFF6E5;
+  border-radius: 20px;
+}
 
 #enrollment-container {
   margin-top: 1em;
