@@ -114,12 +114,31 @@
       }
 
     }
+
+    // Webkit Scrollbar styling will only work in Chrome and Safari
+    // Default styles are on Firefox and Edge (styling in progress)
+    #images {
+      scrollbar-width: 12px;
+      scrollbar-color: #EFF6E5 #a9a9a9;
+    }
+
     #images::-webkit-scrollbar {
-      height: 8px;
+      height: 12px;
     }
 
     #images::-webkit-scrollbar-thumb {
-      background: #EFF6E5;
+      background-color: #bfc4b7;
+      box-shadow: inset 0 0 5px #4f524b;
+      border-radius: 20px;
+    }
+
+    #images::-webkit-scrollbar-thumb:hover {
+      background-color: #EFF6E5;
+      box-shadow: inset 0 0 8px #EFF6E5;
+    }
+
+    #images::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 3px gray;
       border-radius: 20px;
     }
 
