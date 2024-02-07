@@ -255,7 +255,7 @@ main .section-title .chn {
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #about-us-container .section-title {
-  background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/male-teacher1.png"), url("../src/assets/images/female-teacher1.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner.png");
+  background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/male-teacher1.png"), url("../src/assets/images/female-teacher1.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
   background-position: top, left 2% bottom 10%, left 11% bottom 10%, left 20% bottom 10%, left 29% bottom 10%, left 38% bottom 10%, right 38% bottom 10%, right 29% bottom 10%, right 20% bottom 10%, right 11% bottom 10%, right 2% bottom 10%;
   background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
@@ -339,7 +339,10 @@ main .section-title .chn {
 }
 
 #enrollment-container {
-  margin-top: 1em;
+  margin-top: 2.5em;
+  border-radius: 20px;
+  background: linear-gradient(to right, #69b89f, #d9d9aa);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #enrollment-container .enrollment-content div {
   width: fit-content;
@@ -349,6 +352,59 @@ main .section-title .chn {
   line-height: 1.5em;
 }
 
+#contact-info-container {
+  margin-top: 2.5em;
+  border-radius: 20px;
+  background: linear-gradient(to right, #50aa8d, #cdcd8f);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #cdcd8f, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #50aa8d;
+}
+#contact-info-container .section-title {
+  background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/acornBanner2.png");
+  background-repeat: no-repeat, round repeat;
+  background-position: top -0.5em left 50%;
+  background-size: 8.5em, 4em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 3.2em;
+  height: 5em;
+}
+#contact-info-container .section-title .eng {
+  font-weight: bold;
+}
+#contact-info-container .section-title .chn {
+  font-weight: 900;
+}
+#contact-info-container .contact-info-content {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#contact-info-container .contact-info-content .online-contacts {
+  margin-left: 1em;
+}
+#contact-info-container .contact-info-content .online-contacts .subtitle {
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: url("../src/assets/images/arrow.png"), url("../src/assets/images/arrow.png"), url("../src/assets/images/arrow.png"), url("../src/assets/images/arrow.png"), linear-gradient(#daecc5, #daecc5);
+  background-repeat: no-repeat;
+  background-position: left 6% bottom 30%, left 14% bottom 30%, right 14% bottom 30%, right 6% bottom 30%;
+  background-size: 2.5em, 2.5em, 2.5em, 2.5em, 100%;
+  padding: 0.5em;
+}
+#contact-info-container .contact-info-content .online-contacts .subtitle .eng {
+  font-weight: bold;
+  line-height: 1.5em;
+}
+#contact-info-container .contact-info-content .online-contacts .subtitle .chn {
+  font-weight: 900;
+}
+#contact-info-container .contact-info-content .online-contacts .tel, #contact-info-container .contact-info-content .online-contacts .email {
+  font-size: 20px;
+}
+
 #copyright {
   text-align: center;
+  margin-bottom: 2em;
 }

@@ -1,0 +1,82 @@
+#contact-info-container {
+
+  margin-top: 2.5em;
+  border-radius: 20px;
+  background: linear-gradient(to right, #50aa8d, #cdcd8f);
+  box-shadow: 0px -25px 5px -20px #c7e8db,
+    25px 0px 20px -20px #cdcd8f,
+    0px 25px 20px -20px rgba(0, 0, 0, 0.35),
+    -25px 0px 20px -20px #50aa8d;
+
+  .section-title {
+
+    background-image: url('../src/assets/images/contact-info-paper.png'), 
+      url('../src/assets/images/acornBanner2.png');
+    background-repeat: no-repeat, round repeat;
+    background-position: top -0.5em left 50%;
+    background-size: 8.5em, 4em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 3.2em;
+    height: 5em;
+
+    .eng {
+      font-weight: bold;
+    }
+
+    .chn {
+      font-weight: 900;
+    }
+
+  }
+  
+  .contact-info-content {
+
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .online-contacts {
+
+      margin-left: 1em;
+
+      .subtitle {
+      
+        font-size: 20px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background: url('../src/assets/images/arrow.png'), 
+          url('../src/assets/images/arrow.png'),
+          url('../src/assets/images/arrow.png'),
+          url('../src/assets/images/arrow.png'),
+          linear-gradient(#daecc5, #daecc5);
+        background-repeat: no-repeat;
+        background-position: left 6% bottom 30%, 
+          left 14% bottom 30%,
+          right 14% bottom 30%,
+          right 6% bottom 30%;
+        background-size: 2.5em, 2.5em, 2.5em, 2.5em, 100%;
+        padding: 0.5em;
+    
+        .eng {
+          font-weight: bold;
+          line-height: 1.5em;
+        }
+    
+        .chn {
+          font-weight: 900;
+        }
+    
+      }
+
+      .tel, .email {
+        font-size: 20px;
+      }
+
+    }
+
+  }
+
+
+}
