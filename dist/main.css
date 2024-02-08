@@ -170,7 +170,7 @@ main .section-title .chn {
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
-  background-color: #abd3b3;
+  background-color: #69b89f;
   position: sticky;
   top: 0;
 }
@@ -341,7 +341,7 @@ main .section-title .chn {
 #enrollment-container {
   margin-top: 2.5em;
   border-radius: 20px;
-  background: linear-gradient(to right, #69b89f, #d9d9aa);
+  background: linear-gradient(to right, #84c5b0, #e5e5c5);
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #enrollment-container .enrollment-content div {
@@ -355,8 +355,8 @@ main .section-title .chn {
 #contact-info-container {
   margin-top: 2.5em;
   border-radius: 20px;
-  background: linear-gradient(to right, #50aa8d, #cdcd8f);
-  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #cdcd8f, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #50aa8d;
+  background: linear-gradient(to right, #84c5b0, #e5e5c5);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #contact-info-container .section-title {
   background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/acornBanner2.png");
