@@ -463,17 +463,27 @@ main .section-title .chn {
   margin-left: 0.1em;
   margin-right: 0.5em;
 }
-#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-image {
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container {
+  display: flex;
+  align-items: center;
+}
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container .qr-code-image {
   margin-top: 0.5em;
   width: 6em;
 }
-#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-image img {
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container .qr-code-image img {
   width: inherit;
+}
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container .welcoming-message {
+  text-align: justify;
+}
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container .welcoming-message .eng {
+  margin-bottom: 0.75em;
+  line-height: 1.1em;
 }
 #contact-info-container .contact-info-content .online-contacts .welcoming-message {
   color: #666666;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-size: 18px;
   margin-left: 1em;

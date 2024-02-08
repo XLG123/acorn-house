@@ -152,16 +152,35 @@
           margin-right: 0.5em;
         }
 
-        .qr-code-image {
+        .qr-code-container {
 
-          margin-top: 0.5em;
-          width: 6em;
+          display: flex;
+          align-items: center;
 
-          img {
-            width: inherit;
+          .qr-code-image {
+  
+            margin-top: 0.5em;
+            width: 6em;
+  
+            img {
+              width: inherit;
+            }
+  
+          }
+
+          .welcoming-message {
+
+            text-align: justify;
+
+            .eng {
+              margin-bottom: 0.75em;
+              line-height: 1.1em;
+            }
+
           }
 
         }
+
 
       }
 
@@ -169,7 +188,6 @@
 
         color: #666666;
         -webkit-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         font-size: 18px;
         margin-left: 1em;
