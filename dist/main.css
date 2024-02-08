@@ -241,7 +241,7 @@ main .section-title .chn {
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option:hover,
 #nav-bar-container #nav-links-container #nav-links .nav-option:focus {
-  background: linear-gradient(#a7dab2, #def1ee, #a7dab2);
+  background: linear-gradient(#76bea8, #e8f2f1, #76bea8);
 }
 
 @media (width > 1500px) {
