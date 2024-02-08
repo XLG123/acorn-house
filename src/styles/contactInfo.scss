@@ -41,7 +41,6 @@
       margin-left: 1em;
 
       .subtitle {
-      
         font-size: 20px;
         text-align: center;
         border-top-left-radius: 20px;
@@ -106,7 +105,11 @@
 
       .tel, .email {
 
+        display: grid;
+        grid-template-columns: auto auto;
+
         a {
+          width: fit-content;
   
           text-decoration: none;
   
@@ -160,6 +163,21 @@
 
         }
 
+      }
+
+      .welcoming-message {
+
+        color: #666666;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 18px;
+        margin-left: 1em;
+
+        span:first-child {
+          margin-right: 1em;
+        }
+        
       }
 
     }
