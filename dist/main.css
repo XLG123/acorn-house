@@ -375,19 +375,22 @@ main .section-title .chn {
   font-weight: 900;
 }
 #contact-info-container .contact-info-content {
-  padding: 1em;
+  padding: 1em 1em 1.5em 1em;
   display: grid;
   grid-template-columns: 50% 50%;
 }
+#contact-info-container .contact-info-content .in-person-contact {
+  font-size: 20px;
+}
 #contact-info-container .contact-info-content .online-contacts {
   margin-left: 1em;
+  background-color: #EDF6E3;
+  border-radius: 20px;
+  box-shadow: 0px -15px 20px -20px #EDF6E3, 15px 0px 30px -20px #EDF6E3, 0px 15px 30px -20px #EDF6E3, -15px 0px 30px -20px #EDF6E3;
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle {
   font-size: 20px;
   text-align: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: #daecc5;
   padding: 0.5em;
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -426,7 +429,6 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content .online-contacts .tel, #contact-info-container .contact-info-content .online-contacts .email, #contact-info-container .contact-info-content .online-contacts .wechat-qr-code {
   font-size: 20px;
-  background-color: #daecc5;
   color: black;
   padding: 0.5em 1em;
 }
@@ -450,10 +452,6 @@ main .section-title .chn {
   text-decoration: underline;
   text-decoration-color: #50aa8d;
   text-underline-offset: 3px;
-}
-#contact-info-container .contact-info-content .online-contacts .wechat-qr-code {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 #contact-info-container .contact-info-content .online-contacts .wechat-qr-code .wechat-icon .fa-weixin {
   color: #50aa8d;
