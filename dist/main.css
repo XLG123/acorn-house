@@ -263,6 +263,8 @@ main .section-title .chn {
   border-top-right-radius: 20px;
   padding-top: 3em;
   height: 5em;
+  user-select: none;
+  -webkit-user-select: none;
 }
 #about-us-container .section-title .eng {
   font-weight: bold;
@@ -367,6 +369,8 @@ main .section-title .chn {
   border-top-right-radius: 20px;
   padding-top: 3.2em;
   height: 4.5em;
+  user-select: none;
+  -webkit-user-select: none;
 }
 #contact-info-container .section-title .eng {
   font-weight: bold;
@@ -381,22 +385,34 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content .in-person-contact {
   font-size: 20px;
-  padding: 1em;
+  padding: 0.25em 1em 1em 1em;
 }
 #contact-info-container .contact-info-content .in-person-contact .address-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  border: 1px solid blue;
+  display: flex;
+  justify-content: flex-start;
 }
 #contact-info-container .contact-info-content .in-person-contact .address-container .address-icon {
   width: 2em;
-  border: 1px solid green;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  animation-name: locationIconPointingDown;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #contact-info-container .contact-info-content .in-person-contact .address-container .address-icon img {
   width: inherit;
 }
-#contact-info-container .contact-info-content .in-person-contact .address-container .address {
-  border: 1px solid red;
+@keyframes locationIconPointingDown {
+  0% {
+    transform: scaleX(1.25) scaleY(1.25);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 #contact-info-container .contact-info-content .in-person-contact .address-container .address .eng {
   margin-bottom: 0.5em;
@@ -420,6 +436,8 @@ main .section-title .chn {
   grid-template-columns: auto auto;
   padding-top: 0.5em;
   width: 3em;
+  user-select: none;
+  -webkit-user-select: none;
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left .arrow, #contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right .arrow {
   width: inherit;
