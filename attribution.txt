@@ -28,6 +28,7 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/subject" title="subject icons">Subject icons created by Rashad - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/post-it" title="Post it icons">Post it icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons">Arrows icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>

@@ -39,6 +39,36 @@
     .in-person-contact {
 
       font-size: 20px;
+      padding: 1em;
+
+      .address-container {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        border: 1px solid blue;
+
+        .address-icon {
+
+          width: 2em;
+          border: 1px solid green;
+
+          img {
+            width: inherit;
+          }
+
+        }
+
+        .address {
+
+          border: 1px solid red;
+
+          .eng {
+            margin-bottom: 0.5em;
+          }
+
+        }
+
+      }
 
     }
 

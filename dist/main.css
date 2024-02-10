@@ -381,6 +381,25 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content .in-person-contact {
   font-size: 20px;
+  padding: 1em;
+}
+#contact-info-container .contact-info-content .in-person-contact .address-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid blue;
+}
+#contact-info-container .contact-info-content .in-person-contact .address-container .address-icon {
+  width: 2em;
+  border: 1px solid green;
+}
+#contact-info-container .contact-info-content .in-person-contact .address-container .address-icon img {
+  width: inherit;
+}
+#contact-info-container .contact-info-content .in-person-contact .address-container .address {
+  border: 1px solid red;
+}
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .eng {
+  margin-bottom: 0.5em;
 }
 #contact-info-container .contact-info-content .online-contacts {
   margin-left: 1em;
