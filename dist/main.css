@@ -194,17 +194,17 @@ main .section-title .chn {
 #nav-bar-container #school-name-container #name-container .school-eng-name {
   font-size: 28px;
   font-weight: 800;
-  -webkit-text-stroke: 1px #D5B389;
+  -webkit-text-stroke: 1px #69b8a0;
 }
 #nav-bar-container #school-name-container #name-container .school-eng-name div:first-child {
-  color: #5A7343;
+  color: #17312a;
 }
 #nav-bar-container #school-name-container #name-container .school-eng-name div:last-child {
-  color: #1D49A6;
+  color: #2a594b;
 }
 #nav-bar-container #school-name-container #name-container .school-chn-name {
-  color: #4e643a;
-  -webkit-text-stroke: 0.2px #4e643a;
+  color: #244c40;
+  -webkit-text-stroke: 0.2px #244c40;
   margin-left: 0.4em;
   font-size: 30px;
   font-weight: 900;
@@ -221,7 +221,7 @@ main .section-title .chn {
 #nav-bar-container #nav-links-container {
   display: flex;
   align-items: center;
-  color: #1D305C;
+  color: #244c40;
 }
 #nav-bar-container #nav-links-container #nav-links {
   display: flex;
