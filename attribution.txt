@@ -36,6 +36,9 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/metro" title="metro icons">Metro icons created by Smashicons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/walk" title="walk icons">Walk icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/car" title="car icons">Car icons created by Konkapp - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/wechat" title="wechat icons">Wechat icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/communication" title="communication icons">Communication icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
