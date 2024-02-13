@@ -361,10 +361,10 @@ main .section-title .chn {
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #contact-info-container .section-title {
-  background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/bus.png"), url("../src/assets/images/train.png"), url("../src/assets/images/acornBanner2.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
-  background-position: top -0.5em left 50%, bottom 10% left 2%, bottom 10% left 12%;
-  background-size: 8.5em, 4.5em, 4em, 4em;
+  background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/male-teacher1.png"), url("../src/assets/images/female-teacher1.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+  background-position: top -0.5em left 50%, left 2% bottom 10%, left 11% bottom 10%, left 20% bottom 10%, left 29% bottom 10%, left 38% bottom 10%, right 38% bottom 10%, right 29% bottom 10%, right 20% bottom 10%, right 11% bottom 10%, right 2% bottom 10%;
+  background-size: 8.5em, 3.7em, 3.5em, 4em, 4em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding-top: 3.2em;
