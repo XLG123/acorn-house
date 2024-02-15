@@ -39,6 +39,8 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/wechat" title="wechat icons">Wechat icons created by Pixel perfect - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/communication" title="communication icons">Communication icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/speaking" title="speaking icons">Speaking icons created by pongsakornRed - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/partnership-handshake" title="Partnership handshake icons">Partnership handshake icons created by Freepik - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
