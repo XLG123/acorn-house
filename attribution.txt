@@ -41,6 +41,7 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/speaking" title="speaking icons">Speaking icons created by pongsakornRed - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/partnership-handshake" title="Partnership handshake icons">Partnership handshake icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/post-it" title="post-it icons">Post-it icons created by bearicons - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
