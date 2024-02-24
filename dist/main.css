@@ -360,6 +360,7 @@ main .section-title .chn {
 }
 #programs-container .section-title .eng {
   font-weight: bold;
+  margin-bottom: 0.2em;
 }
 #programs-container .section-title .chn {
   font-weight: 900;
