@@ -43,16 +43,41 @@
       justify-content: space-around;
       background-color: #EDF6E3;
       border-radius: 20px;
-      padding: 0.5em;
+      padding-top: 0.5em;
       line-height: 1.3em;
       text-align: center;
 
       .schedule-title {
+
         font-weight: bold;
         margin-right: 3em;
+        display: flex;
+
+
+        .calendar-container {
+          width: 3em;
+          margin-right: 0.5em;
+
+          .calendar-img {
+            width: inherit;
+          }
+
+        }
+
       }
 
       .schedule-time {
+        
+        .eng, .chn {
+
+          font-weight: 500;
+
+          .highlight {
+            background-color:#daecc5;
+            font-weight: 600;
+          }
+
+        }
 
       }
 

@@ -374,14 +374,30 @@ main .section-title .chn {
   justify-content: space-around;
   background-color: #EDF6E3;
   border-radius: 20px;
-  padding: 0.5em;
+  padding-top: 0.5em;
   line-height: 1.3em;
   text-align: center;
 }
 #programs-container .programs-content .class-schedule .schedule-title {
   font-weight: bold;
   margin-right: 3em;
+  display: flex;
 }
+#programs-container .programs-content .class-schedule .schedule-title .calendar-container {
+  width: 3em;
+  margin-right: 0.5em;
+}
+#programs-container .programs-content .class-schedule .schedule-title .calendar-container .calendar-img {
+  width: inherit;
+}
+#programs-container .programs-content .class-schedule .schedule-time .eng, #programs-container .programs-content .class-schedule .schedule-time .chn {
+  font-weight: 500;
+}
+#programs-container .programs-content .class-schedule .schedule-time .eng .highlight, #programs-container .programs-content .class-schedule .schedule-time .chn .highlight {
+  background-color: #daecc5;
+  font-weight: 600;
+}
+
 #contact-info-container {
   margin-top: 2.5em;
   border-radius: 20px;
