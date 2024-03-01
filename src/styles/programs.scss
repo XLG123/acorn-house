@@ -33,4 +33,31 @@
 
   }
 
+  .programs-content {
+    
+    padding: 1em;
+    font-size: 20px;
+
+    .class-schedule {
+      display: flex;
+      justify-content: space-around;
+      background-color: #EDF6E3;
+      border-radius: 20px;
+      padding: 0.5em;
+      line-height: 1.3em;
+      text-align: center;
+
+      .schedule-title {
+        font-weight: bold;
+        margin-right: 3em;
+      }
+
+      .schedule-time {
+
+      }
+
+    }
+
+  }
+
 }

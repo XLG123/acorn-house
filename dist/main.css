@@ -365,7 +365,23 @@ main .section-title .chn {
 #programs-container .section-title .chn {
   font-weight: 900;
 }
-
+#programs-container .programs-content {
+  padding: 1em;
+  font-size: 20px;
+}
+#programs-container .programs-content .class-schedule {
+  display: flex;
+  justify-content: space-around;
+  background-color: #EDF6E3;
+  border-radius: 20px;
+  padding: 0.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+#programs-container .programs-content .class-schedule .schedule-title {
+  font-weight: bold;
+  margin-right: 3em;
+}
 #contact-info-container {
   margin-top: 2.5em;
   border-radius: 20px;
