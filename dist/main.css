@@ -395,8 +395,8 @@ main .section-title .chn {
   font-weight: 500;
 }
 #programs-container .programs-content .class-schedule .schedule-time .eng .highlight, #programs-container .programs-content .class-schedule .schedule-time .chn .highlight {
-  background-color: #daecc5;
-  font-weight: 600;
+  font-weight: bold;
+  color: #2f6d5a;
 }
 
 #contact-info-container {
