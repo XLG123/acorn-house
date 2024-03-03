@@ -374,10 +374,19 @@ main .section-title .chn {
   box-shadow: 0px -15px 20px -20px #EDF6E3, 15px 0px 30px -20px #EDF6E3, 0px 15px 30px -20px #EDF6E3, -15px 0px 30px -20px #EDF6E3;
   border-radius: 20px;
   margin-bottom: 0.5em;
-}
-#programs-container .programs-content .class-schedule {
   display: flex;
   justify-content: space-around;
+}
+#programs-container .programs-content .enrollment-target .target-text {
+  text-align: center;
+}
+#programs-container .programs-content .enrollment-target .target-text .eng, #programs-container .programs-content .enrollment-target .target-text .chn {
+  line-height: 1.3em;
+}
+#programs-container .programs-content .enrollment-target .target-text .eng {
+  font-weight: 500;
+}
+#programs-container .programs-content .class-schedule {
   padding-top: 0.5em;
   line-height: 1.3em;
   text-align: center;
@@ -397,7 +406,7 @@ main .section-title .chn {
 #programs-container .programs-content .class-schedule .schedule-time .eng, #programs-container .programs-content .class-schedule .schedule-time .chn {
   font-weight: 500;
 }
-#programs-container .programs-content .class-schedule .schedule-time .eng .highlight, #programs-container .programs-content .class-schedule .schedule-time .chn .highlight {
+#programs-container .programs-content .highlight {
   font-weight: bold;
   color: #2f6d5a;
 }

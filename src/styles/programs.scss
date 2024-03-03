@@ -46,16 +46,31 @@
           -15px 0px 30px -20px #EDF6E3;
       border-radius: 20px;
       margin-bottom: 0.5em;
+      display: flex;
+      justify-content: space-around;
     }
 
     .enrollment-target {
+      
+
+      .target-text {
+
+        text-align: center;
+
+        .eng, .chn {
+          line-height: 1.3em;
+        }
+
+        .eng {
+          font-weight: 500;
+        }
+
+      }
 
     }
 
     .class-schedule {
 
-      display: flex;
-      justify-content: space-around;
       padding-top: 0.5em;
       line-height: 1.3em;
       text-align: center;
@@ -82,18 +97,16 @@
       .schedule-time {
         
         .eng, .chn {
-
           font-weight: 500;
-
-          .highlight {
-            font-weight: bold;
-            color: #2f6d5a;
-          }
-
         }
 
       }
 
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #2f6d5a;
     }
 
   }
