@@ -38,16 +38,24 @@
     padding: 1em;
     font-size: 20px;
 
-    .class-schedule {
-
-      display: flex;
-      justify-content: space-around;
+    .enrollment-target, .class-schedule {
       background-color: #EDF6E3;
       box-shadow: 0px -15px 20px -20px #EDF6E3,
           15px 0px 30px -20px #EDF6E3,
           0px 15px 30px -20px #EDF6E3,
           -15px 0px 30px -20px #EDF6E3;
       border-radius: 20px;
+      margin-bottom: 0.5em;
+    }
+
+    .enrollment-target {
+
+    }
+
+    .class-schedule {
+
+      display: flex;
+      justify-content: space-around;
       padding-top: 0.5em;
       line-height: 1.3em;
       text-align: center;
