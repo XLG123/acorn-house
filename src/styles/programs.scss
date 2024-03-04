@@ -52,6 +52,8 @@
 
     .enrollment-target {
       
+      padding-top: 0.5em;
+      padding-bottom: 0.2em;
 
       .target-text {
 
@@ -75,25 +77,6 @@
       line-height: 1.3em;
       text-align: center;
 
-      .schedule-title {
-
-        font-weight: bold;
-        margin-right: 3em;
-        display: flex;
-
-
-        .calendar-container {
-          width: 3em;
-          margin-right: 0.5em;
-
-          .calendar-img {
-            width: inherit;
-          }
-
-        }
-
-      }
-
       .schedule-time {
         
         .eng, .chn {
@@ -102,6 +85,25 @@
 
       }
 
+    }
+
+    .grade-title, .schedule-title {
+      font-weight: bold;
+      margin-right: 3em;
+      display: flex;
+    }
+
+    .grade-title {
+      align-items: center;
+    }
+
+    .grade-container, .calendar-container {
+      width: 3em;
+      margin-right: 0.5em;
+    }
+
+    .school-img, .calendar-img {
+      width: inherit;
     }
 
     .highlight {

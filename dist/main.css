@@ -377,6 +377,10 @@ main .section-title .chn {
   display: flex;
   justify-content: space-around;
 }
+#programs-container .programs-content .enrollment-target {
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
 #programs-container .programs-content .enrollment-target .target-text {
   text-align: center;
 }
@@ -391,20 +395,23 @@ main .section-title .chn {
   line-height: 1.3em;
   text-align: center;
 }
-#programs-container .programs-content .class-schedule .schedule-title {
+#programs-container .programs-content .class-schedule .schedule-time .eng, #programs-container .programs-content .class-schedule .schedule-time .chn {
+  font-weight: 500;
+}
+#programs-container .programs-content .grade-title, #programs-container .programs-content .schedule-title {
   font-weight: bold;
   margin-right: 3em;
   display: flex;
 }
-#programs-container .programs-content .class-schedule .schedule-title .calendar-container {
+#programs-container .programs-content .grade-title {
+  align-items: center;
+}
+#programs-container .programs-content .grade-container, #programs-container .programs-content .calendar-container {
   width: 3em;
   margin-right: 0.5em;
 }
-#programs-container .programs-content .class-schedule .schedule-title .calendar-container .calendar-img {
+#programs-container .programs-content .school-img, #programs-container .programs-content .calendar-img {
   width: inherit;
-}
-#programs-container .programs-content .class-schedule .schedule-time .eng, #programs-container .programs-content .class-schedule .schedule-time .chn {
-  font-weight: 500;
 }
 #programs-container .programs-content .highlight {
   font-weight: bold;
