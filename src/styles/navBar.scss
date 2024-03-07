@@ -1,5 +1,4 @@
 #nav-bar-container {
-
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
@@ -8,7 +7,6 @@
   top: 0;
 
   #school-name-container {
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,7 +17,6 @@
     }
 
     #name-container {
-
       text-align: center;
       min-width: 300px;
       display: flex;
@@ -28,7 +25,6 @@
       filter: brightness(1.3);
 
       .school-eng-name {
-
         font-size: 28px;
         font-weight: 800;
         -webkit-text-stroke: 1px #69b8a0;
@@ -40,9 +36,8 @@
         div:last-child {
           color: #2a594b;
         }
-
       }
-    
+
       .school-chn-name {
         color: #244c40;
         -webkit-text-stroke: 0.2px #244c40;
@@ -51,14 +46,11 @@
         font-weight: 900;
         letter-spacing: 3px;
       }
-
     }
-
   }
 
   #school-name-container:hover,
   #school-name-container:focus {
-
     #school-logo {
       filter: brightness(1.05);
     }
@@ -66,17 +58,14 @@
     #name-container {
       filter: brightness(1.5);
     }
-
   }
 
   #nav-links-container {
-    
     display: flex;
     align-items: center;
     color: #244c40;
 
     #nav-links {
-
       display: flex;
       justify-content: space-evenly;
 
@@ -95,22 +84,17 @@
         margin-left: 1em;
       }
 
-      .nav-option:hover, 
+      .nav-option:hover,
       .nav-option:focus {
         background: linear-gradient(#76bea8, #e8f2f1, #76bea8);
         // background: url();
       }
-
     }
-
   }
-
 }
 
 @media (width > 1500px) {
-
   #nav-bar-container {
     padding: 0 9em;
   }
-
 }

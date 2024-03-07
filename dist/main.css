@@ -297,7 +297,7 @@ main .section-title .chn {
   display: inline-block;
   width: 100%;
   box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.35);
-  background-color: #EDF6E3;
+  background-color: #edf6e3;
   border-radius: 15px;
   margin-bottom: 1em;
 }
@@ -309,7 +309,7 @@ main .section-title .chn {
 #about-us-container .about-us-content #images .image-container div {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #EDF6E3;
+  background-color: #edf6e3;
   text-align: center;
   padding: 0.3em 0;
 }
@@ -321,7 +321,7 @@ main .section-title .chn {
 }
 #about-us-container .about-us-content #images {
   scrollbar-width: 12px;
-  scrollbar-color: #EFF6E5 #a9a9a9;
+  scrollbar-color: #eff6e5 #a9a9a9;
 }
 #about-us-container .about-us-content #images::-webkit-scrollbar {
   height: 12px;
@@ -332,8 +332,8 @@ main .section-title .chn {
   border-radius: 20px;
 }
 #about-us-container .about-us-content #images::-webkit-scrollbar-thumb:hover {
-  background-color: #EFF6E5;
-  box-shadow: inset 0 0 8px #EFF6E5;
+  background-color: #eff6e5;
+  box-shadow: inset 0 0 8px #eff6e5;
 }
 #about-us-container .about-us-content #images::-webkit-scrollbar-track {
   box-shadow: inset 0 0 3px gray;
@@ -383,15 +383,17 @@ main .section-title .chn {
   text-align: center;
   line-height: 1.3em;
 }
-#programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .weekday-schedule, #programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .saturday-schedule {
+#programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .weekday-schedule,
+#programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .saturday-schedule {
   padding-left: 1em;
   padding-right: 1em;
 }
-#programs-container .programs-content .grade-schedule-container .grade-container, #programs-container .programs-content .grade-schedule-container .schedule-container {
+#programs-container .programs-content .grade-schedule-container .grade-container,
+#programs-container .programs-content .grade-schedule-container .schedule-container {
   padding: 0.5em;
-  background-color: #EDF6E3;
+  background-color: #edf6e3;
   border-radius: 20px;
-  box-shadow: 0px -15px 20px -20px #EDF6E3, 15px 0px 30px -20px #EDF6E3, 0px 15px 30px -20px #EDF6E3, -15px 0px 30px -20px #EDF6E3;
+  box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3, 0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
   flex-grow: 1;
 }
 #programs-container .programs-content .grade-schedule-container .grade-container {
@@ -403,7 +405,8 @@ main .section-title .chn {
   border-bottom-left-radius: 0;
   border-left: 10px dotted #c0c0c0;
 }
-#programs-container .programs-content .grade-title, #programs-container .programs-content .schedule-title {
+#programs-container .programs-content .grade-title,
+#programs-container .programs-content .schedule-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,15 +417,21 @@ main .section-title .chn {
   margin-left: 0.5em;
   line-height: 1.2em;
 }
-#programs-container .programs-content .grade-icon-container, #programs-container .programs-content .schedule-icon-container {
+#programs-container .programs-content .grade-icon-container,
+#programs-container .programs-content .schedule-icon-container {
   width: 4em;
 }
-#programs-container .programs-content .grade-icon, #programs-container .programs-content .schedule-icon {
+#programs-container .programs-content .grade-icon,
+#programs-container .programs-content .schedule-icon {
   width: inherit;
 }
 #programs-container .programs-content .highlight {
   font-weight: bold;
   color: #2f6d5a;
+}
+#programs-container .programs-content .available-programs {
+  margin-top: 0.5em;
+  display: flex;
 }
 
 #contact-info-container {
@@ -500,9 +509,9 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content .online-contacts {
   margin-left: 1em;
-  background-color: #EDF6E3;
+  background-color: #edf6e3;
   border-radius: 20px;
-  box-shadow: 0px -15px 20px -20px #EDF6E3, 15px 0px 30px -20px #EDF6E3, 0px 15px 30px -20px #EDF6E3, -15px 0px 30px -20px #EDF6E3;
+  box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3, 0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle {
   font-size: 20px;
@@ -512,7 +521,8 @@ main .section-title .chn {
   grid-template-columns: 20% 60% 20%;
   height: 4em;
 }
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left, #contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right {
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left,
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right {
   display: grid;
   grid-template-columns: auto auto;
   padding-top: 0.5em;
@@ -520,7 +530,8 @@ main .section-title .chn {
   user-select: none;
   -webkit-user-select: none;
 }
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left .arrow, #contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right .arrow {
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left .arrow,
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right .arrow {
   width: inherit;
   animation-name: upAndDown;
   animation-duration: 0.5s;
@@ -545,28 +556,37 @@ main .section-title .chn {
 #contact-info-container .contact-info-content .online-contacts .subtitle .main-text .chn {
   font-weight: 900;
 }
-#contact-info-container .contact-info-content .online-contacts .tel, #contact-info-container .contact-info-content .online-contacts .email, #contact-info-container .contact-info-content .online-contacts .wechat-qr-code {
+#contact-info-container .contact-info-content .online-contacts .tel,
+#contact-info-container .contact-info-content .online-contacts .email,
+#contact-info-container .contact-info-content .online-contacts .wechat-qr-code {
   font-size: 20px;
   color: black;
   padding: 0.5em 1em;
 }
-#contact-info-container .contact-info-content .online-contacts .tel, #contact-info-container .contact-info-content .online-contacts .email {
+#contact-info-container .contact-info-content .online-contacts .tel,
+#contact-info-container .contact-info-content .online-contacts .email {
   display: grid;
   grid-template-columns: auto auto;
 }
-#contact-info-container .contact-info-content .online-contacts .tel a, #contact-info-container .contact-info-content .online-contacts .email a {
+#contact-info-container .contact-info-content .online-contacts .tel a,
+#contact-info-container .contact-info-content .online-contacts .email a {
   width: fit-content;
   text-decoration: none;
 }
-#contact-info-container .contact-info-content .online-contacts .tel a .fa-phone, #contact-info-container .contact-info-content .online-contacts .tel a .fa-envelope, #contact-info-container .contact-info-content .online-contacts .email a .fa-phone, #contact-info-container .contact-info-content .online-contacts .email a .fa-envelope {
+#contact-info-container .contact-info-content .online-contacts .tel a .fa-phone,
+#contact-info-container .contact-info-content .online-contacts .tel a .fa-envelope,
+#contact-info-container .contact-info-content .online-contacts .email a .fa-phone,
+#contact-info-container .contact-info-content .online-contacts .email a .fa-envelope {
   color: #50aa8d;
   font-size: 22px;
 }
-#contact-info-container .contact-info-content .online-contacts .tel a .contact-text, #contact-info-container .contact-info-content .online-contacts .email a .contact-text {
+#contact-info-container .contact-info-content .online-contacts .tel a .contact-text,
+#contact-info-container .contact-info-content .online-contacts .email a .contact-text {
   color: black;
   margin-left: 0.5em;
 }
-#contact-info-container .contact-info-content .online-contacts .tel a:hover, #contact-info-container .contact-info-content .online-contacts .email a:hover {
+#contact-info-container .contact-info-content .online-contacts .tel a:hover,
+#contact-info-container .contact-info-content .online-contacts .email a:hover {
   text-decoration: underline;
   text-decoration-color: #50aa8d;
   text-underline-offset: 3px;

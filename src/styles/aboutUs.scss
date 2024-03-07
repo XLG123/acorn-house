@@ -1,39 +1,31 @@
 #about-us-container {
-
   border-radius: 20px;
   background: linear-gradient(to right, #84c5b0, #e5e5c5);
-  box-shadow: 0px -25px 5px -20px #c7e8db,
-      25px 0px 20px -20px #e5e5c5,
-      0px 25px 20px -20px rgba(0, 0, 0, 0.35),
-      -25px 0px 20px -20px #84c5b0;
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5,
+    0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 
   .section-title {
-    
-    background-image: url('../src/assets/images/about-us-paper.png'),
-      url('../src/assets/images/stack-of-books.png'),
-      url('../src/assets/images/training1.png'),
-      url('../src/assets/images/tutoring1.png'),
-      url('../src/assets/images/male-teacher2.png'),
-      url('../src/assets/images/male-teacher1.png'),
-      url('../src/assets/images/female-teacher1.png'),
-      url('../src/assets/images/female-teacher2.png'),
-      url('../src/assets/images/tutoring2.png'),
-      url('../src/assets/images/training2.png'),
-      url('../src/assets/images/books.png'),
-      url('../src/assets/images/acornBanner1.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
-    background-position: top,
-      left 2% bottom 10%,
-      left 11% bottom 10%,
-      left 20% bottom 10%,
-      left 29% bottom 10%,
-      left 38% bottom 10%,
-      right 38% bottom 10%,
-      right 29% bottom 10%,
-      right 20% bottom 10%,
-      right 11% bottom 10%,
-      right 2% bottom 10%;
-    background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
+    background-image: url("../src/assets/images/about-us-paper.png"),
+      url("../src/assets/images/stack-of-books.png"),
+      url("../src/assets/images/training1.png"),
+      url("../src/assets/images/tutoring1.png"),
+      url("../src/assets/images/male-teacher2.png"),
+      url("../src/assets/images/male-teacher1.png"),
+      url("../src/assets/images/female-teacher1.png"),
+      url("../src/assets/images/female-teacher2.png"),
+      url("../src/assets/images/tutoring2.png"),
+      url("../src/assets/images/training2.png"),
+      url("../src/assets/images/books.png"),
+      url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      space repeat;
+    background-position: top, left 2% bottom 10%, left 11% bottom 10%,
+      left 20% bottom 10%, left 29% bottom 10%, left 38% bottom 10%,
+      right 38% bottom 10%, right 29% bottom 10%, right 20% bottom 10%,
+      right 11% bottom 10%, right 2% bottom 10%;
+    background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 4em, 4em, 3.6em, 3.7em,
+      4em, 4em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 3em;
@@ -48,11 +40,9 @@
     .chn {
       font-weight: 900;
     }
-
   }
 
   .about-us-content {
-
     font-size: 20px;
     text-align: justify;
     padding: 1em;
@@ -60,35 +50,31 @@
     grid-template-columns: 50% 50%;
 
     #text {
-
       .eng {
         margin-bottom: 1.5em;
         line-height: 1.5em;
       }
-  
+
       .chn {
         line-height: 1.7em;
       }
-
     }
 
     #images {
-
       margin-left: 1em;
       overflow-x: scroll;
       white-space: nowrap;
       padding-top: 0.1em;
       min-height: fit-content;
-      
+
       .image-container {
-        
         display: inline-block;
         width: 100%;
         box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.35);
-        background-color: #EDF6E3;
+        background-color: #edf6e3;
         border-radius: 15px;
         margin-bottom: 1em;
-        
+
         img {
           width: inherit;
           border-top-left-radius: 15px;
@@ -96,10 +82,9 @@
         }
 
         div {
-
           border-bottom-left-radius: 15px;
           border-bottom-right-radius: 15px;
-          background-color: #EDF6E3;
+          background-color: #edf6e3;
           text-align: center;
           padding: 0.3em 0;
 
@@ -110,18 +95,17 @@
           span.chn {
             line-height: 1.85em;
           }
-
         }
-
       }
-
     }
 
     // Webkit Scrollbar styling will only work in Chrome and Safari
     // Default styles are on Firefox and Edge (styling in progress)
+    // Some chrome browsers display part of the styling for the scrollbar
+    // Buggy
     #images {
       scrollbar-width: 12px;
-      scrollbar-color: #EFF6E5 #a9a9a9;
+      scrollbar-color: #eff6e5 #a9a9a9;
     }
 
     #images::-webkit-scrollbar {
@@ -135,15 +119,13 @@
     }
 
     #images::-webkit-scrollbar-thumb:hover {
-      background-color: #EFF6E5;
-      box-shadow: inset 0 0 8px #EFF6E5;
+      background-color: #eff6e5;
+      box-shadow: inset 0 0 8px #eff6e5;
     }
 
     #images::-webkit-scrollbar-track {
       box-shadow: inset 0 0 3px gray;
       border-radius: 20px;
     }
-
   }
-
 }

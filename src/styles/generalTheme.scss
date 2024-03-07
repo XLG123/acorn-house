@@ -3,7 +3,6 @@ body {
 }
 
 main {
-  
   padding: 2em 4em;
 
   .section-title {
@@ -16,17 +15,13 @@ main {
     .chn {
       font-size: 20px;
     }
-
   }
-
 }
 
 @media (width > 1500px) {
-  
   main {
     padding: 2em 10em;
   }
-
 }
 
 .eng {
@@ -34,5 +29,5 @@ main {
 }
 
 .chn {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
 }
