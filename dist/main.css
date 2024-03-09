@@ -441,7 +441,7 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .language-learning,
 #programs-container .programs-content .available-programs .exam-prep {
   padding: 0.5em 2em;
-  background-color: #edf6e3;
+  background-color: #e7f6e3;
   border-radius: 20px;
   box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3, 0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
 }
@@ -458,6 +458,24 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .language-learning .first-item,
 #programs-container .programs-content .available-programs .exam-prep .first-item {
   margin-top: 0.25em;
+}
+#programs-container .programs-content .available-programs .after-school-tutoring .category-item,
+#programs-container .programs-content .available-programs .enrichment-classes .category-item,
+#programs-container .programs-content .available-programs .language-learning .category-item,
+#programs-container .programs-content .available-programs .exam-prep .category-item {
+  background-color: rgb(184, 213, 176);
+  border-radius: 20px;
+  padding: 0.25em;
+  margin: 0.5em;
+}
+#programs-container .programs-content .available-programs .after-school-tutoring .category-item .eng, #programs-container .programs-content .available-programs .after-school-tutoring .category-item .chn,
+#programs-container .programs-content .available-programs .enrichment-classes .category-item .eng,
+#programs-container .programs-content .available-programs .enrichment-classes .category-item .chn,
+#programs-container .programs-content .available-programs .language-learning .category-item .eng,
+#programs-container .programs-content .available-programs .language-learning .category-item .chn,
+#programs-container .programs-content .available-programs .exam-prep .category-item .eng,
+#programs-container .programs-content .available-programs .exam-prep .category-item .chn {
+  font-weight: 500;
 }
 
 #contact-info-container {
