@@ -47,6 +47,9 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/exam" title="exam icons">Exam icons created by Awicon - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/english-language" title="english language icons">English language icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/math-book" title="math book icons">Math book icons created by Haca Studio - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/copy-writing" title="copy writing icons">Copy writing icons created by mia elysia - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/group" title="group icons">Group icons created by Freepik - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
