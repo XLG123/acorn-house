@@ -8,12 +8,13 @@
   .section-title {
     background-image: url("../src/assets/images/programs-paper.png"),
       url("../src/assets/images/homework.png"),
+      url("../src/assets/images/math-book.png"),
       url("../src/assets/images/eng.png"),
       url("../src/assets/images/acornBanner2.png");
-    background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
     background-position: left 50% top 0.25em, left 2% bottom 10%,
-      right 38% bottom 10%;
-    background-size: 8em, 4em, 4em, 4em;
+      left 38% bottom 10%, right 38% bottom 10%;
+    background-size: 8em, 4em, 4.3em, 4em, 4em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 3em;

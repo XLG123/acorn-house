@@ -347,10 +347,10 @@ main .section-title .chn {
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
 }
 #programs-container .section-title {
-  background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/homework.png"), url("../src/assets/images/eng.png"), url("../src/assets/images/acornBanner2.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
-  background-position: left 50% top 0.25em, left 2% bottom 10%, right 38% bottom 10%;
-  background-size: 8em, 4em, 4em, 4em;
+  background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/homework.png"), url("../src/assets/images/math-book.png"), url("../src/assets/images/eng.png"), url("../src/assets/images/acornBanner2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+  background-position: left 50% top 0.25em, left 2% bottom 10%, left 38% bottom 10%, right 38% bottom 10%;
+  background-size: 8em, 4em, 4.3em, 4em, 4em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding-top: 3em;
