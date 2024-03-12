@@ -44,6 +44,8 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/post-it" title="post-it icons">Post-it icons created by bearicons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/time-and-date" title="time-and-date icons">Time-and-date icons created by justicon - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/school" title="school icons">School icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/exam" title="exam icons">Exam icons created by Awicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/english-language" title="english language icons">English language icons created by Freepik - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
