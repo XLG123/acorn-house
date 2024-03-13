@@ -51,6 +51,8 @@ About Us Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/copy-writing" title="copy writing icons">Copy writing icons created by mia elysia - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/group" title="group icons">Group icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by surang - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/one-on-one" title="one on one icons">One on one icons created by nawicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by Prosymbols - Flaticon</a>
 
 Enrollmenet Title Icon Attribution
 <a href="https://www.flaticon.com/free-icons/note" title="note icons">Note icons created by Freepik - Flaticon</a>
