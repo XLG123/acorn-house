@@ -136,6 +136,11 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8em;
+}
+
 body {
   background: #def1e2;
 }
@@ -232,6 +237,10 @@ main .section-title .chn {
   padding: 1em;
   border-radius: 10px;
   cursor: pointer;
+}
+#nav-bar-container #nav-links-container #nav-links .nav-option a {
+  text-decoration: none;
+  color: inherit;
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option:first-child {
   margin-right: 1em;
@@ -674,7 +683,17 @@ main .section-title .chn {
   margin-right: 1em;
 }
 
-#copyright {
+#attribution, #copyright {
   text-align: center;
+}
+
+#attribution {
+  margin-bottom: 0.5em;
+}
+#attribution a {
+  color: #388448;
+}
+
+#copyright {
   margin-bottom: 2em;
 }

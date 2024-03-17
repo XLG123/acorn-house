@@ -74,6 +74,11 @@
         padding: 1em;
         border-radius: 10px;
         cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
 
       .nav-option:first-child {
