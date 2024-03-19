@@ -2,8 +2,8 @@ const reloadPage = () => {
   const schoolName = document.getElementById("school-name-container");
   schoolName.addEventListener("click", () => {
     document.location.reload();
-  })
-}
+  });
+};
 
 const scrollToPart = () => {
   const navLinks = document.getElementById("nav-links");
@@ -19,6 +19,6 @@ const scrollToPart = () => {
       contactInfoSection.scrollIntoView();
     }
   });
-}
+};
 
-export { reloadPage, scrollToPart }
+export { reloadPage, scrollToPart };
