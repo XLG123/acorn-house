@@ -90,14 +90,16 @@
       }
 
       .nav-option:hover,
-      .nav-option:focus {
+      .nav-option:focus,
+      .selected {
         background: url("../src/assets/images/acornRight.png"),
           url("../src/assets/images/acornLeft.png");
         background-repeat: no-repeat, no-repeat;
         background-position: top right, top left;
         background-size: 1em;
         text-decoration: wavy underline;
-        text-underline-offset: 0.25em;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.4em;
       }
     }
   }

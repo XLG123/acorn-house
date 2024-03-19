@@ -249,13 +249,15 @@ main .section-title .chn {
   margin-left: 1em;
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option:hover,
-#nav-bar-container #nav-links-container #nav-links .nav-option:focus {
+#nav-bar-container #nav-links-container #nav-links .nav-option:focus,
+#nav-bar-container #nav-links-container #nav-links .selected {
   background: url("../src/assets/images/acornRight.png"), url("../src/assets/images/acornLeft.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, top left;
   background-size: 1em;
   text-decoration: wavy underline;
-  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.4em;
 }
 
 @media (width > 1500px) {
