@@ -238,7 +238,7 @@ main .section-title .chn {
   border-radius: 10px;
   cursor: pointer;
 }
-#nav-bar-container #nav-links-container #nav-links .nav-option a {
+#nav-bar-container #nav-links-container #nav-links .nav-option div {
   text-decoration: none;
   color: inherit;
 }
