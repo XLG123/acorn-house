@@ -267,8 +267,8 @@ main .section-title .chn {
 }
 #about-us-container {
   border-radius: 20px;
-  background: linear-gradient(to right, #84c5b0, #e5e5c5);
-  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
+  background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5d1, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #e5e5d1;
 }
 #about-us-container .section-title {
   background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/male-teacher1.png"), url("../src/assets/images/female-teacher1.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
@@ -359,8 +359,8 @@ main .section-title .chn {
 #programs-container {
   margin-top: 2.5em;
   border-radius: 20px;
-  background: linear-gradient(to right, #84c5b0, #e5e5c5);
-  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
+  background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5d1, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #e5e5d1;
 }
 #programs-container .section-title {
   background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/homework.png"), url("../src/assets/images/meeting.png"), url("../src/assets/images/reading.png"), url("../src/assets/images/concept.png"), url("../src/assets/images/math-book.png"), url("../src/assets/images/eng.png"), url("../src/assets/images/note.png"), url("../src/assets/images/reading-eng.png"), url("../src/assets/images/meeting-one-on-one.png"), url("../src/assets/images/score.png"), url("../src/assets/images/acornBanner2.png");
@@ -448,6 +448,7 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs {
   margin-top: 1em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   line-height: 1.2em;
@@ -456,7 +457,9 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .enrichment-classes,
 #programs-container .programs-content .available-programs .language-learning,
 #programs-container .programs-content .available-programs .exam-prep {
-  padding: 0.5em 2.5em;
+  width: fit-content;
+  padding: 0.5em 2.5vw;
+  margin-bottom: 1em;
   background-color: #edf6e3;
   border-radius: 20px;
   box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3, 0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
@@ -481,7 +484,7 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .exam-prep .category-item {
   background-color: #b8d5b0;
   border-radius: 20px;
-  padding: 0.25em 1em;
+  padding: 0.25em 1vw;
   margin: 0.5em;
   box-shadow: 5px 5px 5px #7f907a;
 }
@@ -495,12 +498,20 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .exam-prep .category-item .chn {
   font-weight: 500;
 }
+@media (width <= 450px) {
+  #programs-container .programs-content .available-programs .after-school-tutoring,
+  #programs-container .programs-content .available-programs .enrichment-classes,
+  #programs-container .programs-content .available-programs .language-learning,
+  #programs-container .programs-content .available-programs .exam-prep {
+    padding: 0.5em 3.5vw;
+  }
+}
 
 #contact-info-container {
   margin-top: 2.5em;
   border-radius: 20px;
-  background: linear-gradient(to right, #84c5b0, #e5e5c5);
-  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5c5, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #84c5b0;
+  background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
+  box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5d1, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #e5e5d1;
 }
 #contact-info-container .section-title {
   background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/bus.png"), url("../src/assets/images/train.png"), url("../src/assets/images/car.png"), url("../src/assets/images/family.png"), url("../src/assets/images/distance.png"), url("../src/assets/images/handshake.png"), url("../src/assets/images/speech-bubble.png"), url("../src/assets/images/telephone.png"), url("../src/assets/images/email.png"), url("../src/assets/images/speaker.png"), url("../src/assets/images/acornBanner2.png");
