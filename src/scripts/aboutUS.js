@@ -1,27 +1,25 @@
 const automaticScrolling = () => {
   const el = document.getElementById("images");
-  const imageOneBounding = document
-    .getElementById("img1-container")
-    .getBoundingClientRect();
+  const imageOne = document.getElementById("img1-container");
+  const imageTwo = document.getElementById("img2-container");
+  const imageThree = document.getElementById("img3-container");
 
-  const imageTwoBounding = document
-    .getElementById("img2-container")
-    .getBoundingClientRect();
+  let imageOneBounding,
+    imageTwoBounding,
+    imageThreeBounding = 0;
 
-  const imageThreeBounding = document
-    .getElementById("img3-container")
-    .getBoundingClientRect();
-  
-  const width = imageOneBounding.width + 5;
-    
-  // setInterval(() => {
-  //   console.log(imageTwoBounding);
-  //   console.log(imageThreeBounding);
-  //   el.scrollBy({
-  //     left: width,
-  //     behavior: "smooth",
-  //   });
-  // }, 5000);
+  let width = 0;
+
+  setInterval(() => {
+    imageOneBounding = imageOne.getBoundingClientRect();
+    imageTwoBounding = imageTwo.getBoundingClientRect();
+    imageThreeBounding = imageThree.getBoundingClientRect();
+    console.log(imageOneBounding, imageTwoBounding, imageThreeBounding);
+    el.scrollBy({
+      left: 542,
+      behavior: "smooth",
+    });
+  }, 5000);
 
   // TODO:
   // 1. When users has their mouse on the images, stop the automatic scrolling.
