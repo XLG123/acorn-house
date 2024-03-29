@@ -14,7 +14,8 @@ const scrollToPart = () => {
   const programs = document.getElementById("selected-programs");
   const contactInfo = document.getElementById("selected-contact-info");
   navLinks.addEventListener("click", (e) => {
-    if (e.target.classList.contains("about-us-option")) {
+    const target = e.target.classList;
+    if (target.contains("about-us-option")) {
       aboutUSSection.scrollIntoView();
       aboutUs.classList.add("selected");
       if (programs.classList.contains("selected")) {
@@ -22,7 +23,7 @@ const scrollToPart = () => {
       } else if (contactInfo.classList.contains("selected")) {
         contactInfo.classList.remove("selected");
       }
-    } else if (e.target.classList.contains("programs-option")) {
+    } else if (target.contains("programs-option")) {
       programsSection.scrollIntoView();
       programs.classList.add("selected");
       if (aboutUs.classList.contains("selected")) {
