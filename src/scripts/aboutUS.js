@@ -10,7 +10,7 @@ const automaticScrolling = () => {
 
   const imgCtnBounding = el.getBoundingClientRect();
 
-  setInterval(() => {
+  const imgScroll = () => {
     imgOneBounding = imgOne.getBoundingClientRect();
     imgTwoBounding = imgTwo.getBoundingClientRect();
     imgThreeBounding = imgThree.getBoundingClientRect();
@@ -45,14 +45,17 @@ const automaticScrolling = () => {
         behavior: "smooth",
       });
     }
-  }, 5000);
+  };
 
-  // TODO:
-  // 1. When users has their mouse on the images, stop the automatic scrolling.
+  let scrollTimer = setInterval(imgScroll, 5000);
 
-  // el.addEventListener("mouseover", () => {
+  el.addEventListener("mouseover", () => {
+    clearInterval(scrollTimer);
+  });
 
-  // })
+  el.addEventListener("mouseleave", () => {
+    scrollTimer = setInterval(imgScroll, 5000);
+  });
 };
 
 export { automaticScrolling };
