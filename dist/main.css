@@ -498,6 +498,10 @@ main .section-title .chn {
 #programs-container .programs-content .available-programs .exam-prep .category-item .chn {
   font-weight: 500;
 }
+#programs-container .programs-content .available-programs .mobile-view-available-programs {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (width <= 450px) {
   #programs-container .programs-content .available-programs .after-school-tutoring,
   #programs-container .programs-content .available-programs .enrichment-classes,
