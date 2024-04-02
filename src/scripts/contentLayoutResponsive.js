@@ -9,6 +9,7 @@ const responsiveLayout = () => {
     const contentCtn = document.getElementById("content-container");
     contentCtn.style.paddingLeft = "1em";
     contentCtn.style.paddingRight = "1em";
+    contentCtn.style.backgroundColor = "black";
   }
 
 };
