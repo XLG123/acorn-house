@@ -1,12 +1,15 @@
-const isMobileDevice = () => {
-  // TODO:
-  // Check if the device is a mobile device
-  // return true if it's mobile, false otherwise.
-};
+import platform from 'platform';
+import { alignPrograms } from './programs';
 
 const responsiveLayout = () => {
+  alignPrograms();
   // TODO:
   // Modify the size of the content container for mobile/tablet view
+  if (platform.isMobile) {
+    const contentCtn = document.getElementById("content-container");
+    contentCtn.style.paddingLeft = "2em";
+    contentCtn.style.paddingRight = "2em";
+  }
 };
 
 export { responsiveLayout };
