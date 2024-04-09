@@ -9,8 +9,8 @@ const responsiveLayout = () => {
   // Modify the size of the content container for mobile/tablet view
   const contentCtn = document.getElementById("content-container");
   if (
-    !platform.os.family.includes("iOS") ||
-    !platform.os.family.includes("Android")
+    platform.os.family.includes("iOS") ||
+    platform.os.family.includes("Android")
   ) {
     contentCtn.style.paddingLeft = "1em";
     contentCtn.style.paddingRight = "1em";
