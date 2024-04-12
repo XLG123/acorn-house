@@ -14,8 +14,6 @@ const responsiveLayout = () => {
   ) {
     contentCtn.style.paddingLeft = "1em";
     contentCtn.style.paddingRight = "1em";
-    cl("this is not a touch device");
-    contentCtn.style.backgroundColor = "red";
   }
 };
 
