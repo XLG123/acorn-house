@@ -18,6 +18,15 @@ const modifyProgramsWidth = () => {
   examPrepCtn.style.padding = "0.5em 8vw";
 };
 
+const removeTitleBgImg = () => {
+  const programsTitle = document.getElementById("programs-title");
+  programsTitle.style.backgroundImage =
+    'url("../src/assets/images/programs-paper.png"), url("../src/assets/images/acornBanner2.png")';
+  programsTitle.style.backgroundRepeat = "no-repeat, space repeat";
+  programsTitle.style.position = "left 50% top 0.25em";
+  programsTitle.style.backgroundSize = "8em, 4em";
+};
+
 const responsiveLayout = () => {
   alignPrograms();
   // TODO:
@@ -30,6 +39,7 @@ const responsiveLayout = () => {
     contentCtn.style.paddingLeft = "2em";
     contentCtn.style.paddingRight = "2em";
     modifyProgramsWidth();
+    removeTitleBgImg();
   }
 };
 
