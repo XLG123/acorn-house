@@ -25,6 +25,7 @@ const removeTitleBgImg = () => {
   programsTitle.style.backgroundRepeat = "no-repeat, space repeat";
   programsTitle.style.backgroundPosition = "left 50% top 0.25em";
   programsTitle.style.backgroundSize = "8em, 4em";
+  programsTitle.style.backgroundColor = "Blue";
 };
 
 const responsiveLayout = () => {
