@@ -3,6 +3,8 @@ import { alignPrograms } from "./programs";
 
 const cl = console.log.bind(console);
 
+// const programs
+
 const responsiveLayout = () => {
   alignPrograms();
   // TODO:
@@ -12,8 +14,8 @@ const responsiveLayout = () => {
     platform.os.family.includes("iOS") ||
     platform.os.family.includes("Android")
   ) {
-    contentCtn.style.paddingLeft = "1em";
-    contentCtn.style.paddingRight = "1em";
+    contentCtn.style.paddingLeft = "2em";
+    contentCtn.style.paddingRight = "2em";
   }
 };
 
