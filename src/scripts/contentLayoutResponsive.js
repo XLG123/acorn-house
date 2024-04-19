@@ -53,10 +53,10 @@ const modifyContentWidth = () => {
 
 const responsiveLayout = () => {
   alignPrograms();
-  modifyContentWidth();
-  window.addEventListener("resize", () => {
-    modifyContentWidth();
-  })
+  // modifyContentWidth();
+  // window.addEventListener("resize", () => {
+  //   modifyContentWidth();
+  // })
 };
 
 export { responsiveLayout };
