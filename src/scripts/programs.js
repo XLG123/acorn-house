@@ -14,6 +14,29 @@ const alignPrograms = () => {
 
   let verticalAlign = false;
 
+  ctnOnePos = afterSchool.getBoundingClientRect().left;
+  ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
+  ctnThreePos = languageLearning.getBoundingClientRect().left;
+
+  if (ctnOnePos + 10 >= ctnTwoPos && ctnTwoPos + 5 >= ctnThreePos) {
+    verticalAlign = true;
+  } else {
+    verticalAlign = false;
+  }
+
+  if (verticalAlign) {
+    afterSchool.classList.add("mobile-view-available-programs");
+    enrichmentClasses.classList.add("mobile-view-available-programs");
+    languageLearning.classList.add("mobile-view-available-programs");
+    examPrep.classList.add("mobile-view-available-programs");
+  } else {
+    afterSchool.classList.remove("mobile-view-available-programs");
+    enrichmentClasses.classList.remove("mobile-view-available-programs");
+    languageLearning.classList.remove("mobile-view-available-programs");
+    examPrep.classList.remove("mobile-view-available-programs");
+  }
+
+
   window.addEventListener("resize", () => {
     ctnOnePos = afterSchool.getBoundingClientRect().left;
     ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;

@@ -11,52 +11,8 @@ const cl = console.log.bind(console);
 //   programsTitle.style.backgroundSize = "8em, 4em";
 // };
 
-const modifyProgramsWidth = (windowWidth) => {
-  const afterSchoolCtn = document.getElementById("after-school-container");
-  const enrichmentClassesCtn = document.getElementById(
-    "enrichment-classes-container"
-  );
-  const languageLearningCtn = document.getElementById(
-    "language-learning-container"
-  );
-  const examPrepCtn = document.getElementById("exam-prep-container");
-  if (windowWidth < 450) { // Mobile Padding
-    afterSchoolCtn.style.padding = "0.5em 8vw";
-    enrichmentClassesCtn.style.padding = "0.5em 8vw";
-    languageLearningCtn.style.padding = "0.5em 8vw";
-    examPrepCtn.style.padding = "0.5em 8vw";
-  } else { // Tablet and Desktop Padding
-    afterSchoolCtn.style.padding = "0.5em 2.5vw";
-    enrichmentClassesCtn.style.padding = "0.5em 2.5vw";
-    languageLearningCtn.style.padding = "0.5em 2.5vw";
-    examPrepCtn.style.padding = "0.5em 2.5vw";
-  } 
-};
-
-const modifyContentWidth = () => {
-  const contentCtn = document.getElementById("content-container");
-  const windowWidth = window.innerWidth;
-  if (windowWidth < 450) { // Mobile View
-    contentCtn.style.paddingLeft = "2em";
-    contentCtn.style.paddingRight = "2em";
-    cl("mobile view");
-    // removeTitleBgImg();
-  } else if (windowWidth < 1500) {
-    contentCtn.style.paddingLeft = "4em";
-    contentCtn.style.paddingRight = "4em";
-  } else {
-    contentCtn.style.paddingLeft = "10em";
-    contentCtn.style.paddingRight = "10em";
-  }
-  modifyProgramsWidth(windowWidth);
-};
-
 const responsiveLayout = () => {
   alignPrograms();
-  // modifyContentWidth();
-  // window.addEventListener("resize", () => {
-  //   modifyContentWidth();
-  // })
 };
 
 export { responsiveLayout };
