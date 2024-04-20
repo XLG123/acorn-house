@@ -26,13 +26,6 @@ main {
   main {
     padding: 2em;
   }
-
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 8vw;
-  }
 }
 
 // Tablet/Laptop View
@@ -40,26 +33,12 @@ main {
   main {
     padding: 2em 4em;
   }
-
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 2.5vw;
-  }
 }
 
 // Large Screen Desktop/Laptop View
 @media (width > 1500px) {
   main {
     padding: 2em 10em;
-  }
-  
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 2.5vw;
   }
 }
 

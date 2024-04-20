@@ -159,33 +159,15 @@ main .section-title .chn {
   main {
     padding: 2em;
   }
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 8vw;
-  }
 }
 @media (min-width: 601px) and (max-width: 1500px) {
   main {
     padding: 2em 4em;
   }
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 2.5vw;
-  }
 }
 @media (width > 1500px) {
   main {
     padding: 2em 10em;
-  }
-  #after-school-container,
-  #enrichment-classes-container,
-  #language-learning-container,
-  #exam-prep-container {
-    padding: 0.5em 2.5vw;
   }
 }
 .eng {
@@ -533,6 +515,30 @@ main .section-title .chn {
   #programs-container .programs-content .available-programs .language-learning,
   #programs-container .programs-content .available-programs .exam-prep {
     padding: 0.5em 3.5vw;
+  }
+}
+@media (max-width: 600px) {
+  #programs-container .programs-content .available-programs #after-school-container,
+  #programs-container .programs-content .available-programs #enrichment-classes-container,
+  #programs-container .programs-content .available-programs #language-learning-container,
+  #programs-container .programs-content .available-programs #exam-prep-container {
+    padding: 0.5em 8vw;
+  }
+}
+@media (min-width: 601px) and (max-width: 1500px) {
+  #programs-container .programs-content .available-programs #after-school-container,
+  #programs-container .programs-content .available-programs #enrichment-classes-container,
+  #programs-container .programs-content .available-programs #language-learning-container,
+  #programs-container .programs-content .available-programs #exam-prep-container {
+    padding: 0.5em 2.5vw;
+  }
+}
+@media (width > 1500px) {
+  #programs-container .programs-content .available-programs #after-school-container,
+  #programs-container .programs-content .available-programs #enrichment-classes-container,
+  #programs-container .programs-content .available-programs #language-learning-container,
+  #programs-container .programs-content .available-programs #exam-prep-container {
+    padding: 0.5em 2.5vw;
   }
 }
 
