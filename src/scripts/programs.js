@@ -1,3 +1,32 @@
+const alignProgramsHelper = (
+  eleOne,
+  eleTwo,
+  eleThree,
+  eleFour,
+  boundingOne,
+  boundingTwo,
+  boundingThree,
+  verticalAlignment
+) => {
+  if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
+    verticalAlignment = true;
+  } else {
+    verticalAlignment = false;
+  }
+
+  if (verticalAlignment) {
+    eleOne.classList.add("mobile-view-available-programs");
+    eleTwo.classList.add("mobile-view-available-programs");
+    eleThree.classList.add("mobile-view-available-programs");
+    eleFour.classList.add("mobile-view-available-programs");
+  } else {
+    eleOne.classList.remove("mobile-view-available-programs");
+    eleTwo.classList.remove("mobile-view-available-programs");
+    eleThree.classList.remove("mobile-view-available-programs");
+    eleFour.classList.remove("mobile-view-available-programs");
+  }
+};
+
 const alignPrograms = () => {
   const afterSchool = document.getElementById("after-school-container");
   const enrichmentClasses = document.getElementById(
@@ -8,9 +37,7 @@ const alignPrograms = () => {
   );
   const examPrep = document.getElementById("exam-prep-container");
 
-  let ctnOnePos,
-    ctnTwoPos,
-    ctnThreePos;
+  let ctnOnePos, ctnTwoPos, ctnThreePos;
 
   let verticalAlign = false;
 
@@ -18,47 +45,32 @@ const alignPrograms = () => {
   ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
   ctnThreePos = languageLearning.getBoundingClientRect().left;
 
-  if (ctnOnePos + 10 >= ctnTwoPos && ctnTwoPos + 5 >= ctnThreePos) {
-    verticalAlign = true;
-  } else {
-    verticalAlign = false;
-  }
-
-  if (verticalAlign) {
-    afterSchool.classList.add("mobile-view-available-programs");
-    enrichmentClasses.classList.add("mobile-view-available-programs");
-    languageLearning.classList.add("mobile-view-available-programs");
-    examPrep.classList.add("mobile-view-available-programs");
-  } else {
-    afterSchool.classList.remove("mobile-view-available-programs");
-    enrichmentClasses.classList.remove("mobile-view-available-programs");
-    languageLearning.classList.remove("mobile-view-available-programs");
-    examPrep.classList.remove("mobile-view-available-programs");
-  }
-
+  alignProgramsHelper(
+    afterSchool,
+    enrichmentClasses,
+    languageLearning,
+    examPrep,
+    ctnOnePos,
+    ctnTwoPos,
+    ctnThreePos,
+    verticalAlign
+  );
 
   window.addEventListener("resize", () => {
     ctnOnePos = afterSchool.getBoundingClientRect().left;
     ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
     ctnThreePos = languageLearning.getBoundingClientRect().left;
 
-    if (ctnOnePos + 10 >= ctnTwoPos && ctnTwoPos + 5 >= ctnThreePos) {
-      verticalAlign = true;
-    } else {
-      verticalAlign = false;
-    }
-
-    if (verticalAlign) {
-      afterSchool.classList.add("mobile-view-available-programs");
-      enrichmentClasses.classList.add("mobile-view-available-programs");
-      languageLearning.classList.add("mobile-view-available-programs");
-      examPrep.classList.add("mobile-view-available-programs");
-    } else {
-      afterSchool.classList.remove("mobile-view-available-programs");
-      enrichmentClasses.classList.remove("mobile-view-available-programs");
-      languageLearning.classList.remove("mobile-view-available-programs");
-      examPrep.classList.remove("mobile-view-available-programs");
-    }
+    // Call the alignProgramsHelper Function to check the alignment
+    alignProgramsHelper(
+      afterSchool,
+      enrichmentClasses,
+      languageLearning,
+      examPrep,
+      ctnOnePos,
+      ctnTwoPos,
+      ctnThreePos
+    );
   });
 };
 
