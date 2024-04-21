@@ -4,7 +4,7 @@ const cl = console.log.bind(console);
 
 const responsiveLayout = () => {
   alignPrograms();
-
+  // removeTitleBgImg();
 };
 
 export { responsiveLayout };

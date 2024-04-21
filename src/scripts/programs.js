@@ -74,6 +74,7 @@ const alignPrograms = () => {
   });
 };
 
+// TODO: might have to change it to CSS media queries
 const removeTitleBgImg = () => {
   // const programsTitle = document.getElementById("programs-title");
   // programsTitle.style.backgroundImage =
@@ -82,5 +83,5 @@ const removeTitleBgImg = () => {
   // programsTitle.style.backgroundPosition = "left 50% top 0.25em";
   // programsTitle.style.backgroundSize = "8em, 4em";
 };
-  
+
 export { alignPrograms, removeTitleBgImg };
