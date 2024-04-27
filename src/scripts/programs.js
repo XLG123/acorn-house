@@ -75,6 +75,7 @@ const alignPrograms = () => {
 };
 
 // TODO: will change it to CSS media queries
+// TODO: Should add to every content container
 // const removeTitleBgImg = () => {
 //   // const programsTitle = document.getElementById("programs-title");
 //   // programsTitle.style.backgroundImage =
