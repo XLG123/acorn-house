@@ -75,7 +75,8 @@ const alignPrograms = () => {
 };
 
 // TODO: will change it to CSS media queries
-// TODO: Should add to every content container
+// 1. Should add to every content container
+// 2. Might be a major layout change because of code modularity
 // const removeTitleBgImg = () => {
 //   // const programsTitle = document.getElementById("programs-title");
 //   // programsTitle.style.backgroundImage =
