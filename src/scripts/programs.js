@@ -74,8 +74,4 @@ const alignPrograms = () => {
   });
 };
 
-// TODO: will change it to CSS media queries
-// 1. Should add to every content container
-// 2. Might be a major layout change because of code modularity
-
 export { alignPrograms };
