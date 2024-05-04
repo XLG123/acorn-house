@@ -279,3 +279,25 @@
     }
   }
 }
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+  #programs-container {
+    .section-title {
+      background-image: url("../src/assets/images/programs-paper.png"),
+      url("../src/assets/images/homework.png"),
+      url("../src/assets/images/meeting.png"),
+      url("../src/assets/images/reading.png"),
+      url("../src/assets/images/concept.png"),
+      url("../src/assets/images/note.png"),
+      url("../src/assets/images/reading-eng.png"),
+      url("../src/assets/images/meeting-one-on-one.png"),
+      url("../src/assets/images/score.png"),
+      url("../src/assets/images/acornBanner2.png");
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+          no-repeat,no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+        background-position: left 50% top 0.25em, left 2% bottom 10%, left 13% bottom 10%, left 25% bottom 10%, left 37% bottom 10%,
+          right 37% bottom 10%, right 25% bottom 10%, right 13% bottom 10%, right 2% bottom 10%;
+        background-size: 8em, 4em, 4.5em, 6em, 5em, 4em, 4.2em, 4em, 4em, 4em;
+    }
+  }
+}
