@@ -542,12 +542,28 @@ main .section-title .chn {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #programs-container .section-title {
     background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/acornBanner2.png");
     background-repeat: no-repeat, space repeat;
     background-position: left 50% top 0.25em;
     background-size: 8em, 4em;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  #programs-container .section-title {
+    background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/homework.png"), url("../src/assets/images/score.png"), url("../src/assets/images/acornBanner2.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: left 50% top 0.25em, left 10% bottom 10%, right 10% bottom 10%;
+    background-size: 8em, 4em, 4em, 4em;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  #programs-container .section-title {
+    background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/homework.png"), url("../src/assets/images/meeting.png"), url("../src/assets/images/meeting-one-on-one.png"), url("../src/assets/images/score.png"), url("../src/assets/images/acornBanner2.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: left 50% top 0.25em, left 4% bottom 10%, left 22% bottom 10%, right 22% bottom 10%, right 4% bottom 10%;
+    background-size: 8em, 4em, 4.5em, 4em, 4em, 4em;
   }
 }
 #contact-info-container {
