@@ -542,6 +542,14 @@ main .section-title .chn {
   }
 }
 
+@media (max-width: 600px) {
+  #programs-container .section-title {
+    background-image: url("../src/assets/images/programs-paper.png"), url("../src/assets/images/acornBanner2.png");
+    background-repeat: no-repeat, space repeat;
+    background-position: left 50% top 0.25em;
+    background-size: 8em, 4em;
+  }
+}
 #contact-info-container {
   margin-top: 2.5em;
   border-radius: 20px;
