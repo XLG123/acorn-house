@@ -439,6 +439,7 @@ main .section-title .chn {
   text-align: center;
   margin-left: 0.5em;
   line-height: 1.2em;
+  min-width: fit-content;
 }
 #programs-container .programs-content .grade-icon-container,
 #programs-container .programs-content .schedule-icon-container {
@@ -451,6 +452,9 @@ main .section-title .chn {
 #programs-container .programs-content .highlight {
   font-weight: bold;
   color: #2f6d5a;
+}
+#programs-container .programs-content .schedule-text {
+  flex-wrap: wrap;
 }
 #programs-container .programs-content .available-programs {
   margin-top: 1em;

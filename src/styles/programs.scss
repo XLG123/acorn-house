@@ -107,6 +107,7 @@
       text-align: center;
       margin-left: 0.5em;
       line-height: 1.2em;
+      min-width: fit-content;
     }
 
     .grade-icon-container,
@@ -122,6 +123,10 @@
     .highlight {
       font-weight: bold;
       color: #2f6d5a;
+    }
+
+    .schedule-text {
+      flex-wrap: wrap;
     }
 
     .available-programs {
@@ -212,9 +217,6 @@
     }
   }
 }
-
-// TODO: Apply CSS media queries
-// Remove background icons when screen size is within a certain range
 
 // Mobile View
 @media (max-width: 500px) {
