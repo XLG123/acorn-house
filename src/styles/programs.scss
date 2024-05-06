@@ -47,8 +47,10 @@
     padding: 1em;
     font-size: 20px;
 
+    // TODO: Apply media query for this flex container, so that the two children can be more responsive to the viewport change
     .grade-schedule-container {
       display: flex;
+      // flex-wrap: wrap;
       justify-content: space-evenly;
 
       .grade-container {
