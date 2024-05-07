@@ -50,7 +50,6 @@
     // TODO: Apply media query for this flex container, so that the two children can be more responsive to the viewport change
     .grade-schedule-container {
       display: flex;
-      // flex-wrap: wrap;
       justify-content: space-evenly;
 
       .grade-container {
@@ -310,4 +309,27 @@
         background-size: 8em, 4em, 4.5em, 6em, 5em, 4em, 4.2em, 4em, 4em, 4em;
     }
   }
+}
+
+@media (max-width: 950px) {
+  #programs-container {
+    .programs-content {
+      .grade-schedule-container {
+        flex-wrap: wrap;
+
+        .grade-container,
+        .schedule-container {
+          border-radius: 20px;
+        }
+
+        .grade-container {
+          margin-bottom: 1em;
+        }
+
+        .schedule-container {
+          border: none;
+        }
+      }
+    }
+  }  
 }
