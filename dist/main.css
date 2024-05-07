@@ -400,6 +400,9 @@ main .section-title .chn {
   line-height: 1.3em;
   text-align: center;
 }
+#programs-container .programs-content .grade-schedule-container .grade-container .grade-text .chn {
+  white-space: nowrap;
+}
 #programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text {
   display: flex;
   justify-content: space-evenly;
@@ -410,6 +413,7 @@ main .section-title .chn {
 #programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .saturday-schedule {
   padding-left: 1em;
   padding-right: 1em;
+  white-space: nowrap;
 }
 #programs-container .programs-content .grade-schedule-container .grade-container,
 #programs-container .programs-content .grade-schedule-container .schedule-container {
@@ -452,6 +456,7 @@ main .section-title .chn {
 #programs-container .programs-content .highlight {
   font-weight: bold;
   color: #2f6d5a;
+  white-space: nowrap;
 }
 #programs-container .programs-content .schedule-text {
   flex-wrap: wrap;

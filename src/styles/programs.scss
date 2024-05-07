@@ -57,6 +57,10 @@
         .grade-text {
           line-height: 1.3em;
           text-align: center;
+
+          .chn {
+            white-space: nowrap;
+          }
         }
       }
 
@@ -71,6 +75,7 @@
           .saturday-schedule {
             padding-left: 1em;
             padding-right: 1em;
+            white-space: nowrap;
           }
         }
       }
@@ -125,6 +130,7 @@
     .highlight {
       font-weight: bold;
       color: #2f6d5a;
+      white-space: nowrap;
     }
 
     .schedule-text {
