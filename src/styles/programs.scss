@@ -47,7 +47,6 @@
     padding: 1em;
     font-size: 20px;
 
-    // TODO: Apply media query for this flex container, so that the two children can be more responsive to the viewport change
     .grade-schedule-container {
       display: flex;
       justify-content: space-evenly;
@@ -66,6 +65,7 @@
       .schedule-container {
         .schedule-text {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-evenly;
           text-align: center;
           line-height: 1.3em;
@@ -74,6 +74,9 @@
           .saturday-schedule {
             padding-left: 1em;
             padding-right: 1em;
+          }
+
+          .regular-text {
             white-space: nowrap;
           }
         }
@@ -130,10 +133,6 @@
       font-weight: bold;
       color: #2f6d5a;
       white-space: nowrap;
-    }
-
-    .schedule-text {
-      flex-wrap: wrap;
     }
 
     .available-programs {
@@ -311,6 +310,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .weekday-schedule {
+    border-bottom: 1px dotted #ababab;
+  }
+}
+
 @media (max-width: 950px) {
   #programs-container {
     .programs-content {
@@ -328,6 +333,18 @@
 
         .schedule-container {
           border: none;
+
+          .schedule-icon {
+            width: 80%;
+          }
+
+          .weekday-schedule {
+            padding-bottom: 0.25em;
+          }
+
+          .saturday-schedule {
+            padding-top: 0.25em;
+          }
         }
       }
     }
