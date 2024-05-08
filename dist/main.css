@@ -588,6 +588,14 @@ main .section-title .chn {
     background-size: 8em, 4em, 4.5em, 6em, 5em, 4em, 4.2em, 4em, 4em, 4em;
   }
 }
+@media (max-width: 450px) {
+  .grade-text .eng {
+    margin-bottom: 0.5em;
+  }
+  .next-line-rt {
+    display: block;
+  }
+}
 @media (max-width: 600px) {
   .weekday-schedule {
     border-bottom: 1px dotted #ababab;
