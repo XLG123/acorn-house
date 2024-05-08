@@ -400,9 +400,6 @@ main .section-title .chn {
   line-height: 1.3em;
   text-align: center;
 }
-#programs-container .programs-content .grade-schedule-container .grade-container .grade-text .chn {
-  white-space: nowrap;
-}
 #programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text {
   display: flex;
   flex-wrap: wrap;
@@ -414,9 +411,6 @@ main .section-title .chn {
 #programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .saturday-schedule {
   padding-left: 1em;
   padding-right: 1em;
-}
-#programs-container .programs-content .grade-schedule-container .schedule-container .schedule-text .regular-text {
-  white-space: nowrap;
 }
 #programs-container .programs-content .grade-schedule-container .grade-container,
 #programs-container .programs-content .grade-schedule-container .schedule-container {
@@ -459,6 +453,9 @@ main .section-title .chn {
 #programs-container .programs-content .highlight {
   font-weight: bold;
   color: #2f6d5a;
+  white-space: nowrap;
+}
+#programs-container .programs-content .regular-text {
   white-space: nowrap;
 }
 #programs-container .programs-content .available-programs {
@@ -606,6 +603,9 @@ main .section-title .chn {
   }
   #programs-container .programs-content .grade-schedule-container .grade-container {
     margin-bottom: 1em;
+  }
+  #programs-container .programs-content .grade-schedule-container .grade-container .grade-icon {
+    width: 80%;
   }
   #programs-container .programs-content .grade-schedule-container .schedule-container {
     border: none;
