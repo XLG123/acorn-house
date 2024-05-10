@@ -654,11 +654,12 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content {
   padding: 1em 1em 1.5em 1em;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
 }
 #contact-info-container .contact-info-content .in-person-contact {
   font-size: 20px;
+  width: 50%;
   padding: 0.25em 0.25em 0 0.25em;
 }
 #contact-info-container .contact-info-content .in-person-contact .address-container {
@@ -702,9 +703,9 @@ main .section-title .chn {
   border-radius: 20px;
 }
 #contact-info-container .contact-info-content .online-contacts {
-  margin-left: 1em;
   background-color: #edf6e3;
   border-radius: 20px;
+  width: 50%;
   box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3, 0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle {
