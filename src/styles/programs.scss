@@ -181,7 +181,6 @@
       }
 
       @media (width <=450px) {
-
         .after-school-tutoring,
         .enrichment-classes,
         .language-learning,
@@ -225,7 +224,7 @@
   #programs-container {
     .section-title {
       background-image: url("../src/assets/images/programs-paper.png"),
-      url("../src/assets/images/acornBanner2.png");
+        url("../src/assets/images/acornBanner2.png");
       background-repeat: no-repeat, space repeat;
       background-position: left 50% top 0.25em;
       background-size: 8em, 4em;
@@ -237,12 +236,13 @@
   #programs-container {
     .section-title {
       background-image: url("../src/assets/images/programs-paper.png"),
-      url("../src/assets/images/homework.png"),
-      url("../src/assets/images/score.png"),
-      url("../src/assets/images/acornBanner2.png");
-        background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
-        background-position: left 50% top 0.25em, left 10% bottom 10%, right 10% bottom 10%;
-        background-size: 8em, 4em, 4em, 4em;
+        url("../src/assets/images/homework.png"),
+        url("../src/assets/images/score.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
+      background-position: left 50% top 0.25em, left 10% bottom 10%,
+        right 10% bottom 10%;
+      background-size: 8em, 4em, 4em, 4em;
     }
   }
 }
@@ -252,15 +252,16 @@
   #programs-container {
     .section-title {
       background-image: url("../src/assets/images/programs-paper.png"),
-      url("../src/assets/images/homework.png"),
-      url("../src/assets/images/meeting.png"),
-      url("../src/assets/images/meeting-one-on-one.png"),
-      url("../src/assets/images/score.png"),
-      url("../src/assets/images/acornBanner2.png");
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
-          no-repeat, space repeat;
-        background-position: left 50% top 0.25em, left 4% bottom 10%, left 22% bottom 10%, right 22% bottom 10%, right 4% bottom 10%;
-        background-size: 8em, 4em, 4.5em, 4em, 4em, 4em;
+        url("../src/assets/images/homework.png"),
+        url("../src/assets/images/meeting.png"),
+        url("../src/assets/images/meeting-one-on-one.png"),
+        url("../src/assets/images/score.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        space repeat;
+      background-position: left 50% top 0.25em, left 4% bottom 10%,
+        left 22% bottom 10%, right 22% bottom 10%, right 4% bottom 10%;
+      background-size: 8em, 4em, 4.5em, 4em, 4em, 4em;
     }
   }
 }
@@ -269,17 +270,19 @@
   #programs-container {
     .section-title {
       background-image: url("../src/assets/images/programs-paper.png"),
-      url("../src/assets/images/homework.png"),
-      url("../src/assets/images/meeting.png"),
-      url("../src/assets/images/reading.png"),
-      url("../src/assets/images/reading-eng.png"),
-      url("../src/assets/images/meeting-one-on-one.png"),
-      url("../src/assets/images/score.png"),
-      url("../src/assets/images/acornBanner2.png");
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
-          no-repeat,no-repeat, no-repeat, space repeat;
-        background-position: left 50% top 0.25em, left 3% bottom 10%, left 18% bottom 10%, left 33% bottom 10%, right 33% bottom 10%, right 18% bottom 10%, right 3% bottom 10%;
-        background-size: 8em, 4em, 4.5em, 6em, 4.2em, 4em, 4em, 4em;
+        url("../src/assets/images/homework.png"),
+        url("../src/assets/images/meeting.png"),
+        url("../src/assets/images/reading.png"),
+        url("../src/assets/images/reading-eng.png"),
+        url("../src/assets/images/meeting-one-on-one.png"),
+        url("../src/assets/images/score.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        no-repeat, no-repeat, space repeat;
+      background-position: left 50% top 0.25em, left 3% bottom 10%,
+        left 18% bottom 10%, left 33% bottom 10%, right 33% bottom 10%,
+        right 18% bottom 10%, right 3% bottom 10%;
+      background-size: 8em, 4em, 4.5em, 6em, 4.2em, 4em, 4em, 4em;
     }
   }
 }
@@ -288,20 +291,22 @@
   #programs-container {
     .section-title {
       background-image: url("../src/assets/images/programs-paper.png"),
-      url("../src/assets/images/homework.png"),
-      url("../src/assets/images/meeting.png"),
-      url("../src/assets/images/reading.png"),
-      url("../src/assets/images/concept.png"),
-      url("../src/assets/images/note.png"),
-      url("../src/assets/images/reading-eng.png"),
-      url("../src/assets/images/meeting-one-on-one.png"),
-      url("../src/assets/images/score.png"),
-      url("../src/assets/images/acornBanner2.png");
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
-          no-repeat,no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
-        background-position: left 50% top 0.25em, left 2% bottom 10%, left 13% bottom 10%, left 25% bottom 10%, left 37% bottom 10%,
-          right 37% bottom 10%, right 25% bottom 10%, right 13% bottom 10%, right 2% bottom 10%;
-        background-size: 8em, 4em, 4.5em, 6em, 5em, 4em, 4.2em, 4em, 4em, 4em;
+        url("../src/assets/images/homework.png"),
+        url("../src/assets/images/meeting.png"),
+        url("../src/assets/images/reading.png"),
+        url("../src/assets/images/concept.png"),
+        url("../src/assets/images/note.png"),
+        url("../src/assets/images/reading-eng.png"),
+        url("../src/assets/images/meeting-one-on-one.png"),
+        url("../src/assets/images/score.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+      background-position: left 50% top 0.25em, left 2% bottom 10%,
+        left 13% bottom 10%, left 25% bottom 10%, left 37% bottom 10%,
+        right 37% bottom 10%, right 25% bottom 10%, right 13% bottom 10%,
+        right 2% bottom 10%;
+      background-size: 8em, 4em, 4.5em, 6em, 5em, 4em, 4.2em, 4em, 4em, 4em;
     }
   }
 }
@@ -360,5 +365,5 @@
         }
       }
     }
-  }  
+  }
 }

@@ -259,7 +259,7 @@
   #contact-info-container {
     .section-title {
       background-image: url("../src/assets/images/contact-info-paper.png"),
-      url("../src/assets/images/acornBanner2.png");
+        url("../src/assets/images/acornBanner2.png");
       background-repeat: no-repeat, space repeat;
       background-position: left 50% top -0.5em;
       background-size: 8.5em, 4em;
@@ -271,12 +271,78 @@
   #contact-info-container {
     .section-title {
       background-image: url("../src/assets/images/contact-info-paper.png"),
-      url("../src/assets/images/bus.png"),
-      url("../src/assets/images/speaker.png"),
-      url("../src/assets/images/acornBanner2.png");
+        url("../src/assets/images/bus.png"),
+        url("../src/assets/images/speaker.png"),
+        url("../src/assets/images/acornBanner2.png");
       background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
-      background-position: left 50% top -0.5em, left 10% bottom 10%, right 10% bottom 10%;
+      background-position: left 50% top -0.5em, left 10% bottom 10%,
+        right 10% bottom 10%;
       background-size: 8.5em, 4.2em, 4.5em, 4em;
     }
-  }  
+  }
+}
+
+// Tablet/Laptop View
+@media (min-width: 601px) and (max-width: 900px) {
+  #contact-info-container {
+    .section-title {
+      background-image: url("../src/assets/images/contact-info-paper.png"),
+        url("../src/assets/images/bus.png"),
+        url("../src/assets/images/train.png"),
+        url("../src/assets/images/email.png"),
+        url("../src/assets/images/speaker.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        space repeat;
+      background-position: left 50% top -0.5em, left 4% bottom 10%,
+        left 22% bottom 10%, right 22% bottom 10%, right 4% bottom 10%;
+      background-size: 8.5em, 4.2em, 4em, 4.3em, 4.5em, 4em;
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  #contact-info-container {
+    .section-title {
+      background-image: url("../src/assets/images/contact-info-paper.png"),
+        url("../src/assets/images/bus.png"),
+        url("../src/assets/images/train.png"),
+        url("../src/assets/images/car.png"),
+        url("../src/assets/images/telephone.png"),
+        url("../src/assets/images/email.png"),
+        url("../src/assets/images/speaker.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        no-repeat, no-repeat, space repeat;
+      background-position: left 50% top -0.5em, left 3% bottom 10%,
+        left 18% bottom 10%, left 33% bottom 10%, right 33% bottom 10%,
+        right 18% bottom 10%, right 3% bottom 10%;
+      background-size: 8.5em, 4.2em, 4em, 4.3em, 3.6em, 4.3em, 4.5em, 4em;
+    }
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+  #contact-info-container {
+    .section-title {
+      background-image: url("../src/assets/images/contact-info-paper.png"),
+        url("../src/assets/images/bus.png"),
+        url("../src/assets/images/train.png"),
+        url("../src/assets/images/car.png"),
+        url("../src/assets/images/family.png"),
+        url("../src/assets/images/speech-bubble.png"),
+        url("../src/assets/images/telephone.png"),
+        url("../src/assets/images/email.png"),
+        url("../src/assets/images/speaker.png"),
+        url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+        no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+      background-position: left 50% top -0.5em, left 2% bottom 10%,
+        left 13% bottom 10%, left 25% bottom 10%, left 37% bottom 10%,
+        right 37% bottom 10%, right 25% bottom 10%, right 13% bottom 10%,
+        right 2% bottom 10%;
+      background-size: 8.5em, 4.2em, 4em, 4.3em, 3.7em, 3.8em, 3.6em, 4.3em,
+        4.5em, 4em;
+    }
+  }
 }
