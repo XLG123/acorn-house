@@ -253,3 +253,30 @@
 // 2. the container should switch to flex box instead of grid
 // 3. make sure address and map first, then contact information
 // *** Remove all the animated icons and welcome text
+
+// Mobile View
+@media (max-width: 500px) {
+  #contact-info-container {
+    .section-title {
+      background-image: url("../src/assets/images/contact-info-paper.png"),
+      url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, space repeat;
+      background-position: left 50% top -0.5em;
+      background-size: 8.5em, 4em;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  #contact-info-container {
+    .section-title {
+      background-image: url("../src/assets/images/contact-info-paper.png"),
+      url("../src/assets/images/bus.png"),
+      url("../src/assets/images/speaker.png"),
+      url("../src/assets/images/acornBanner2.png");
+      background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
+      background-position: left 50% top -0.5em, left 10% bottom 10%, right 10% bottom 10%;
+      background-size: 8.5em, 4.2em, 4.5em, 4em;
+    }
+  }  
+}
