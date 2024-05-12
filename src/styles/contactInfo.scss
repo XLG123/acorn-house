@@ -293,6 +293,14 @@
   }
 }
 
+@media (max-width: 500px) {
+  #contact-info-container {
+    .contact-info-content {
+      row-gap: 6.5em;
+    }
+  }
+}
+
 // Modify flex items to take up the remaining space of the horizontal axis
 @media (max-width: 1100px) {
   #contact-info-container {

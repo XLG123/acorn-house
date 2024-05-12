@@ -852,6 +852,11 @@ main .section-title .chn {
     row-gap: 5em;
   }
 }
+@media (max-width: 500px) {
+  #contact-info-container .contact-info-content {
+    row-gap: 6.5em;
+  }
+}
 @media (max-width: 1100px) {
   #contact-info-container .contact-info-content .in-person-contact,
   #contact-info-container .contact-info-content .online-contacts {
