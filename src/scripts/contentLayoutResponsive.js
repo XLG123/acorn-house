@@ -1,10 +1,11 @@
-import { alignPrograms, removeTitleBgImg } from "./programs";
+import { pauseAnimations } from "./animation";
+import { alignPrograms } from "./programs";
 
-const cl = console.log.bind(console);
+// const cl = console.log.bind(console);
 
 const responsiveLayout = () => {
   alignPrograms();
-  // removeTitleBgImg();
+  pauseAnimations();
 };
 
 export { responsiveLayout };
