@@ -45,12 +45,13 @@
   .contact-info-content {
     padding: 1em 1em 1.5em 1em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    // flex-wrap: wrap;
 
     .in-person-contact {
       font-size: 20px;
-      width: 50%;
+      min-width: 14em;
+      width: 49%;
       padding: 0.25em 0.25em 0 0.25em;
 
       .address-container {
@@ -107,7 +108,9 @@
     .online-contacts {
       background-color: #edf6e3;
       border-radius: 20px;
-      width: 50%;
+      min-width: 18em;
+      width: 49%;
+      margin: 0 0.25em;
       box-shadow: 0px -15px 20px -20px #edf6e3, 15px 0px 30px -20px #edf6e3,
         0px 15px 30px -20px #edf6e3, -15px 0px 30px -20px #edf6e3;
 
@@ -284,6 +287,21 @@
 }
 
 // Tablet/Laptop View
+@media (max-width: 900px) {
+  #contact-info-container {
+    .contact-info-content {
+      .in-person-contact,
+      .online-contacts {
+        flex-grow: 1;
+      }
+
+      .online-contacts {
+        margin-top: 3em;
+      }
+    }
+  }
+}
+
 @media (min-width: 601px) and (max-width: 900px) {
   #contact-info-container {
     .section-title {
