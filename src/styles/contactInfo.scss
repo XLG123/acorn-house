@@ -1,5 +1,7 @@
 #contact-info-container {
   margin-top: 2.5em;
+  height: fit-content;
+  padding-bottom: 1em;
   border-radius: 20px;
   background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5d1,
@@ -46,6 +48,7 @@
     padding: 1em 1em 1.5em 1em;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 3em;
     justify-content: space-between;
 
     .in-person-contact {
@@ -89,21 +92,17 @@
           .eng {
             margin-bottom: 0.5em;
 
-            span:first-child {
+            span:first-child,
+            span:last-child {
               white-space: nowrap;
             }
           }
 
           .chn {
-            // line-height: 1.2em;
-            span:first-child {
-              white-space: nowrap;
-            }
+            line-height: 1.2em;
 
-            span:nth-child(2) {
-              white-space: nowrap;
-            }
-
+            span:first-child,
+            span:nth-child(2),
             span:last-child {
               white-space: nowrap;
             }
@@ -277,6 +276,35 @@
 // 3. make sure address and map first, then contact information
 // *** Remove all the animated icons and welcome text
 
+// Change row gap between flex-box items
+@media (max-width: 710px) {
+  #contact-info-container {
+    .contact-info-content {
+      row-gap: 4em;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  #contact-info-container {
+    .contact-info-content {
+      row-gap: 5em;
+    }
+  }
+}
+
+// Modify flex items to take up the remaining space of the horizontal axis
+@media (max-width: 1100px) {
+  #contact-info-container {
+    .contact-info-content {
+      .in-person-contact,
+      .online-contacts {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
 // Mobile View
 @media (max-width: 500px) {
   #contact-info-container {
@@ -306,21 +334,6 @@
 }
 
 // Tablet/Laptop View
-@media (max-width: 1100px) {
-  #contact-info-container {
-    .contact-info-content {
-      .in-person-contact,
-      .online-contacts {
-        flex-grow: 1;
-      }
-
-      .online-contacts {
-        // margin-top: 3em;
-      }
-    }
-  }
-}
-
 @media (min-width: 601px) and (max-width: 900px) {
   #contact-info-container {
     .section-title {

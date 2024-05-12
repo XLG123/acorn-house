@@ -630,6 +630,8 @@ main .section-title .chn {
 }
 #contact-info-container {
   margin-top: 2.5em;
+  height: fit-content;
+  padding-bottom: 1em;
   border-radius: 20px;
   background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
   box-shadow: 0px -25px 5px -20px #c7e8db, 25px 0px 20px -20px #e5e5d1, 0px 25px 20px -20px rgba(0, 0, 0, 0.35), -25px 0px 20px -20px #e5e5d1;
@@ -656,6 +658,7 @@ main .section-title .chn {
   padding: 1em 1em 1.5em 1em;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 3em;
   justify-content: space-between;
 }
 #contact-info-container .contact-info-content .in-person-contact {
@@ -694,15 +697,15 @@ main .section-title .chn {
 #contact-info-container .contact-info-content .in-person-contact .address-container .address .eng {
   margin-bottom: 0.5em;
 }
-#contact-info-container .contact-info-content .in-person-contact .address-container .address .eng span:first-child {
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .eng span:first-child,
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .eng span:last-child {
   white-space: nowrap;
 }
-#contact-info-container .contact-info-content .in-person-contact .address-container .address .chn span:first-child {
-  white-space: nowrap;
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .chn {
+  line-height: 1.2em;
 }
-#contact-info-container .contact-info-content .in-person-contact .address-container .address .chn span:nth-child(2) {
-  white-space: nowrap;
-}
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .chn span:first-child,
+#contact-info-container .contact-info-content .in-person-contact .address-container .address .chn span:nth-child(2),
 #contact-info-container .contact-info-content .in-person-contact .address-container .address .chn span:last-child {
   white-space: nowrap;
 }
@@ -839,6 +842,22 @@ main .section-title .chn {
   margin-right: 1em;
 }
 
+@media (max-width: 710px) {
+  #contact-info-container .contact-info-content {
+    row-gap: 4em;
+  }
+}
+@media (max-width: 650px) {
+  #contact-info-container .contact-info-content {
+    row-gap: 5em;
+  }
+}
+@media (max-width: 1100px) {
+  #contact-info-container .contact-info-content .in-person-contact,
+  #contact-info-container .contact-info-content .online-contacts {
+    flex-grow: 1;
+  }
+}
 @media (max-width: 500px) {
   #contact-info-container .section-title {
     background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/acornBanner2.png");
@@ -853,12 +872,6 @@ main .section-title .chn {
     background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
     background-position: left 50% top -0.5em, left 10% bottom 10%, right 10% bottom 10%;
     background-size: 8.5em, 4.2em, 4.5em, 4em;
-  }
-}
-@media (max-width: 1100px) {
-  #contact-info-container .contact-info-content .in-person-contact,
-  #contact-info-container .contact-info-content .online-contacts {
-    flex-grow: 1;
   }
 }
 @media (min-width: 601px) and (max-width: 900px) {
