@@ -88,6 +88,25 @@
         .address {
           .eng {
             margin-bottom: 0.5em;
+
+            span:first-child {
+              white-space: nowrap;
+            }
+          }
+
+          .chn {
+            // line-height: 1.2em;
+            span:first-child {
+              white-space: nowrap;
+            }
+
+            span:nth-child(2) {
+              white-space: nowrap;
+            }
+
+            span:last-child {
+              white-space: nowrap;
+            }
           }
         }
       }
@@ -287,7 +306,7 @@
 }
 
 // Tablet/Laptop View
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   #contact-info-container {
     .contact-info-content {
       .in-person-contact,
@@ -296,7 +315,7 @@
       }
 
       .online-contacts {
-        margin-top: 3em;
+        // margin-top: 3em;
       }
     }
   }
