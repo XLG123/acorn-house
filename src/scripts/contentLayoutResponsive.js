@@ -1,4 +1,4 @@
-import { pauseAnimations } from "./animation";
+import { disableAnimation, pauseAnimations } from "./animation";
 import { alignPrograms } from "./programs";
 
 // const cl = console.log.bind(console);
@@ -6,6 +6,7 @@ import { alignPrograms } from "./programs";
 const responsiveLayout = () => {
   alignPrograms();
   pauseAnimations();
+  disableAnimation();
 };
 
 export { responsiveLayout };

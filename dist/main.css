@@ -735,17 +735,17 @@ main .section-title .chn {
   grid-template-columns: 20% 60% 20%;
   height: 4em;
 }
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left,
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right {
-  display: grid;
-  grid-template-columns: auto auto;
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-left,
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-right {
   padding-top: 0.5em;
   width: 3em;
+  margin-left: auto;
+  margin-right: auto;
   user-select: none;
   -webkit-user-select: none;
 }
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-left .arrow,
-#contact-info-container .contact-info-content .online-contacts .subtitle .arrows-on-the-right .arrow {
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-left .arrow,
+#contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-right .arrow {
   width: inherit;
   animation-name: upAndDown;
   animation-duration: 0.5s;
@@ -849,7 +849,7 @@ main .section-title .chn {
 }
 @media (max-width: 650px) {
   #contact-info-container .contact-info-content {
-    row-gap: 5em;
+    row-gap: 5.5em;
   }
 }
 @media (max-width: 500px) {
