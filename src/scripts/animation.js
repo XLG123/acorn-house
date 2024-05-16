@@ -1,3 +1,4 @@
+// Check the screen size to modify Location Icon's animation
 const pauseAnimations = () => {
     const el = document.getElementById("location-icon");
     let currentWidth = window.innerWidth;
@@ -14,6 +15,7 @@ const pauseAnimations = () => {
     });
 };
 
+// Check the screen size to modify Arrow Icons' animation
 const disableAnimationHelper = (leftArrow, rightArrow, currentWidth) => {
     if (currentWidth < 600) {
 		leftArrow.style.display = "none";
@@ -29,6 +31,7 @@ const disableAnimationHelper = (leftArrow, rightArrow, currentWidth) => {
     }
 };
 
+// Call the helper function to modify Arrow Icon's animation
 const disableAnimation = () => {
     const leftArrow = document.getElementById("left-arrow");
     const rightArrow = document.getElementById("right-arrow");
