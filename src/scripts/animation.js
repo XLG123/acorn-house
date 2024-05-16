@@ -47,7 +47,6 @@ const disableAnimation = () => {
 export { pauseAnimations, disableAnimation };
 
 // TODO: Modify the layout of the sub-title of contact-info container's online contact
-// 1. restructure the sub-title
 // 2. remove all the welcoming texts
 // 3. restructure the layout of the online contact info such as email, tel, and wechat qr code 
 // *** Might have to make the font smaller

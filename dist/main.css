@@ -765,10 +765,14 @@ main .section-title .chn {
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle .main-text .eng {
   font-weight: bold;
-  line-height: 1.5em;
+  margin-bottom: 0.25em;
 }
 #contact-info-container .contact-info-content .online-contacts .subtitle .main-text .chn {
   font-weight: 900;
+  line-height: 1.2em;
+}
+#contact-info-container .contact-info-content .online-contacts .subtitle .main-text span {
+  white-space: nowrap;
 }
 #contact-info-container .contact-info-content .online-contacts .tel,
 #contact-info-container .contact-info-content .online-contacts .email,
@@ -861,6 +865,11 @@ main .section-title .chn {
   #contact-info-container .contact-info-content .in-person-contact,
   #contact-info-container .contact-info-content .online-contacts {
     flex-grow: 1;
+  }
+}
+@media (max-width: 599px) {
+  #contact-info-container .contact-info-content .online-contacts .subtitle {
+    display: block;
   }
 }
 @media (max-width: 500px) {

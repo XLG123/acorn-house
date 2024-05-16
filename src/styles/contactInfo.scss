@@ -173,11 +173,17 @@
 
           .eng {
             font-weight: bold;
-            line-height: 1.5em;
-          }
+            margin-bottom: 0.25em;
 
+          }
+          
           .chn {
             font-weight: 900;
+            line-height: 1.2em;
+          }
+
+          span {
+            white-space: nowrap;
           }
         }
       }
@@ -271,10 +277,6 @@
   }
 }
 
-// TODO: Make the container responsive
-// 3. make sure address and map first, then contact information
-// *** Remove all the animated icons and welcome text
-
 // Change row gap between flex-box items
 @media (max-width: 710px) {
   #contact-info-container {
@@ -311,6 +313,32 @@
     }
   }
 }
+
+// Restructure the layout of online contacts's subtitle
+@media (max-width: 599px) {
+  #contact-info-container {
+    .contact-info-content {
+      .online-contacts {
+        .subtitle {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Remove all welcoming texts when screen size is less than or equal to 750px
+// @media (max-width: 750px) {
+//   #contact-info-container {
+//     .contact-info-content {
+//       .online-contacts {
+//         .welcoming-message {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Mobile View
 @media (max-width: 500px) {
