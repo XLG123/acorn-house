@@ -917,3 +917,6 @@ main .section-title .chn {
 #copyright {
   margin-bottom: 2em;
 }
+#copyright span:last-child {
+  white-space: nowrap;
+}

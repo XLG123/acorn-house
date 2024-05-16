@@ -12,4 +12,8 @@
 
 #copyright {
   margin-bottom: 2em;
+
+  span:last-child {
+    white-space: nowrap;
+  }
 }
