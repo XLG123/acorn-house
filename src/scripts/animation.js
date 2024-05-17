@@ -51,3 +51,4 @@ export { pauseAnimations, disableAnimation };
 // 3. restructure the layout of the online contact info such as email, tel, and wechat qr code 
 // *** Might have to make the font smaller
 // Aim for mobile devices
+// Switch to CSS styling instead of adding too much scripts to the webpage
