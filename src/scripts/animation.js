@@ -1,20 +1,3 @@
-// Check the screen size to modify Location Icon's animation
-const pauseAnimations = () => {
-    const el = document.getElementById("location-icon");
-    let currentWidth = window.innerWidth;
-    if (currentWidth < 750 && el) {
-        el.style.animationPlayState = "paused";
-    }
-    window.addEventListener("resize", () => {
-        currentWidth = window.innerWidth;
-        if (currentWidth < 750 && el) {
-            el.style.animationPlayState = "paused";
-        } else {
-            el.style.animationPlayState = "running";
-        }
-    });
-};
-
 // Check the screen size to modify Arrow Icons' animation
 const disableAnimationHelper = (leftArrow, rightArrow, currentWidth) => {
     if (currentWidth < 600) {
@@ -44,11 +27,8 @@ const disableAnimation = () => {
     });
 };
 
-export { pauseAnimations, disableAnimation };
+export { disableAnimation };
 
 // TODO: Modify the layout of the sub-title of contact-info container's online contact
-// 2. remove all the welcoming texts
 // 3. restructure the layout of the online contact info such as email, tel, and wechat qr code 
-// *** Might have to make the font smaller
-// Aim for mobile devices
 // Switch to CSS styling instead of adding too much scripts to the webpage

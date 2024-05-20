@@ -328,19 +328,29 @@
 }
 
 // TODO: Convert animation.js to corresponding css stylings
+// Restructure the layout of the online contact info such as email, tel, and wechat qr code
 
+// Pause the Location Icon's animation when screen size is less than 750px
 // Remove all welcoming texts when screen size is less than or equal to 750px
-// @media (max-width: 750px) {
-//   #contact-info-container {
-//     .contact-info-content {
-//       .online-contacts {
-//         .welcoming-message {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (max-width: 750px) {
+  #contact-info-container {
+    .contact-info-content {
+      .in-person-contact {
+        .address-container {
+          #location-icon {
+            animation-play-state: paused;
+          }
+        }
+      }
+
+      .online-contacts {
+        .welcoming-message {
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 // Mobile View
 @media (max-width: 500px) {

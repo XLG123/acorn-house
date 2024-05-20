@@ -872,6 +872,14 @@ main .section-title .chn {
     display: block;
   }
 }
+@media (max-width: 750px) {
+  #contact-info-container .contact-info-content .in-person-contact .address-container #location-icon {
+    animation-play-state: paused;
+  }
+  #contact-info-container .contact-info-content .online-contacts .welcoming-message {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   #contact-info-container .section-title {
     background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/acornBanner2.png");
