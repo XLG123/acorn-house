@@ -332,6 +332,8 @@
 
 // Pause the Location Icon's animation when screen size is less than 750px
 // Remove all welcoming texts when screen size is less than or equal to 750px
+// Pause Arrow Icon's animation when screen size is greater than 600px but less than or equal to 750px
+// Don't display Arrow Icons when screen size is than or equal to 600px
 @media (max-width: 750px) {
   #contact-info-container {
     .contact-info-content {
@@ -346,6 +348,37 @@
       .online-contacts {
         .welcoming-message {
           display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+  #contact-info-container {
+    .contact-info-content {
+      .online-contacts {
+        .subtitle {
+          #left-arrow, #right-arrow {
+            animation-play-state: paused;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-info-container {
+    .contact-info-content {
+      .online-contacts {
+        .subtitle {
+          display: block;
+          
+          .arrow-on-the-left,
+          .arrow-on-the-right {
+            display: none;
+          }
         }
       }
     }

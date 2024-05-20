@@ -880,6 +880,20 @@ main .section-title .chn {
     display: none;
   }
 }
+@media (min-width: 601px) and (max-width: 750px) {
+  #contact-info-container .contact-info-content .online-contacts .subtitle #left-arrow, #contact-info-container .contact-info-content .online-contacts .subtitle #right-arrow {
+    animation-play-state: paused;
+  }
+}
+@media (max-width: 600px) {
+  #contact-info-container .contact-info-content .online-contacts .subtitle {
+    display: block;
+  }
+  #contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-left,
+  #contact-info-container .contact-info-content .online-contacts .subtitle .arrow-on-the-right {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   #contact-info-container .section-title {
     background-image: url("../src/assets/images/contact-info-paper.png"), url("../src/assets/images/acornBanner2.png");
