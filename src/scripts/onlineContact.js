@@ -7,7 +7,7 @@ const addMargin = (el, parentCtn) => {
     }
 };
 
-// Restructure the layout of the subtitle when screen size changes and the element is wrapping onto the next line.
+// Restructure the layout of the subtitle when screen size changes and the Chinese Subtitle is wrapping onto the next line.
 const restructureSubtitle = () => {
     const subtitleCtn = document.getElementById("subtitle-content");
     const chnSubtitle = subtitleCtn.children[1].children[1];
