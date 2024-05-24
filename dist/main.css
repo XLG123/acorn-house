@@ -880,6 +880,15 @@ main .section-title .chn {
   #contact-info-container .contact-info-content .online-contacts .welcoming-message {
     display: none;
   }
+  #contact-info-container .contact-info-content .online-contacts .tel, #contact-info-container .contact-info-content .online-contacts .email, #contact-info-container .contact-info-content .online-contacts .wechat-qr-code {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 18px;
+  }
+  #contact-info-container .contact-info-content .online-contacts .wechat-qr-code .qr-code-container {
+    margin: 0 auto;
+    width: fit-content;
+  }
 }
 @media (min-width: 601px) and (max-width: 750px) {
   #contact-info-container .contact-info-content .online-contacts .subtitle #left-arrow, #contact-info-container .contact-info-content .online-contacts .subtitle #right-arrow {

@@ -351,6 +351,19 @@
         .welcoming-message {
           display: none;
         }
+
+        .tel, .email, .wechat-qr-code {
+          margin: 0 auto;
+          width: fit-content;
+          font-size: 18px;
+        }
+
+        .wechat-qr-code {
+          .qr-code-container {
+            margin: 0 auto;
+            width: fit-content; 
+          }
+        }
       }
     }
   }
