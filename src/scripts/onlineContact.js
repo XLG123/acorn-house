@@ -1,4 +1,4 @@
-// Add a margin to the bottom of the container if the container's height changes, otherwise set it to 0px.
+// Add a margin to the bottom of the container if the container's height is not equal to 24px, otherwise set the bottom margin to 0px.
 const addMargin = (el, parentCtn) => {
     if (el.offsetHeight !== 24) {
         parentCtn.style.marginBottom = "1em";
@@ -7,14 +7,20 @@ const addMargin = (el, parentCtn) => {
     }
 };
 
-// Restructure the layout of the subtitle when screen size changes and the Chinese Subtitle is wrapping onto the next line.
+// Observe the size of the Chinese subtitle, and restructure the subtitle container when the size changes.
 const restructureSubtitle = () => {
     const subtitleCtn = document.getElementById("subtitle-content");
     const chnSubtitle = subtitleCtn.children[1].children[1];
+
     addMargin(chnSubtitle, subtitleCtn);
-    window.addEventListener("resize", () => {
-        addMargin(chnSubtitle, subtitleCtn);
-    })
+
+    const sizeObserver = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
+            addMargin(entry.target, subtitleCtn);
+        });
+    });
+
+    sizeObserver.observe(chnSubtitle);
 };
 
 export { restructureSubtitle };
