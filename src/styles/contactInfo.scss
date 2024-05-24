@@ -328,8 +328,11 @@
 }
 
 // TODO:
-// 1. BUG: Location Icon's z-index is higher than the navigation bar. It will cover parts of the nav bar when it's on mobile view
-// 2. Restructure the layout of the online contact info such as email, tel, and wechat qr code
+// 1. Restructure the layout of the online contact info such as email, tel, and wechat qr code
+// 2. When user scrolls on the page, remove the selected style on the navigation item.
+// 3. Restructure the layout of About Us container
+// --- a. The automatic scrolling of the images should also be responsive
+// 4. Navigation Bar's responsiveness
 
 // Pause the Location Icon's animation when screen size is less than 750px
 // Remove all welcoming texts when screen size is less than or equal to 750px
