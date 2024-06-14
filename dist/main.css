@@ -891,7 +891,7 @@ main .section-title .chn {
   }
 }
 @media (max-width: 500px) {
-  #contact-info-container .contact-info-content .online-contacts .email #email-link .contact-text {
+  #contact-info-container .contact-info-content .online-contacts .email #email-link .contact-text span {
     background-color: yellow;
   }
 }

@@ -376,7 +376,9 @@
         .email {
           #email-link {
             .contact-text {
-              background-color: yellow;
+              span {
+                background-color: yellow;
+              }
             }
           }
         }
