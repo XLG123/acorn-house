@@ -891,8 +891,11 @@ main .section-title .chn {
   }
 }
 @media (max-width: 500px) {
-  #contact-info-container .contact-info-content .online-contacts .email #email-link .contact-text span {
-    background-color: yellow;
+  #contact-info-container .contact-info-content .online-contacts .email #email-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 601px) and (max-width: 750px) {
