@@ -375,16 +375,16 @@
       .online-contacts {
         .email {
           #email-link {
-            // .contact-text {
-            //   span {
-            //     display: flex;
-            //     background-color: yellow;
-            //   }
-            // }
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+
+            .contact-text {
+              span {
+                display: flex;
+              }
+            }
           }
         }
       }

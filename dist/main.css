@@ -897,6 +897,9 @@ main .section-title .chn {
     align-items: center;
     flex-wrap: wrap;
   }
+  #contact-info-container .contact-info-content .online-contacts .email #email-link .contact-text span {
+    display: flex;
+  }
 }
 @media (min-width: 601px) and (max-width: 750px) {
   #contact-info-container .contact-info-content .online-contacts .subtitle #left-arrow, #contact-info-container .contact-info-content .online-contacts .subtitle #right-arrow {
