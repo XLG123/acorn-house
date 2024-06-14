@@ -358,18 +358,26 @@
           font-size: 18px;
         }
 
-        .email {
-          #email-link {
-            span:last-child {
-
-            }
-          }
-        }
-
         .wechat-qr-code {
           .qr-code-container {
             margin: 0 auto;
             width: fit-content; 
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #contact-info-container {
+    .contact-info-content {
+      .online-contacts {
+        .email {
+          #email-link {
+            .contact-text {
+              background-color: yellow;
+            }
           }
         }
       }
