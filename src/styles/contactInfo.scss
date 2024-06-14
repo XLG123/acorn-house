@@ -328,11 +328,10 @@
 }
 
 // TODO:
-// 1. Restructure the layout of the online contact info such as email, tel, and wechat qr code
-// 2. When user scrolls on the page, remove the selected style on the navigation item.
-// 3. Restructure the layout of About Us container
+// 1. When user scrolls on the page, remove the selected style on the navigation item.
+// 2. Restructure the layout of About Us container
 // --- a. The automatic scrolling of the images should also be responsive
-// 4. Navigation Bar's responsiveness
+// 3. Navigation Bar's responsiveness
 
 // Pause the Location Icon's animation when screen size is less than 750px
 // Remove all welcoming texts when screen size is less than or equal to 750px
@@ -369,6 +368,7 @@
   }
 }
 
+// Restructure the layout the email container when screen size is less than or equal to 500px
 @media (max-width: 500px) {
   #contact-info-container {
     .contact-info-content {
