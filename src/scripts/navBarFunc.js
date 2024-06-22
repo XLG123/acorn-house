@@ -43,4 +43,16 @@ const scrollToPart = () => {
   });
 };
 
-export { reloadPage, scrollToPart };
+// Remove the styling from the selected navigation item when it detects scrolling
+const removeSelectedStyle = () => {
+  // const navLinks = document.querySelectorAll(".nav-option");
+  // document.addEventListener("scroll", () => {
+  //   navLinks.forEach(navLink => {
+  //     if (navLink.classList.contains("selected")) {
+  //       navLink.classList.remove("selected");
+  //     }
+  //   });
+  // }) 
+}
+
+export { reloadPage, scrollToPart, removeSelectedStyle };
