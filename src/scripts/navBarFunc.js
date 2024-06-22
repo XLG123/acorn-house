@@ -55,13 +55,13 @@ const removeSelectedStyle = () => {
     //     }
     //   });
     // }
-    window.onscroll = function (e) {
-      if (e.isTrusted) {
-        userHasScrolled = true;
-      } else {
-        userHasScrolled = false;
-      }
-    }
+    // window.onscroll = function (e) {
+    //   if (e.isTrusted) {
+    //     userHasScrolled = true;
+    //   } else {
+    //     userHasScrolled = false;
+    //   }
+    // }
     // console.log(userHasScrolled);
   }) 
 }
