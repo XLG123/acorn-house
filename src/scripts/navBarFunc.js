@@ -45,14 +45,25 @@ const scrollToPart = () => {
 
 // Remove the styling from the selected navigation item when it detects scrolling
 const removeSelectedStyle = () => {
-  // const navLinks = document.querySelectorAll(".nav-option");
-  // document.addEventListener("scroll", () => {
-  //   navLinks.forEach(navLink => {
-  //     if (navLink.classList.contains("selected")) {
-  //       navLink.classList.remove("selected");
-  //     }
-  //   });
-  // }) 
+  const navLinks = document.querySelectorAll(".nav-option");
+  let userHasScrolled = false;
+  document.addEventListener("scroll", (e) => {
+    // if (!e.isTrusted) {
+    //   navLinks.forEach(navLink => {
+    //     if (navLink.classList.contains("selected")) {
+    //       navLink.classList.remove("selected");
+    //     }
+    //   });
+    // }
+    window.onscroll = function (e) {
+      if (e.isTrusted) {
+        userHasScrolled = true;
+      } else {
+        userHasScrolled = false;
+      }
+    }
+    // console.log(userHasScrolled);
+  }) 
 }
 
 export { reloadPage, scrollToPart, removeSelectedStyle };
