@@ -46,11 +46,12 @@ const scrollToPart = () => {
 // Remove the styling from the selected navigation item when it detects scrolling
 const removeSelectedStyle = () => {
   const navLinks = document.querySelectorAll(".nav-option");
-  let userHasScrolled = false;
-  document.addEventListener("scroll", (e) => {
-    // Approach 1
-    // when user clicks on the nav bar item, userHasScrolled set to false
-    // when scrolling, set it to true, and remove the selected style
+  document.addEventListener("scroll", () => {
+    // Approach 2
+    // Check each of the content container's position
+    // If they are not fully visible, remove selected style
+    // If one is fully visible, keep that one's selected style, and remove others' styles.
+    // If two are fully visible, keep the top one's selected style
   }) 
 }
 
