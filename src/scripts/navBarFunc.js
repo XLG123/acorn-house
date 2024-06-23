@@ -50,7 +50,7 @@ const removeSelectedStyle = () => {
   document.addEventListener("scroll", (e) => {
     // Approach 1
     // when user clicks on the nav bar item, userHasScrolled set to false
-    // when scrolling, set it to true
+    // when scrolling, set it to true, and remove the selected style
   }) 
 }
 
