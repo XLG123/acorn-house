@@ -46,6 +46,9 @@ const scrollToPart = () => {
 // Remove the styling from the selected navigation item when it detects scrolling
 const removeSelectedStyle = () => {
   const navLinks = document.querySelectorAll(".nav-option");
+  const aboutUSSection = document.getElementById("about-us-container");
+  const programsSection = document.getElementById("programs-container");
+  const contactInfoSection = document.getElementById("contact-info-container");
   document.addEventListener("scroll", () => {
     // Approach 2
     // Check each of the content container's position
