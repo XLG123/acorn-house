@@ -327,13 +327,6 @@
   }
 }
 
-// TODO:
-// 1. When user scrolls on the page, remove the selected style on the navigation item.
-// --- BUG: nav bar link delay
-// 2. Restructure the layout of About Us container
-// --- a. The automatic scrolling of the images should also be responsive
-// 3. Navigation Bar's responsiveness
-
 // Pause the Location Icon's animation when screen size is less than 750px
 // Remove all welcoming texts when screen size is less than or equal to 750px
 @media (max-width: 750px) {

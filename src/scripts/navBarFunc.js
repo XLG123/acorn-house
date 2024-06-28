@@ -59,3 +59,10 @@ const removeSelectedStyle = () => {
 }
 
 export { reloadPage, scrollToPart, removeSelectedStyle };
+
+// TODO:
+// 1. When user scrolls on the page, remove the selected style on the navigation item.
+// --- BUG: nav bar link delay
+// 2. Restructure the layout of About Us container
+// --- a. The automatic scrolling of the images should also be responsive
+// 3. Navigation Bar's responsiveness
