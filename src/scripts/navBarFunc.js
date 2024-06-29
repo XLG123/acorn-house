@@ -66,5 +66,5 @@ export { reloadPage, scrollToPart, removeSelectedStyle };
 // --- BUG: nav bar link delay
 
 // 1. When user scrolls on the page, remove the selected style on the navigation item.
-// 2. Restructure the layout of About Us container
+// 2. Restructure the layout of About Us container -> make it responsive from css, reduce load time. (try as much as on css)
 // --- a. The automatic scrolling of the images should also be responsive
