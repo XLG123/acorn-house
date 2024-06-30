@@ -54,6 +54,7 @@ const removeSelectedStyle = () => {
     // Check each of the content container's position
     // --- top, left, bottom, right pos
     // --- less than the viewport pos
+    // --- getBoundingClientRect
     // If they are not fully visible, remove selected style
     // If one is fully visible, keep that one's selected style, and remove others' styles.
     // If two are fully visible, keep the top one's selected style
