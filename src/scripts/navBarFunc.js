@@ -46,9 +46,13 @@ const scrollToPart = () => {
 };
 
 const isFullyVisible = (container) => {
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-	
+	const viewportHeight = window.innerHeight;
+	const pos = container.getBoundingClientRect();
+	if (pos.top < 0 || pos.bottom > viewportHeight) {
+		return false;
+	} else {
+		return true;
+	}
 };
 
 // Remove the styling from the selected navigation item when it detects scrolling
@@ -68,13 +72,7 @@ const removeSelectedStyle = () => {
         // If they are not fully visible, remove selected style
         // If one is fully visible, keep that one's selected style, and remove others' styles.
         // If two are fully visible, keep the top one's selected style
-
-        if (
-            isFullyVisible(aboutUSSection) &&
-            !isFullyVisible(programsSection) &&
-            !isFullyVisible(contactInfoSection)
-        ) {
-        }
+		
     });
 };
 
