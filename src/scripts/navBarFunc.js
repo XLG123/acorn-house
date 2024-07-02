@@ -69,12 +69,7 @@ const removeSelectedStyle = () => {
 	const contactInfo = document.getElementById("selected-contact-info");
 
     document.addEventListener("scroll", () => {
-        // Approach 2
-        // Check each of the content container's position
-        // If they are not fully visible, remove selected style
-        // If one is fully visible, keep that one's selected style, and remove others' styles.
-        // If two are fully visible, keep the top one's selected style
-		if (isFullyVisible(aboutUSSection)) {
+		if (isFullyVisible(aboutUSSection)) {	
 			aboutUs.classList.add("selected");
 			if (programs.classList.contains("selected")) {
 				programs.classList.remove("selected");
@@ -82,8 +77,7 @@ const removeSelectedStyle = () => {
 			if (contactInfo.classList.contains("selected")) {
 				contactInfo.classList.remove("selected");
 			}
-			console.log("about us");
-		} else if (isFullyVisible(programs)) {
+		} else if (isFullyVisible(programsSection)) {
 			programs.classList.add("selected");
 			if (aboutUs.classList.contains("selected")) {
 				aboutUs.classList.remove("selected");
@@ -91,7 +85,19 @@ const removeSelectedStyle = () => {
 			if (contactInfo.classList.contains("selected")) {
 				contactInfo.classList.remove("selected");
 			}
-			console.log("programs");
+		} else if (isFullyVisible(contactInfoSection)) {
+			contactInfo.classList.add("selected");
+			if (aboutUs.classList.contains("selected")) {
+				aboutUs.classList.remove("selected");
+			}
+			if (programs.classList.contains("selected")) {
+				programs.classList.remove("selected");
+			}
+		} else {
+			aboutUs.classList.remove("selected");
+			programs.classList.remove("selected");
+			contactInfo.classList.remove("selected");
+			console.log("between");
 		}
     });
 };
