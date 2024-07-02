@@ -63,16 +63,36 @@ const removeSelectedStyle = () => {
     const contactInfoSection = document.getElementById(
         "contact-info-container"
     );
+
+	const aboutUs = document.getElementById("selected-about-us");
+	const programs = document.getElementById("selected-programs");
+	const contactInfo = document.getElementById("selected-contact-info");
+
     document.addEventListener("scroll", () => {
         // Approach 2
         // Check each of the content container's position
-        // --- top, left, bottom, right pos
-        // --- less than the viewport pos
-        // --- getBoundingClientRect
         // If they are not fully visible, remove selected style
         // If one is fully visible, keep that one's selected style, and remove others' styles.
         // If two are fully visible, keep the top one's selected style
-		
+		if (isFullyVisible(aboutUSSection)) {
+			aboutUs.classList.add("selected");
+			if (programs.classList.contains("selected")) {
+				programs.classList.remove("selected");
+			}
+			if (contactInfo.classList.contains("selected")) {
+				contactInfo.classList.remove("selected");
+			}
+			console.log("about us");
+		} else if (isFullyVisible(programs)) {
+			programs.classList.add("selected");
+			if (aboutUs.classList.contains("selected")) {
+				aboutUs.classList.remove("selected");
+			}
+			if (contactInfo.classList.contains("selected")) {
+				contactInfo.classList.remove("selected");
+			}
+			console.log("programs");
+		}
     });
 };
 
