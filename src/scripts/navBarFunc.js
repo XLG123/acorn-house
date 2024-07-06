@@ -53,7 +53,7 @@ const scrollToPart = () => {
         }
 		removeSelectedStyle(optionOneIsClicked, optionTwoIsClicked, optionThreeIsClicked);
     });
-	removeSelectedStyle(optionOneIsClicked, optionTwoIsClicked, optionThreeIsClicked);
+	removeSelectedStyle(false, false, false);
 };
 
 const isFullyVisible = (container) => {
@@ -110,7 +110,15 @@ const removeSelectedStyle = (optionOne, optionTwo, optionThree) => {
 				if (contactInfo.classList.contains("selected")) {
 					contactInfo.classList.remove("selected");
 				}
-			}
+			} // else {
+			// 	programs.classList.add("selected");
+            //     if (aboutUs.classList.contains("selected")) {
+			// 		aboutUs.classList.remove("selected");
+            //     }
+            //     if (contactInfo.classList.contains("selected")) {
+			// 		contactInfo.classList.remove("selected");
+            //     }
+			// }
 		} else if (isFullyVisible(contactInfoSection)) {
 			contactInfo.classList.add("selected");
 			if (aboutUs.classList.contains("selected")) {
@@ -124,6 +132,9 @@ const removeSelectedStyle = (optionOne, optionTwo, optionThree) => {
 			programs.classList.remove("selected");
 			contactInfo.classList.remove("selected");
 		}
+		// console.log(optionOne);
+		// console.log(optionTwo);
+		// console.log(optionThree);
     });
 };
 
