@@ -141,8 +141,8 @@ const removeSelectedStyle = (optionOne, optionTwo, optionThree) => {
 export { reloadPage, scrollToPart };
 
 // TODO:
-// --- BUG: nav bar link delay 
 // --- BUG: nav bar scrolling, selected style is not applied on programs -> Top Priority
+// --- BUG: nav bar link delay  
 
-// 1. Restructure the layout of About Us container -> make it responsive from css, reduce load time. (try as much as on css)
-// --- a. The automatic scrolling of the images should also be responsive
+// 1. Restructure the layout of About Us container -> make it responsive from css, reduce load time.
+// --- a. The automatic scrolling of the images should also be responsive (when screen size changes)
