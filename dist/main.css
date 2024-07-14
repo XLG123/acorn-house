@@ -384,6 +384,30 @@ main .section-title .chn {
     background-size: 8em, 3.7em, 4em, 4em;
   }
 }
+@media (min-width: 601px) and (max-width: 900px) {
+  #about-us-container .section-title {
+    background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: top, left 4% bottom 10%, left 22% bottom 10%, right 22% bottom 10%, right 4% bottom 10%;
+    background-size: 8em, 3.7em, 3.5em, 3.7em, 4em, 4em;
+  }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  #about-us-container .section-title {
+    background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: top, left 3% bottom 10%, left 18% bottom 10%, left 33% bottom 10%, right 33% bottom 10%, right 18% bottom 10%, right 3% bottom 10%;
+    background-size: 8em, 3.7em, 3.5em, 4em, 3.6em, 3.7em, 4em, 4em;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+  #about-us-container .section-title {
+    background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/training1.png"), url("../src/assets/images/tutoring1.png"), url("../src/assets/images/male-teacher2.png"), url("../src/assets/images/female-teacher2.png"), url("../src/assets/images/tutoring2.png"), url("../src/assets/images/training2.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: top, left 2% bottom 10%, left 13% bottom 10%, left 25% bottom 10%, left 37% bottom 10%, right 37% bottom 10%, right 25% bottom 10%, right 13% bottom 10%, right 2% bottom 10%;
+    background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
+  }
+}
 #programs-container {
   margin-top: 2.5em;
   border-radius: 20px;
