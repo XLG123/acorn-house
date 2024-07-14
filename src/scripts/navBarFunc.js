@@ -100,5 +100,6 @@ const removeSelectedStyle = () => {
 export { reloadPage, scrollToPart };
 
 // TODO:  
-// 1. Restructure the layout of About Us container -> make it responsive from css, reduce load time.
+// 1. Restructure the layout of About Us container (with SCSS)
 // --- a. The automatic scrolling of the images should also be responsive (when screen size changes)
+// 2. NavBar responsive styling for mobile devices
