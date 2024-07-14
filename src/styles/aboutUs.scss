@@ -46,15 +46,12 @@
     font-size: 20px;
     text-align: justify;
     padding: 1em;
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     #text {
-      // width: 50%;
+      width: 49%;
       .eng {
         margin-bottom: 1.5em;
         line-height: 1.5em;
@@ -66,12 +63,11 @@
     }
 
     #images {
-      margin-left: 1em;
       overflow-x: scroll;
       white-space: nowrap;
       padding-top: 0.1em;
       min-height: fit-content;
-      // width: 50%;
+      width: 49%;
 
       .image-container {
         display: inline-block;

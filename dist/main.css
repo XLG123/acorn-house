@@ -300,8 +300,12 @@ main .section-title .chn {
   font-size: 20px;
   text-align: justify;
   padding: 1em;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#about-us-container .about-us-content #text {
+  width: 49%;
 }
 #about-us-container .about-us-content #text .eng {
   margin-bottom: 1.5em;
@@ -311,11 +315,11 @@ main .section-title .chn {
   line-height: 1.7em;
 }
 #about-us-container .about-us-content #images {
-  margin-left: 1em;
   overflow-x: scroll;
   white-space: nowrap;
   padding-top: 0.1em;
   min-height: fit-content;
+  width: 49%;
 }
 #about-us-container .about-us-content #images .image-container {
   display: inline-block;
