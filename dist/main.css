@@ -368,6 +368,22 @@ main .section-title .chn {
   border-radius: 20px;
 }
 
+@media (max-width: 500px) {
+  #about-us-container .section-title {
+    background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, space repeat;
+    background-position: top;
+    background-size: 8em, 4em;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  #about-us-container .section-title {
+    background-image: url("../src/assets/images/about-us-paper.png"), url("../src/assets/images/stack-of-books.png"), url("../src/assets/images/books.png"), url("../src/assets/images/acornBanner1.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, space repeat;
+    background-position: top, left 10% bottom 10%, right 10% bottom 10%;
+    background-size: 8em, 3.7em, 4em, 4em;
+  }
+}
 #programs-container {
   margin-top: 2.5em;
   border-radius: 20px;
