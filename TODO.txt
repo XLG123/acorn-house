@@ -1,0 +1,8 @@
+TODO:
+
+1. Restructure the layout of About Us container (with SCSS)
+    a. The automatic scrolling of the images should also be responsive (when screen size changes)
+    b. Major Bug: Image auto scrolling does not function properly
+        --- when it scrolls to the third image, it would not go back to the first one
+
+2. NavBar responsive styling for mobile devices and other devices

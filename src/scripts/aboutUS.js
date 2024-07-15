@@ -14,6 +14,7 @@ const automaticScrolling = () => {
     imgOneBounding = imgOne.getBoundingClientRect();
     imgTwoBounding = imgTwo.getBoundingClientRect();
     imgThreeBounding = imgThree.getBoundingClientRect();
+    
     if (
       imgOneBounding.left < imgCtnBounding.left &&
       imgOneBounding.right > imgCtnBounding.left
@@ -30,11 +31,7 @@ const automaticScrolling = () => {
         left: imgThreeBounding.right - imgCtnBounding.right,
         behavior: "smooth",
       });
-    } else if (
-      imgThreeBounding.left === imgCtnBounding.left &&
-      imgThreeBounding.right === imgCtnBounding.right &&
-      imgOneBounding.left < 0
-    ) {
+    } else if ( imgOneBounding.left < 0 ) {
       el.scrollBy({
         left: imgOneBounding.left - imgThreeBounding.left,
         behavior: "instant",
