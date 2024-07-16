@@ -223,3 +223,48 @@
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	#about-us-container {
+		.about-us-content {
+			#text {
+				width: 100%;
+			}
+
+			#images {
+				width: 100%;
+				overflow: hidden;
+
+				.image-container {
+					display: block;
+					font-size: 18px;
+					box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.15);
+
+					div {
+						padding: 0.3em 1em;
+						white-space: normal;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	#about-us-container {
+		.about-us-content {
+			#images {
+				.image-container {
+					font-size: 16px;
+					box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.1); 
+
+					div {
+						.eng {
+							margin-bottom: 0.25em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

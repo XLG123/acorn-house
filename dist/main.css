@@ -408,6 +408,33 @@ main .section-title .chn {
     background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
   }
 }
+@media (max-width: 500px) {
+  #about-us-container .about-us-content #text {
+    width: 100%;
+  }
+  #about-us-container .about-us-content #images {
+    width: 100%;
+    overflow: hidden;
+  }
+  #about-us-container .about-us-content #images .image-container {
+    display: block;
+    font-size: 18px;
+    box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.15);
+  }
+  #about-us-container .about-us-content #images .image-container div {
+    padding: 0.3em 1em;
+    white-space: normal;
+  }
+}
+@media (max-width: 450px) {
+  #about-us-container .about-us-content #images .image-container {
+    font-size: 16px;
+    box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.1);
+  }
+  #about-us-container .about-us-content #images .image-container div .eng {
+    margin-bottom: 0.25em;
+  }
+}
 #programs-container {
   margin-top: 2.5em;
   border-radius: 20px;

@@ -14,34 +14,40 @@ const automaticScrolling = () => {
     imgOneBounding = imgOne.getBoundingClientRect();
     imgTwoBounding = imgTwo.getBoundingClientRect();
     imgThreeBounding = imgThree.getBoundingClientRect();
-    
-    if (
-      imgOneBounding.left < imgCtnBounding.left &&
-      imgOneBounding.right > imgCtnBounding.left
-    ) {
-      el.scrollBy({
-        left: imgTwoBounding.right - imgCtnBounding.right,
-        behavior: "smooth",
-      });
-    } else if (
-      imgTwoBounding.left < imgCtnBounding.left &&
-      imgTwoBounding.right > imgCtnBounding.left
-    ) {
-      el.scrollBy({
-        left: imgThreeBounding.right - imgCtnBounding.right,
-        behavior: "smooth",
-      });
-    } else if ( imgOneBounding.left < 0 ) {
-      el.scrollBy({
-        left: imgOneBounding.left - imgThreeBounding.left,
-        behavior: "instant",
-      });
-    } else {
-      el.scrollBy({
-        left: imgCtnBounding.width + 5,
-        behavior: "smooth",
-      });
+
+    if (window.innerWidth > 500) {
+      if (
+        imgOneBounding.left < imgCtnBounding.left &&
+        imgOneBounding.right > imgCtnBounding.left
+      ) {
+        el.scrollBy({
+          left: imgTwoBounding.right - imgCtnBounding.right,
+          behavior: "smooth",
+        });
+      } else if (
+        imgTwoBounding.left < imgCtnBounding.left &&
+        imgTwoBounding.right > imgCtnBounding.left
+      ) {
+        el.scrollBy({
+          left: imgThreeBounding.right - imgCtnBounding.right,
+          behavior: "smooth",
+        });
+      } else if ( imgOneBounding.left < 0 ) {
+        el.scrollBy({
+          left: imgOneBounding.left - imgThreeBounding.left,
+          behavior: "instant",
+        });
+      } else {
+        el.scrollBy({
+          left: imgCtnBounding.width + 5,
+          behavior: "smooth",
+        });
+      }
     }
+    
+    // window.addEventListener("resize", () => {
+
+    // })
   };
 
   let scrollTimer = setInterval(imgScroll, 5000);
