@@ -224,11 +224,7 @@
 	}
 }
 
-// @media (max-width: ) {
-	
-// }
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 	#about-us-container {
 		.about-us-content {
 			#text {
@@ -236,6 +232,7 @@
 			}
 
 			#images {
+				margin-top: 0.5em;
 				width: 100%;
 				overflow: hidden;
 
@@ -243,7 +240,7 @@
 					display: block;
 					font-size: 18px;
 					box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.15);
-
+					
 					div {
 						padding: 0.3em 1em;
 						white-space: normal;
@@ -259,7 +256,6 @@
 		.about-us-content {
 			#images {
 				.image-container {
-					font-size: 18px;
 					box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.1); 
 
 					div {

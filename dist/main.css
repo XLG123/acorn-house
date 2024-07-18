@@ -408,11 +408,12 @@ main .section-title .chn {
     background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   #about-us-container .about-us-content #text {
     width: 100%;
   }
   #about-us-container .about-us-content #images {
+    margin-top: 0.5em;
     width: 100%;
     overflow: hidden;
   }
@@ -428,7 +429,6 @@ main .section-title .chn {
 }
 @media (max-width: 450px) {
   #about-us-container .about-us-content #images .image-container {
-    font-size: 18px;
     box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.1);
   }
   #about-us-container .about-us-content #images .image-container div .eng {
