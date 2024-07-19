@@ -15,7 +15,7 @@ const automaticScrolling = () => {
     imgTwoBounding = imgTwo.getBoundingClientRect();
     imgThreeBounding = imgThree.getBoundingClientRect();
 
-    if (window.innerWidth > 500) {
+    if (window.innerWidth > 1100) {
       if (
         imgOneBounding.left < imgCtnBounding.left &&
         imgOneBounding.right > imgCtnBounding.left
