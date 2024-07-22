@@ -7,3 +7,7 @@ TODO:
     *** Bug ***
     1. Automatic Scrolling stops at the 2nd image, it does not scroll to the 3rd image. Instead, it jumps back to the 1st image.
 
+2. NavBar Responsiveness
+    a. mobile devices should have a drawer/sidebar navigation
+    b. for smaller ipad devices, it should have the drawer/sidebar navigation,
+        for larger ipad devices, it should have the top navigation bar.
