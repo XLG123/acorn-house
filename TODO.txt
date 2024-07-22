@@ -6,7 +6,4 @@ TODO:
 
     *** Bug ***
     1. Automatic Scrolling stops at the 2nd image, it does not scroll to the 3rd image. Instead, it jumps back to the 1st image.
-    2. Automatic Scrolling not working on screen sizes that are less than 1100px
 
-
-2. NavBar responsive styling for mobile devices and other devices
