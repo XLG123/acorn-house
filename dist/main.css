@@ -408,6 +408,16 @@ main .section-title .chn {
     background-size: 8em, 3.7em, 3.5em, 4em, 4em, 4em, 3.6em, 3.7em, 4em, 4em;
   }
 }
+@media (min-width: 1201px) and (max-width: 1400px) {
+  #about-us-container .about-us-content {
+    align-items: center;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1250px) {
+  #about-us-container .about-us-content #images .image-container {
+    margin-bottom: 2em;
+  }
+}
 @media (max-width: 1200px) {
   #about-us-container .about-us-content #images .image-container {
     font-size: 18px;
