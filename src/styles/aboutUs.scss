@@ -227,17 +227,17 @@
 @media (min-width: 1201px) and (max-width: 1400px) {
 	#about-us-container {
 		.about-us-content {
-			align-items: center;
+			align-items: start;
 		}
 	}
 }
 
-@media (min-width: 1201px) and (max-width: 1250px) {
+@media (min-width: 1201px) and (max-width: 1450px) {
 	#about-us-container {
 		.about-us-content {
 			#images {
 				.image-container {
-					margin-bottom: 2em;
+					margin-bottom: 1.5em;
 				}
 			}
 		}

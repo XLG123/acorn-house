@@ -1,7 +1,6 @@
 TODO:
 
 1. Restructure the layout of About Us container (with SCSS)
-    a. Text and Image Layout should be responsive to the size changes of the screen
     b. The automatic scrolling of the images should also be responsive (when screen size changes)
 
     *** Bug ***
