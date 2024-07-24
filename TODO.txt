@@ -5,6 +5,7 @@ TODO:
 
     *** Bug ***
     1. Automatic Scrolling stops at the 2nd image, it does not scroll to the 3rd image. Instead, it jumps back to the 1st image.
+    (affected screen sizes from min 701px to max 900px)
 
 2. NavBar Responsiveness
     a. mobile devices should have a drawer/sidebar navigation
