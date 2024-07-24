@@ -3,10 +3,6 @@ TODO:
 1. Restructure the layout of About Us container (with SCSS)
     b. The automatic scrolling of the images should also be responsive (when screen size changes)
 
-    *** Bug ***
-    1. Automatic Scrolling stops at the 2nd image, it does not scroll to the 3rd image. Instead, it jumps back to the 1st image.
-    (affected screen sizes from min 701px to max 900px)
-
 2. NavBar Responsiveness
     a. mobile devices should have a drawer/sidebar navigation
     b. for smaller ipad devices, it should have the drawer/sidebar navigation,
