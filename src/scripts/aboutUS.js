@@ -1,9 +1,9 @@
-// 
+// Get the display style of the first image
 const getDisplayStyle = (imgOne) => {
     return window.getComputedStyle(imgOne).getPropertyValue("display");
 };
 
-// 
+// Return true if the image is partially visible, otherwise return false.
 const isPartiallyVisible = (ctnBounding, imgBounding) => {
     return (
         imgBounding.left < ctnBounding.left &&
@@ -11,14 +11,14 @@ const isPartiallyVisible = (ctnBounding, imgBounding) => {
     );
 };
 
-// 
+// Return true if the currently visible image is the last image, otherwise return false.
 const isLastImage = (ctnBounding, imgOneBounding, imgThreeBounding) => {
     return (
         imgOneBounding.left < 0 && imgThreeBounding.left - 2 < ctnBounding.left
     );
 };
 
-// 
+// Scroll to the next available image
 const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
     const ctnBounding = ctn.getBoundingClientRect();
     const imgOneBounding = imgOne.getBoundingClientRect();
@@ -52,7 +52,8 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
     }
 };
 
-// 
+// Automatic Scrolling of the images
+// When a cursor is on the image container, stop the automatic scrolling until the user moves the cursor away.
 const automaticScrolling = () => {
     const ctn = document.getElementById("images");
     const imgOne = document.getElementById("img1-container");
