@@ -1,7 +1,9 @@
+// 
 const getDisplayStyle = (imgOne) => {
     return window.getComputedStyle(imgOne).getPropertyValue("display");
 };
 
+// 
 const isPartiallyVisible = (ctnBounding, imgBounding) => {
     return (
         imgBounding.left < ctnBounding.left &&
@@ -9,12 +11,14 @@ const isPartiallyVisible = (ctnBounding, imgBounding) => {
     );
 };
 
+// 
 const isLastImage = (ctnBounding, imgOneBounding, imgThreeBounding) => {
     return (
         imgOneBounding.left < 0 && imgThreeBounding.left - 2 < ctnBounding.left
     );
 };
 
+// 
 const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
     const ctnBounding = ctn.getBoundingClientRect();
     const imgOneBounding = imgOne.getBoundingClientRect();
@@ -48,6 +52,7 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
     }
 };
 
+// 
 const automaticScrolling = () => {
     const ctn = document.getElementById("images");
     const imgOne = document.getElementById("img1-container");
