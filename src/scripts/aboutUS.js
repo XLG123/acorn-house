@@ -50,6 +50,8 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
             });
         }
     }
+
+    // ResizeObserver will be used here
 };
 
 // Automatic Scrolling of the images
