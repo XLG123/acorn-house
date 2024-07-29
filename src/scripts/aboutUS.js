@@ -36,9 +36,7 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
                 left: imgThreeBounding.right - ctnBounding.right,
                 behavior: "smooth",
             });
-        } else if (
-            isLastImage(ctnBounding, imgOneBounding, imgThreeBounding)
-        ) {
+        } else if (isLastImage(ctnBounding, imgOneBounding, imgThreeBounding)) {
             ctn.scrollBy({
                 left: imgOneBounding.left - imgThreeBounding.left,
                 behavior: "instant",
