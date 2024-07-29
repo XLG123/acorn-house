@@ -18,17 +18,12 @@ const isLastImage = (ctnBounding, imgOneBounding, imgThreeBounding) => {
     );
 };
 
-
 // Scroll to the next available image
-const performScroll = (ctn, imgOne, imgTwo, imgThree, originalCtnWidth) => {
+const performScroll = (ctn, imgOne, imgTwo, imgThree) => {
     const ctnBounding = ctn.getBoundingClientRect();
     const imgOneBounding = imgOne.getBoundingClientRect();
     const imgTwoBounding = imgTwo.getBoundingClientRect();
     const imgThreeBounding = imgThree.getBoundingClientRect();
-
-    // const newWidth = observeContainerSizeChange(ctn, originalCtnWidth);
-
-    // console.log(newWidth);
 
     if (getDisplayStyle(imgOne) === "inline-block") {
         if (isPartiallyVisible(ctnBounding, imgOneBounding)) {
@@ -57,25 +52,6 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree, originalCtnWidth) => {
     }
 };
 
-// const getNewWidth = (newWidth) => {
-//     console.log(newWidth);
-//     return 0;
-// }
-
-// const observeContainerSizeChange = (ctn, originalWidth, getNewWidth) => {
-//     let newWidth = originalWidth;
-//     const sizeObserver = new ResizeObserver((entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.contentRect.width !== originalWidth) {
-//                 newWidth = entry.contentRect.width;
-//                 getNewWidth(newWidth);
-//             }
-//         })
-//     })
-
-//     sizeObserver.observe(ctn);
-// };
-
 // Automatic Scrolling of the images
 // When a cursor is on the image container, stop the automatic scrolling until the user moves the cursor away.
 const automaticScrolling = () => {
@@ -84,10 +60,8 @@ const automaticScrolling = () => {
     const imgTwo = document.getElementById("img2-container");
     const imgThree = document.getElementById("img3-container");
 
-    const originalCtnWidth = ctn.getBoundingClientRect().width;
-
     const imgScroll = () => {
-        performScroll(ctn, imgOne, imgTwo, imgThree, originalCtnWidth);
+        performScroll(ctn, imgOne, imgTwo, imgThree);
     };
 
     let scrollTimer = setInterval(imgScroll, 5000);
