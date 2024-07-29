@@ -1,9 +1,6 @@
 TODO:
 
-1. Restructure the layout of About Us container (with SCSS)
-    b. The automatic scrolling of the images should also be responsive (when screen size changes) -> ResizeObserver?
-
-2. NavBar Responsiveness
+1. NavBar Responsiveness
     a. mobile devices should have a drawer/sidebar navigation
     b. for smaller ipad devices, it should have the drawer/sidebar navigation,
         for larger ipad devices, it should have the top navigation bar.
