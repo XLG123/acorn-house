@@ -26,9 +26,9 @@ const performScroll = (ctn, imgOne, imgTwo, imgThree, originalCtnWidth) => {
     const imgTwoBounding = imgTwo.getBoundingClientRect();
     const imgThreeBounding = imgThree.getBoundingClientRect();
 
-    const newWidth = observeContainerSizeChange(ctn, originalCtnWidth);
+    // const newWidth = observeContainerSizeChange(ctn, originalCtnWidth);
 
-    console.log(newWidth);
+    // console.log(newWidth);
 
     if (getDisplayStyle(imgOne) === "inline-block") {
         if (isPartiallyVisible(ctnBounding, imgOneBounding)) {
