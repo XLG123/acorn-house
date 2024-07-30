@@ -4,3 +4,5 @@ TODO:
     a. mobile devices should have a drawer/sidebar navigation
     b. for smaller ipad devices, it should have the drawer/sidebar navigation,
         for larger ipad devices, it should have the top navigation bar.
+
+2. Refactor the code for navBarFunc.js and programs.js
