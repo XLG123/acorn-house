@@ -6,3 +6,5 @@ TODO:
         for larger ipad devices, it should have the top navigation bar.
 
 2. Refactor the code for navBarFunc.js and programs.js
+
+3. Provide comments to describe each function in the js files
