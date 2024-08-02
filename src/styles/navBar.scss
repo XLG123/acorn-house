@@ -121,6 +121,11 @@
       #nav-links {
         .nav-option {
           text-align: center;
+          display: grid;
+
+          span:first-child {
+            margin-bottom: 0.25em;
+          }
         }
       
         .nav-option:hover,
