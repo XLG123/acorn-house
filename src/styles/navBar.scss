@@ -100,7 +100,7 @@
         text-decoration: wavy underline;
         text-decoration-thickness: 1px;
         text-underline-offset: 0.4em;
-      }
+      } 
     }
   }
 }
@@ -115,7 +115,20 @@
   #nav-bar-container {
     #nav-links-container {
       #nav-links {
+        .nav-option {
+          text-align: center;
+        }
+      
+        .nav-option:hover,
+        .nav-option:focus,
+        .selected {
+          text-decoration: none;
 
+          span:last-child {
+            text-decoration: wavy underline;
+            text-decoration-thickness: 1px;
+          }
+        }
       }
     }
   }
