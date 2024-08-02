@@ -76,9 +76,8 @@
         border-radius: 10px;
         cursor: pointer;
 
-        div {
-          text-decoration: none;
-          color: inherit;
+        span {
+          white-space: nowrap;
         }
       }
 
@@ -105,16 +104,20 @@
     }
   }
 }
-
+  
 @media (width > 1500px) {
   #nav-bar-container {
     padding: 0 9em;
   }
 }
 
-// @media (max-width: 600px) {
-//   #nav-bar-container {
+@media (max-width: 1350px) {
+  #nav-bar-container {
+    #nav-links-container {
+      #nav-links {
 
-//   }
-// }
+      }
+    }
+  }
+}
 

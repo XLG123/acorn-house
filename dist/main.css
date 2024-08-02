@@ -246,9 +246,8 @@ main .section-title .chn {
   border-radius: 10px;
   cursor: pointer;
 }
-#nav-bar-container #nav-links-container #nav-links .nav-option div {
-  text-decoration: none;
-  color: inherit;
+#nav-bar-container #nav-links-container #nav-links .nav-option span {
+  white-space: nowrap;
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option:first-child {
   margin-right: 1em;
