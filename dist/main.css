@@ -223,6 +223,9 @@ main .section-title .chn {
   font-weight: 900;
   letter-spacing: 3px;
 }
+#nav-bar-container #school-name-container #name-container .school-chn-name span {
+  white-space: nowrap;
+}
 #nav-bar-container #school-name-container:hover #school-logo,
 #nav-bar-container #school-name-container:focus #school-logo {
   filter: brightness(1.05);
