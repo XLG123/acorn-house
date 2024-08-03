@@ -5,6 +5,9 @@ TODO:
     b. for smaller ipad devices, it should have the drawer/sidebar navigation,
         for larger ipad devices, it should have the top navigation bar.
 
+    *** Bug ***
+    - Between 1501px and 1517px, navigation links are poorly stylied and the background looks messy when the link is selected.
+
 2. Refactor the code for navBarFunc.js and programs.js
 
 3. Provide comments to describe each function in the js files
