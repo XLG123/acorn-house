@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1350px) or ((min-width: 1501px) and (max-width: 1600px)) {
   #nav-bar-container {
     #nav-links-container {
       #nav-links {
@@ -142,4 +142,6 @@
     }
   }
 }
+
+
 
