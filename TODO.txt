@@ -8,6 +8,8 @@ TODO:
     *** Bug ***
     - Between 1501px and 1517px, navigation links are poorly stylied and the background looks messy when the link is selected.
 
+    Possible Solution: DOM Manipulation, check the screen size and display style. If the screen size is greater than 1500px and the display style is not grid, then align the spans in the center, and remove the underline on the first span.
+
 2. Refactor the code for navBarFunc.js and programs.js
 
 3. Provide comments to describe each function in the js files
