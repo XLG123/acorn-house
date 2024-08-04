@@ -123,13 +123,29 @@ const addSlash = (navLinks) => {
 	}
 };
 
+// Return true if the span element is wrapped to the next line by checking its y position, otherwise return false.
+const isWrappedToNextLine = (navLinks) => {
+	return navLinks[0].children[1].getBoundingClientRect().y > 40;
+};
+
+// Align the navigation links' content to the center.
+const alignNavLinks = (navLinks) => {
+	for (let i = 0; i < navLinks.length; ++i) {
+		navLinks[i].style.textAlign = "center";
+		navLinks[i].style.display = "grid";
+	}
+};
+
 // Update the name of the navigation links depends on the screen sizes.
 const updateNavigationItem = (navLinks) => {
-	if (window.innerWidth <= 1350 && isGrid(navLinks[0])) {
+    if (window.innerWidth <= 1350 && isGrid(navLinks[0])) {
+        removeSlash(navLinks);
+    } else if (window.innerWidth > 1500 && isWrappedToNextLine(navLinks)) {
+		alignNavLinks(navLinks);
 		removeSlash(navLinks);
-	} else {
-		addSlash(navLinks);
-	}
+    } else {
+        addSlash(navLinks);
+    }
 };
 
 // Update the navigation bar.
