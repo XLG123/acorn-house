@@ -125,8 +125,13 @@ const addSlash = (navLinks) => {
 
 // Update the name of the navigation links depends on the screen sizes.
 const updateNavigationItem = (navLinks) => {
-    if (window.innerWidth <= 1350 && isGrid(navLinks[0])) {
-        removeSlash(navLinks);
+    if (
+        window.innerWidth <= 1350 ||
+        (window.innerWidth > 1500 && window.innerWidth <= 1600)
+    ) {
+        if (isGrid(navLinks[0])) {
+            removeSlash(navLinks);
+        }
     } else {
         addSlash(navLinks);
     }
