@@ -246,7 +246,6 @@ main .section-title .chn {
 #nav-bar-container #nav-links-container #nav-links .nav-option {
   font-size: 20px;
   padding: 1em;
-  border-radius: 10px;
   cursor: pointer;
 }
 #nav-bar-container #nav-links-container #nav-links .nav-option span {
@@ -293,6 +292,17 @@ main .section-title .chn {
   #nav-bar-container #nav-links-container #nav-links .selected span:last-child {
     text-decoration: wavy underline;
     text-decoration-thickness: 1px;
+  }
+}
+@media (max-width: 1100px) {
+  #nav-bar-container #school-name-container #name-container .school-chn-name span {
+    display: block;
+  }
+  #nav-bar-container #nav-links-container #nav-links .nav-option:first-child {
+    margin-right: 0;
+  }
+  #nav-bar-container #nav-links-container #nav-links .nav-option:last-child {
+    margin-left: 0;
   }
 }
 #about-us-container {
