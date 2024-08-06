@@ -268,6 +268,19 @@ main .section-title .chn {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.4em;
 }
+#nav-bar-container #sidebar-btn {
+  display: flex;
+  align-items: center;
+}
+#nav-bar-container .fa-bars {
+  color: #244c40;
+  font-size: 26px;
+  cursor: pointer;
+}
+#nav-bar-container .fa-bars:hover,
+#nav-bar-container .fa-bars:focus {
+  filter: brightness(1.3);
+}
 
 @media (min-width: 1501px) {
   #nav-bar-container {
@@ -306,6 +319,9 @@ main .section-title .chn {
   }
 }
 @media (max-width: 450px) {
+  #nav-bar-container {
+    padding: 0 2em;
+  }
   #nav-bar-container #school-name-container #name-container {
     display: grid;
     row-gap: 0.5em;
@@ -319,6 +335,14 @@ main .section-title .chn {
   }
   #nav-bar-container #school-name-container #name-container .school-chn-name span {
     display: inline-block;
+  }
+  #nav-bar-container #nav-links-container {
+    position: absolute;
+    display: none;
+  }
+  #nav-bar-container #nav-links-container #nav-links {
+    display: grid;
+    border: 1px solid green;
   }
 }
 #about-us-container {

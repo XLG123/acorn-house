@@ -137,12 +137,45 @@ const updateNavigationItem = (navLinks) => {
     }
 };
 
+// Return true if screen size is less than or equal to 450px, otherwise return false.
+const isMobile = () => {
+	return window.innerWidth <= 450;
+}
+
+// Insert a sidebar toggle button at the beginning of the navigation bar.
+const insertSidebarButton = () => {
+	const navBarCtn = document.getElementById("nav-bar-container");
+	const sidebarBtn = document.createElement("div");
+	const sidebarIcon = document.createElement("i");
+
+	sidebarBtn.setAttribute("id", "sidebar-btn");
+	sidebarIcon.classList.add("fa-solid", "fa-bars");
+
+	sidebarBtn.appendChild(sidebarIcon);
+	navBarCtn.insertBefore(sidebarBtn, navBarCtn.firstChild);
+}
+
+// Manage the visibility of the sidebar button based on whether the device is a mobile device.
+// Insert the sidebar button if it's a mobile device and the button doesn't exist.Otherwise removes the button.
+const navBarMobileView = () => {
+	const sidebarBtn = document.getElementById("sidebar-btn");
+	if (isMobile()) {
+		if (!sidebarBtn) {
+			insertSidebarButton();
+		}
+	} else {
+		sidebarBtn?.remove();
+	}
+}
+
 // Update the navigation bar.
 const updateNavigationBar = () => {
 	const navLinks = document.getElementsByClassName("nav-option");
 	updateNavigationItem(navLinks);
+	navBarMobileView();
 	window.addEventListener("resize", () => {
 		updateNavigationItem(navLinks);
+		navBarMobileView();
 	});
 };
 

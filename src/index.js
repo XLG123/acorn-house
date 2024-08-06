@@ -1,4 +1,5 @@
 import {
+	mobileSideBar,
 	reloadPage,
 	scrollToPart,
 	updateNavigationBar,
