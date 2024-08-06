@@ -170,7 +170,26 @@
 
 
 // Mobile Devices
-// @media (max-width: ) {
-  
-// }
+@media (max-width: 450px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        display: grid;
+        row-gap: 0.5em;
+        min-width: 200px;
+
+        .school-eng-name {
+          font-size: 24px;
+        }
+
+        .school-chn-name {
+          font-size: 22px;
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
 

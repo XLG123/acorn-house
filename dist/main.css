@@ -305,6 +305,22 @@ main .section-title .chn {
     margin-left: 0;
   }
 }
+@media (max-width: 450px) {
+  #nav-bar-container #school-name-container #name-container {
+    display: grid;
+    row-gap: 0.5em;
+    min-width: 200px;
+  }
+  #nav-bar-container #school-name-container #name-container .school-eng-name {
+    font-size: 24px;
+  }
+  #nav-bar-container #school-name-container #name-container .school-chn-name {
+    font-size: 22px;
+  }
+  #nav-bar-container #school-name-container #name-container .school-chn-name span {
+    display: inline-block;
+  }
+}
 #about-us-container {
   border-radius: 20px;
   background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
