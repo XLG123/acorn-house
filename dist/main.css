@@ -272,13 +272,20 @@ main .section-title .chn {
   display: flex;
   align-items: center;
 }
-#nav-bar-container .fa-bars {
+#nav-bar-container #close-sidebar-btn {
+  text-align: right;
+  padding: 0.25em;
+}
+#nav-bar-container .fa-bars,
+#nav-bar-container .fa-xmark {
   color: #244c40;
   font-size: 26px;
   cursor: pointer;
 }
 #nav-bar-container .fa-bars:hover,
-#nav-bar-container .fa-bars:focus {
+#nav-bar-container .fa-bars:focus,
+#nav-bar-container .fa-xmark:hover,
+#nav-bar-container .fa-xmark:focus {
   filter: brightness(1.3);
 }
 
@@ -341,7 +348,7 @@ main .section-title .chn {
     top: 0;
     left: 0;
     background-color: #def1e2;
-    height: 50vh;
+    height: 100vh;
     display: none;
   }
   #nav-bar-container #nav-links-container #nav-links {

@@ -142,10 +142,14 @@ const isMobile = () => {
 	return window.innerWidth <= 450;
 }
 
-// Display navigation sidebar.
-const displaySidebar = () => {
+// Display navigation sidebar based on the .
+const displaySidebar = (display) => {
 	const sidebar = document.getElementById("nav-links-container");
-	sidebar.style.display = "block";
+	if (display) {
+		sidebar.style.display = "block";
+	} else {
+		sidebar.style.display = "none";
+	}
 }
 
 // Insert a sidebar toggle button at the beginning of the navigation bar.
@@ -153,27 +157,49 @@ const insertSidebarButton = () => {
 	const navBarCtn = document.getElementById("nav-bar-container");
 	const sidebarBtn = document.createElement("div");
 	const sidebarIcon = document.createElement("i");
-
-	sidebarBtn.setAttribute("id", "sidebar-btn");
+	
 	sidebarIcon.classList.add("fa-solid", "fa-bars");
 	sidebarIcon.addEventListener("click", () => {
-		displaySidebar();
+		displaySidebar(true);
 	})
-
+	
+	sidebarBtn.setAttribute("id", "sidebar-btn");
 	sidebarBtn.appendChild(sidebarIcon);
 	navBarCtn.insertBefore(sidebarBtn, navBarCtn.firstChild);
 }
 
+// Insert a close button on the upper right corner of the sidebar.
+const insertCloseButton = () => {
+	const navLinksCtn = document.getElementById("nav-links-container");
+	const closeBtn = document.createElement("div");
+	const closeIcon = document.createElement("i");
+
+	closeIcon.classList.add("fa-solid", "fa-xmark");
+	closeIcon.addEventListener("click", () => {
+		displaySidebar(false);
+	})
+
+	closeBtn.setAttribute("id", "close-sidebar-btn");
+	closeBtn.appendChild(closeIcon);
+	navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
+}
+
 // Manage the visibility of the sidebar button based on whether the device is a mobile device.
-// Insert the sidebar button if it's a mobile device and the button doesn't exist. Otherwise removes the button.
+// Insert the sidebar button if it's a mobile device and the button doesn't exist. Otherwise removes the sidebar button.
+// Insert the close button if it's a mobile device and the close button doesn't exist. Otherwise removes the close button.
 const navBarMobileView = () => {
 	const sidebarBtn = document.getElementById("sidebar-btn");
+	const closeBtn = document.getElementById("close-sidebar-btn");
 	if (isMobile()) {
 		if (!sidebarBtn) {
 			insertSidebarButton();
 		}
+		if (!closeBtn) {
+			insertCloseButton();
+		}
 	} else {
 		sidebarBtn?.remove();
+		closeBtn?.remove();
 	}
 }
 
