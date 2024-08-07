@@ -338,11 +338,14 @@ main .section-title .chn {
   }
   #nav-bar-container #nav-links-container {
     position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #def1e2;
+    height: 50vh;
     display: none;
   }
   #nav-bar-container #nav-links-container #nav-links {
     display: grid;
-    border: 1px solid green;
   }
 }
 #about-us-container {

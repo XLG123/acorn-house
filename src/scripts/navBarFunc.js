@@ -142,6 +142,12 @@ const isMobile = () => {
 	return window.innerWidth <= 450;
 }
 
+// Display navigation sidebar.
+const displaySidebar = () => {
+	const sidebar = document.getElementById("nav-links-container");
+	sidebar.style.display = "block";
+}
+
 // Insert a sidebar toggle button at the beginning of the navigation bar.
 const insertSidebarButton = () => {
 	const navBarCtn = document.getElementById("nav-bar-container");
@@ -150,13 +156,16 @@ const insertSidebarButton = () => {
 
 	sidebarBtn.setAttribute("id", "sidebar-btn");
 	sidebarIcon.classList.add("fa-solid", "fa-bars");
+	sidebarIcon.addEventListener("click", () => {
+		displaySidebar();
+	})
 
 	sidebarBtn.appendChild(sidebarIcon);
 	navBarCtn.insertBefore(sidebarBtn, navBarCtn.firstChild);
 }
 
 // Manage the visibility of the sidebar button based on whether the device is a mobile device.
-// Insert the sidebar button if it's a mobile device and the button doesn't exist.Otherwise removes the button.
+// Insert the sidebar button if it's a mobile device and the button doesn't exist. Otherwise removes the button.
 const navBarMobileView = () => {
 	const sidebarBtn = document.getElementById("sidebar-btn");
 	if (isMobile()) {

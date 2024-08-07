@@ -212,11 +212,14 @@
     // The following code will be modified to show the links again.
     #nav-links-container {
       position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #def1e2;
+      height: 50vh;
       display: none;
 
       #nav-links {
         display: grid;
-        border: 1px solid green;
       }
     }
   }
