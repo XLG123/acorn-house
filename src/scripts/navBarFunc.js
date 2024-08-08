@@ -190,6 +190,7 @@ const insertCloseButton = () => {
 const navBarMobileView = () => {
 	const sidebarBtn = document.getElementById("sidebar-btn");
 	const closeBtn = document.getElementById("close-sidebar-btn");
+	const navigationLinks = document.getElementById("nav-links-container");
 	if (isMobile()) {
 		if (!sidebarBtn) {
 			insertSidebarButton();
@@ -197,9 +198,11 @@ const navBarMobileView = () => {
 		if (!closeBtn) {
 			insertCloseButton();
 		}
+		navigationLinks.style.display = "none";
 	} else {
 		sidebarBtn?.remove();
 		closeBtn?.remove();
+		navigationLinks.style.display = "flex";
 	}
 }
 
