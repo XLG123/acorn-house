@@ -347,8 +347,8 @@ main .section-title .chn {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #def1e2;
     height: 100vh;
+    background-color: #def1e2;
     display: none;
   }
   #nav-bar-container #nav-links-container #nav-links {
