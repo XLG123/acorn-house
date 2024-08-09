@@ -349,7 +349,7 @@ main .section-title .chn {
     left: 0;
     height: 100vh;
     background-color: #def1e2;
-    box-shadow: 5px 0px 100vw 10vw rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 0px 100vw 25vw rgba(0, 0, 0, 0.8);
     display: none;
   }
   #nav-bar-container #nav-links-container #nav-links {
