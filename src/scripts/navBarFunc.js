@@ -142,70 +142,62 @@ const updateNavigationBar = () => {
 
 // Scroll to the selected section on the page.
 const handleScrolling = (selectedSection) => {
-	const sections = {
-		aboutUs: document.getElementById("about-us-container"),
+    const sections = {
+        aboutUs: document.getElementById("about-us-container"),
         programs: document.getElementById("programs-container"),
         contactInfo: document.getElementById("contact-info-container"),
     };
-	
+
     sections[selectedSection].scrollIntoView();
 };
 
-
 // Return true if the container is fully visible, otheriwse return false.
 const isFullyVisible = (container) => {
-	const viewportHeight = window.innerHeight;
-	const pos = container.getBoundingClientRect();
-	if (pos.top < 0 || pos.bottom > viewportHeight) {
-		return false;
-	} else {
-		return true;
-	}
+    const viewportHeight = window.innerHeight;
+    const pos = container.getBoundingClientRect();
+    if (pos.top < 0 || pos.bottom > viewportHeight) {
+        return false;
+    } else {
+        return true;
+    }
 };
 
 const handleSelectedStyles = (selectedOption) => {
-	const navOptions = {
-		aboutUsOption: document.getElementById("selected-about-us"),
-		programsOption: document.getElementById("selected-programs"),
-		contactInfoOption: document.getElementById("selected-contact-info")
-	};
+    const navOptions = {
+        aboutUsOption: document.getElementById("selected-about-us"),
+        programsOption: document.getElementById("selected-programs"),
+        contactInfoOption: document.getElementById("selected-contact-info"),
+    };
 
-	for (const [optionName, option] of Object.entries(navOptions)) {
-		if (optionName === selectedOption) {
-			option.classList.add("selected");
-		} else {
-			option.classList.remove("selected");
-		}
-	}
+    for (const [optionName, option] of Object.entries(navOptions)) {
+        if (optionName === selectedOption) {
+            option.classList.add("selected");
+        } else {
+            option.classList.remove("selected");
+        }
+    }
 };
 
 // Adds or removes the "selected" class from navigation links based on the visibility of corresponding sections in the viewport as the user scrolls the page
 const applySelectedStyle = () => {
-    const aboutUSSection = document.getElementById("about-us-container");
-    const programsSection = document.getElementById("programs-container");
-    const contactInfoSection = document.getElementById(
-        "contact-info-container"
-    );
-	// const sections = [aboutUSSection, programsSection, contactInfoSection];
+    const sections = {
+        aboutUsSection: document.getElementById("about-us-container"),
+        programsSection: document.getElementById("programs-container"),
+        contactInfoSection: document.getElementById("contact-info-container"),
+    };
 
     document.addEventListener("scroll", () => {
-		let selectedOption = "";
-        if (isFullyVisible(aboutUSSection)) {
-			selectedOption = "aboutUsOption";
-        } else if (isFullyVisible(programsSection)) {
-			selectedOption = "programsOption";
-        } else if (isFullyVisible(contactInfoSection)) {
-			selectedOption = "contactInfoOption";
+        let selectedOption = "";
+
+        for (const [sectionName, section] of Object.entries(sections)) {
+            if (isFullyVisible(section)) {
+                selectedOption =
+                    sectionName.substring(0, sectionName.length - 7) + "Option";
+                break;
+            }
         }
 
-		// for (const section of sections) {
-		// 	if (isFullyVisible(section)) {
-		// 		selectedOption = section;
-		// 		break;
-		// 	}
-		// }
-
-		handleSelectedStyles(selectedOption);
+        handleSelectedStyles(selectedOption);
     });
 };
 
