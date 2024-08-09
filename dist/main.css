@@ -274,7 +274,7 @@ main .section-title .chn {
 }
 #nav-bar-container #close-sidebar-btn {
   text-align: right;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0.5em 3em 0.5em;
 }
 #nav-bar-container .fa-bars,
 #nav-bar-container .fa-xmark {
