@@ -1,7 +1,7 @@
 TODO:
 
 1. NavBar Responsiveness
-    a. mobile devices should have a drawer/sidebar navigation
+    a. mobile devices should have a sidebar navigation
 
 2. Refactor the code for navBarFunc.js and programs.js
 

@@ -155,6 +155,11 @@ main .section-title .chn {
   font-size: 20px;
 }
 
+.blurred {
+  filter: blur(3px);
+  transition: filter 0.3s ease-in-out;
+}
+
 @media (max-width: 600px) {
   main {
     padding: 2em;
