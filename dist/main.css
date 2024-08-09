@@ -345,11 +345,11 @@ main .section-title .chn {
   }
   #nav-bar-container #nav-links-container {
     position: absolute;
-    top: 0;
+    top: 5.6em;
     left: 0;
-    height: 100vh;
     background-color: #def1e2;
-    box-shadow: 5px 0px 100vw 25vw rgba(0, 0, 0, 0.8);
+    background-color: #aed5bd;
+    box-shadow: 5px 0px 100vw 25vw rgba(0, 0, 0, 0.5);
     display: none;
   }
   #nav-bar-container #nav-links-container #nav-links {

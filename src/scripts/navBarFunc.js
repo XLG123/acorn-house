@@ -196,12 +196,12 @@ const navBarMobileView = () => {
 			insertSidebarButton();
 		}
 		if (!closeBtn) {
-			insertCloseButton();
+			// insertCloseButton();
 		}
 		navigationLinks.style.display = "none";
 	} else {
 		sidebarBtn?.remove();
-		closeBtn?.remove();
+		// closeBtn?.remove();
 		navigationLinks.style.display = "flex";
 	}
 }
