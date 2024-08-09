@@ -52,7 +52,7 @@ const updateNavigationItem = (navLinks) => {
 
 // Apply blur effect to the main content and footer section when the sidebar is shown. Otherwise, removes the blur effect.
 const applyBlurEffect = (shown) => {
-	const schoolNameCtn = document.getElementById("school-name-container");
+    const schoolNameCtn = document.getElementById("school-name-container");
     const mainContentCtn = document.getElementById("content-container");
     const footer = document.getElementById("footer-ctn");
     const targets = [schoolNameCtn, mainContentCtn, footer];
@@ -140,6 +140,7 @@ const updateNavigationBar = () => {
     });
 };
 
+// Return true if the container is fully visible, otheriwse return false.
 const isFullyVisible = (container) => {
     const viewportHeight = window.innerHeight;
     const pos = container.getBoundingClientRect();
@@ -150,8 +151,19 @@ const isFullyVisible = (container) => {
     }
 };
 
-// Remove the styling from the selected navigation item when it detects scrolling
-const removeSelectedStyle = () => {
+// Scroll to the selected section on the page.
+const handleScrolling = (selectedSection) => {
+    const sections = {
+        aboutUs: document.getElementById("about-us-container"),
+        programs: document.getElementById("programs-container"),
+        contactInfo: document.getElementById("contact-info-container"),
+    };
+
+    sections[selectedSection].scrollIntoView();
+};
+
+// Adds or removes the "selected" class from navigation links based on the visibility of corresponding sections in the viewport as the user scrolls the page
+const applySelectedStyle = () => {
     const aboutUSSection = document.getElementById("about-us-container");
     const programsSection = document.getElementById("programs-container");
     const contactInfoSection = document.getElementById(
@@ -195,44 +207,27 @@ const removeSelectedStyle = () => {
     });
 };
 
+// Detect a user's clicks on navigation links and scrolls the page to the corresponding section, updating the selected style and hiding the sidebar on mobile.
 const scrollToPart = () => {
-    const navLinks = document.getElementById("nav-links");
-    const aboutUSSection = document.getElementById("about-us-container");
-    const programsSection = document.getElementById("programs-container");
-    const contactInfoSection = document.getElementById(
-        "contact-info-container"
-    );
-    const aboutUs = document.getElementById("selected-about-us");
-    const programs = document.getElementById("selected-programs");
-    const contactInfo = document.getElementById("selected-contact-info");
+    const navOptionsCtn = document.getElementById("nav-links");
 
-    navLinks.addEventListener("click", (e) => {
+    navOptionsCtn.addEventListener("click", (e) => {
         const target = e.target.classList;
+        let selectedSection = "";
         if (target.contains("about-us-option")) {
-            aboutUSSection.scrollIntoView();
-            aboutUs.classList.add("selected");
-            if (programs.classList.contains("selected")) {
-                programs.classList.remove("selected");
-            } else if (contactInfo.classList.contains("selected")) {
-                contactInfo.classList.remove("selected");
-            }
+            selectedSection = "aboutUs";
         } else if (target.contains("programs-option")) {
-            programsSection.scrollIntoView();
-            programs.classList.add("selected");
-            if (aboutUs.classList.contains("selected")) {
-                aboutUs.classList.remove("selected");
-            } else if (contactInfo.classList.contains("selected")) {
-                contactInfo.classList.remove("selected");
-            }
+            selectedSection = "programs";
         } else {
-            contactInfoSection.scrollIntoView();
-            contactInfo.classList.add("selected");
+            selectedSection = "contactInfo";
         }
-		if (isMobile()) {
-			toggleSidebar(false);
-		}
+        handleScrolling(selectedSection);
+        if (isMobile()) {
+            toggleSidebar(false);
+        }
     });
-    removeSelectedStyle();
+
+    applySelectedStyle();
 };
 
 export { reloadPage, updateNavigationBar, scrollToPart };

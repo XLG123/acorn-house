@@ -1,18 +1,17 @@
 import {
-	mobileSideBar,
-	reloadPage,
+    reloadPage,
 	scrollToPart,
-	updateNavigationBar,
+	updateNavigationBar
 } from "./scripts/navBarFunc";
 import { automaticScrolling } from "./scripts/aboutUS";
 import { modifyYear } from "./scripts/copyRight";
 import { responsiveLayout } from "./scripts/contentLayoutResponsive";
 
 document.addEventListener("DOMContentLoaded", () => {
-	reloadPage();
-	scrollToPart();
+    reloadPage();
 	updateNavigationBar();
-	automaticScrolling();
-	responsiveLayout();
-	modifyYear();
+	scrollToPart();
+    automaticScrolling();
+    responsiveLayout();
+    modifyYear();
 });
