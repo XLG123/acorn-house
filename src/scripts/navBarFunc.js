@@ -221,10 +221,12 @@ const scrollToPart = () => {
         } else {
             selectedSection = "contactInfo";
         }
-        handleScrolling(selectedSection);
+
         if (isMobile()) {
             toggleSidebar(false);
         }
+		
+        handleScrolling(selectedSection);
     });
 
     applySelectedStyle();
