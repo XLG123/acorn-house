@@ -140,26 +140,43 @@ const updateNavigationBar = () => {
     });
 };
 
-// Return true if the container is fully visible, otheriwse return false.
-const isFullyVisible = (container) => {
-    const viewportHeight = window.innerHeight;
-    const pos = container.getBoundingClientRect();
-    if (pos.top < 0 || pos.bottom > viewportHeight) {
-        return false;
-    } else {
-        return true;
-    }
-};
-
 // Scroll to the selected section on the page.
 const handleScrolling = (selectedSection) => {
-    const sections = {
-        aboutUs: document.getElementById("about-us-container"),
+	const sections = {
+		aboutUs: document.getElementById("about-us-container"),
         programs: document.getElementById("programs-container"),
         contactInfo: document.getElementById("contact-info-container"),
     };
-
+	
     sections[selectedSection].scrollIntoView();
+};
+
+
+// Return true if the container is fully visible, otheriwse return false.
+const isFullyVisible = (container) => {
+	const viewportHeight = window.innerHeight;
+	const pos = container.getBoundingClientRect();
+	if (pos.top < 0 || pos.bottom > viewportHeight) {
+		return false;
+	} else {
+		return true;
+	}
+};
+
+const handleSelectedStyles = (selectedOption) => {
+	const navOptions = {
+		aboutUsOption: document.getElementById("selected-about-us"),
+		programsOption: document.getElementById("selected-programs"),
+		contactInfoOption: document.getElementById("selected-contact-info")
+	};
+
+	for (const [optionName, option] of Object.entries(navOptions)) {
+		if (optionName === selectedOption) {
+			option.classList.add("selected");
+		} else {
+			option.classList.remove("selected");
+		}
+	}
 };
 
 // Adds or removes the "selected" class from navigation links based on the visibility of corresponding sections in the viewport as the user scrolls the page
@@ -169,41 +186,26 @@ const applySelectedStyle = () => {
     const contactInfoSection = document.getElementById(
         "contact-info-container"
     );
-
-    const aboutUs = document.getElementById("selected-about-us");
-    const programs = document.getElementById("selected-programs");
-    const contactInfo = document.getElementById("selected-contact-info");
+	// const sections = [aboutUSSection, programsSection, contactInfoSection];
 
     document.addEventListener("scroll", () => {
+		let selectedOption = "";
         if (isFullyVisible(aboutUSSection)) {
-            aboutUs.classList.add("selected");
-            if (programs.classList.contains("selected")) {
-                programs.classList.remove("selected");
-            }
-            if (contactInfo.classList.contains("selected")) {
-                contactInfo.classList.remove("selected");
-            }
+			selectedOption = "aboutUsOption";
         } else if (isFullyVisible(programsSection)) {
-            programs.classList.add("selected");
-            if (aboutUs.classList.contains("selected")) {
-                aboutUs.classList.remove("selected");
-            }
-            if (contactInfo.classList.contains("selected")) {
-                contactInfo.classList.remove("selected");
-            }
+			selectedOption = "programsOption";
         } else if (isFullyVisible(contactInfoSection)) {
-            contactInfo.classList.add("selected");
-            if (aboutUs.classList.contains("selected")) {
-                aboutUs.classList.remove("selected");
-            }
-            if (programs.classList.contains("selected")) {
-                programs.classList.remove("selected");
-            }
-        } else {
-            aboutUs.classList.remove("selected");
-            programs.classList.remove("selected");
-            contactInfo.classList.remove("selected");
+			selectedOption = "contactInfoOption";
         }
+
+		// for (const section of sections) {
+		// 	if (isFullyVisible(section)) {
+		// 		selectedOption = section;
+		// 		break;
+		// 	}
+		// }
+
+		handleSelectedStyles(selectedOption);
     });
 };
 
@@ -225,7 +227,7 @@ const scrollToPart = () => {
         if (isMobile()) {
             toggleSidebar(false);
         }
-		
+
         handleScrolling(selectedSection);
     });
 
