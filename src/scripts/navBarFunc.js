@@ -144,12 +144,10 @@ const isMobile = () => {
 
 // Apply blur effect to the main content and footer section when the sidebar is shown. Otherwise, removes the blur effect.
 const applyBlurEffect = (shown) => {
-	// const schoolNameCtn = document.getElementById("school-name-container");
-	// const navBarCtn = document.getElementById("nav-bar-container");
+	const schoolNameCtn = document.getElementById("school-name-container");
     const mainContentCtn = document.getElementById("content-container");
     const footer = document.getElementById("footer-ctn");
-    // const targets = [schoolNameCtn, mainContentCtn, footer];
-    const targets = [mainContentCtn, footer];
+    const targets = [schoolNameCtn, mainContentCtn, footer];
     if (shown) {
         targets.forEach((target) => target.classList.add("blurred"));
     } else {
