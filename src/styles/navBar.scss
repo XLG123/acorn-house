@@ -114,7 +114,7 @@
   
   #close-sidebar-btn {
     text-align: right;
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
   }
 
   .fa-bars,
@@ -224,7 +224,8 @@
       height: 100vh;
       background-color: #def1e2;
       box-shadow:  5px 0px 100vw 25vw rgba(0, 0, 0, 0.8);
-      display: none;
+      display: none; // fallback
+      // in case the js file is not loaded successfully
 
       #nav-links {
         display: grid;
