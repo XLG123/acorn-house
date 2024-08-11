@@ -1,11 +1,12 @@
 // Return true if screen size is less than or equal to 450px, otherwise return false.
-const isMobile = () => {
-    return window.innerWidth <= 450;
-};
+const isMobile = () => window.innerWidth <= 450;
 
-// Return true if the display style of the specific element is grid, otherwise return false.
-const isGrid = (el) => {
-    return window.getComputedStyle(el).getPropertyValue("display") === "grid";
+// Return true if the display style of the navigation option is grid, otherwise return false.
+const isGrid = (navOption) => {
+    return (
+        window.getComputedStyle(navOption).getPropertyValue("display") ===
+        "grid"
+    );
 };
 
 // Return true if the sidebar is shown as a block, otherwise return false.
