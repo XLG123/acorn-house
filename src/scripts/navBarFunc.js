@@ -63,7 +63,7 @@ const applyBlurEffect = (shown) => {
     }
 };
 
-// Toggles the sidebar visibility, and applies a blur effect to the target sections when the sidebar is shown.
+// Toggles the sidebar visibility and applies a blur effect to the target sections.
 const toggleSidebar = (display) => {
     const sidebar = document.getElementById("nav-links-container");
     if (display) {
@@ -84,6 +84,7 @@ const insertSidebarButton = () => {
     sidebarIcon.classList.add("fa-solid", "fa-bars");
     sidebarIcon.addEventListener("click", () => {
         toggleSidebar(true);
+		handleClicksOutsideSidebar();
     });
 
     sidebarBtn.setAttribute("id", "sidebar-btn");
@@ -107,6 +108,17 @@ const insertCloseButton = () => {
     navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
 };
 
+// Handle clicks outside the sidebar when sidebar is shown.
+const handleClicksOutsideSidebar = () => {
+	const mainContentCtn = document.getElementById("content-container");
+	const sidebarIsShown = !!document.querySelector(".sidebar");
+	if (sidebarIsShown) {
+		console.log("sidebar is shown");
+	} else {
+		console.log("sidebar is not shown");
+	}
+};
+
 // Manage the visibility of the sidebar button based on whether the device is a mobile device.
 // Insert the sidebar button if it's a mobile device and the button doesn't exist. Otherwise removes the sidebar button.
 // Insert the close button if it's a mobile device and the close button doesn't exist. Otherwise removes the close button.
@@ -122,10 +134,12 @@ const navBarMobileView = () => {
             insertCloseButton();
         }
         navigationLinks.style.display = "none";
+		navigationLinks.classList.add("sidebar");
     } else {
         sidebarBtn?.remove();
         closeBtn?.remove();
         navigationLinks.style.display = "flex";
+		navigationLinks.classList.remove("sidebar");
     }
 };
 
