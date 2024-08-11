@@ -84,7 +84,6 @@ const insertSidebarButton = () => {
     sidebarIcon.classList.add("fa-solid", "fa-bars");
     sidebarIcon.addEventListener("click", () => {
         toggleSidebar(true);
-		handleClicksOutsideSidebar();
     });
 
     sidebarBtn.setAttribute("id", "sidebar-btn");
@@ -108,20 +107,21 @@ const insertCloseButton = () => {
     navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
 };
 
+// Hides the sidebar when clicked outside.
+const handleClicksHelper = () => toggleSidebar(false);
+
 // Handle clicks outside the sidebar when sidebar is shown.
 const handleClicksOutsideSidebar = () => {
 	const mainContentCtn = document.getElementById("content-container");
 	const sidebarIsShown = !!document.querySelector(".sidebar");
 	if (sidebarIsShown) {
-		console.log("sidebar is shown");
+		mainContentCtn.addEventListener("click", handleClicksHelper);
 	} else {
-		console.log("sidebar is not shown");
+		mainContentCtn.removeEventListener("click", handleClicksHelper);
 	}
 };
 
-// Manage the visibility of the sidebar button based on whether the device is a mobile device.
-// Insert the sidebar button if it's a mobile device and the button doesn't exist. Otherwise removes the sidebar button.
-// Insert the close button if it's a mobile device and the close button doesn't exist. Otherwise removes the close button.
+// Manage the visibility of the sidebar button and close sidebar button based on whether the device is a mobile device.
 const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
@@ -141,6 +141,7 @@ const navBarMobileView = () => {
         navigationLinks.style.display = "flex";
 		navigationLinks.classList.remove("sidebar");
     }
+	handleClicksOutsideSidebar();
 };
 
 // Update the navigation bar.
