@@ -50,7 +50,7 @@ const updateNavigationItem = (navLinks) => {
     }
 };
 
-// Apply blur effect to the main content and footer section when the sidebar is shown. Otherwise, removes the blur effect.
+// Apply blur effect to the non-sidebar sections when the sidebar is shown. Otherwise, removes the blur effect.
 const applyBlurEffect = (shown) => {
     const schoolNameCtn = document.getElementById("school-name-container");
     const mainContentCtn = document.getElementById("content-container");
