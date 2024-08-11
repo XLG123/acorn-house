@@ -50,28 +50,31 @@ const updateNavigationItem = (navLinks) => {
     }
 };
 
-// Apply blur effect to the non-sidebar sections when the sidebar is shown. Otherwise, removes the blur effect.
-const applyBlurEffect = (shown) => {
-    const schoolNameCtn = document.getElementById("school-name-container");
-    const mainContentCtn = document.getElementById("content-container");
-    const footer = document.getElementById("footer-ctn");
-    const targets = [schoolNameCtn, mainContentCtn, footer];
-    if (shown) {
-        targets.forEach((target) => target.classList.add("blurred"));
-    } else {
-        targets.forEach((target) => target.classList.remove("blurred"));
-    }
+// Apply blur effect to the non-sidebar sections.
+const applyBlurEffect = () => {
+    [
+        document.getElementById("school-name-container"),
+        document.getElementById("content-container"),
+        document.getElementById("footer-ctn"),
+    ].forEach((section) => section.classList.add("blurred"));
 };
 
-// Toggles the sidebar visibility and applies a blur effect to the target sections.
+// Remove blur effect from the non-sidebar sections.
+const removeBlurEffect = () => {
+    document
+        .querySelectorAll(".blurred")
+        .forEach((el) => el.classList.remove("blurred"));
+};
+
+// Toggles the sidebar visibility and apply blur effect when sidebar is shown, otherwise removes the blur effect.
 const toggleSidebar = (display) => {
     const sidebar = document.getElementById("nav-links-container");
     if (display) {
         sidebar.style.display = "block";
-        applyBlurEffect(true);
+        applyBlurEffect();
     } else {
         sidebar.style.display = "none";
-        applyBlurEffect(false);
+        removeBlurEffect();
     }
 };
 
@@ -145,6 +148,7 @@ const navBarMobileView = () => {
 };
 
 // Update the navigation bar.
+// removeBlurEffect is called to remove all blur effects when users forget to exit the sidebar while changing screen sizes.
 const updateNavigationBar = () => {
     const navLinks = document.getElementsByClassName("nav-option");
     updateNavigationItem(navLinks);
@@ -152,6 +156,7 @@ const updateNavigationBar = () => {
     window.addEventListener("resize", () => {
         updateNavigationItem(navLinks);
         navBarMobileView();
+		removeBlurEffect();
     });
 };
 
