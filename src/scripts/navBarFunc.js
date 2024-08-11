@@ -1,10 +1,3 @@
-const reloadPage = () => {
-    const schoolName = document.getElementById("school-name-container");
-    schoolName.addEventListener("click", () => {
-        document.location.reload();
-    });
-};
-
 // Return true if screen size is less than or equal to 450px, otherwise return false.
 const isMobile = () => {
     return window.innerWidth <= 450;
@@ -13,6 +6,26 @@ const isMobile = () => {
 // Return true if the display style of the specific element is grid, otherwise return false.
 const isGrid = (el) => {
     return window.getComputedStyle(el).getPropertyValue("display") === "grid";
+};
+
+// Return true if the sidebar is shown as a block, otherwise return false.
+const isShown = (sidebar) => {
+    return (
+        window.getComputedStyle(sidebar).getPropertyValue("display") === "block"
+    );
+};
+
+//  Reloads the page when the school name is clicked, unless on mobile with the sidebar visible.
+const triggerReload = () => {
+    const schoolName = document.getElementById("school-name-container");
+    schoolName.addEventListener("click", () => {
+		const sidebar = document.querySelector(".sidebar");
+		if (!isMobile() || !isShown(sidebar)) {
+			document.location.reload();
+		} else {
+			// TODO: exit the sidebar, and apply the appropriate styling
+		}
+	});
 };
 
 // Remove the slash from the navigation link.
@@ -246,4 +259,4 @@ const scrollToPart = () => {
     applySelectedStyle();
 };
 
-export { reloadPage, updateNavigationBar, scrollToPart };
+export { triggerReload, updateNavigationBar, scrollToPart };
