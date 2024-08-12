@@ -150,12 +150,12 @@ const navBarMobileView = () => {
         if (!closeBtn) {
             insertCloseButton();
         }
-        navigationLinks.style.display = "none";
+		navigationLinks.style.display = "none";
 		navigationLinks.classList.add("sidebar");
     } else {
         sidebarBtn?.remove();
         closeBtn?.remove();
-        navigationLinks.style.display = "flex";
+		navigationLinks.style.display = "flex";
 		navigationLinks.classList.remove("sidebar");
     }
 	handleClicksOutsideSidebar();
@@ -169,7 +169,7 @@ const updateNavigationBar = () => {
     navBarMobileView();
     window.addEventListener("resize", () => {
         updateNavigationItem(navLinks);
-        navBarMobileView();
+		navBarMobileView();
 		removeBlurEffect();
     });
 };
