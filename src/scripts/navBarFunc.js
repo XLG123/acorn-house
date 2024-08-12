@@ -20,13 +20,13 @@ const isShown = (sidebar) => {
 const triggerReload = () => {
     const schoolName = document.getElementById("school-name-container");
     schoolName.addEventListener("click", () => {
-		const sidebar = document.querySelector(".sidebar");
-		if (!isMobile() || !isShown(sidebar)) {
-			document.location.reload();
-		} else {
-			// TODO: exit the sidebar, and apply the appropriate styling
-		}
-	});
+        const sidebar = document.querySelector(".sidebar");
+        if (!isMobile() || !isShown(sidebar)) {
+            document.location.reload();
+        } else {
+            // TODO: exit the sidebar, and apply the appropriate styling
+        }
+    });
 };
 
 // Remove the slash from the navigation link.
@@ -129,13 +129,13 @@ const handleClicksHelper = () => toggleSidebar(false);
 
 // Handle clicks outside the sidebar when sidebar is shown.
 const handleClicksOutsideSidebar = () => {
-	const mainContentCtn = document.getElementById("content-container");
-	const sidebarIsShown = !!document.querySelector(".sidebar");
-	if (sidebarIsShown) {
-		mainContentCtn.addEventListener("click", handleClicksHelper);
-	} else {
-		mainContentCtn.removeEventListener("click", handleClicksHelper);
-	}
+    const mainContentCtn = document.getElementById("content-container");
+    const sidebarIsShown = !!document.querySelector(".sidebar");
+    if (sidebarIsShown) {
+        mainContentCtn.addEventListener("click", handleClicksHelper);
+    } else {
+        mainContentCtn.removeEventListener("click", handleClicksHelper);
+    }
 };
 
 // Manage the visibility of the sidebar button and close sidebar button based on whether the device is a mobile device.
@@ -150,15 +150,15 @@ const navBarMobileView = () => {
         if (!closeBtn) {
             insertCloseButton();
         }
-		navigationLinks.style.display = "none";
-		navigationLinks.classList.add("sidebar");
+        navigationLinks.style.display = "none";
+        navigationLinks.classList.add("sidebar");
     } else {
         sidebarBtn?.remove();
         closeBtn?.remove();
-		navigationLinks.style.display = "flex";
-		navigationLinks.classList.remove("sidebar");
+        navigationLinks.style.display = "flex";
+        navigationLinks.classList.remove("sidebar");
     }
-	handleClicksOutsideSidebar();
+    handleClicksOutsideSidebar();
 };
 
 // Update the navigation bar.
@@ -169,8 +169,8 @@ const updateNavigationBar = () => {
     navBarMobileView();
     window.addEventListener("resize", () => {
         updateNavigationItem(navLinks);
-		navBarMobileView();
-		removeBlurEffect();
+        navBarMobileView();
+        removeBlurEffect();
     });
 };
 
