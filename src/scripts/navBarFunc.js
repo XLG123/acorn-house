@@ -32,7 +32,7 @@ const removeBlurEffect = () => {
         .forEach((el) => el.classList.remove("blurred"));
 };
 
-// Toggles the sidebar visibility and apply blur effect when sidebar is shown, otherwise removes the blur effect.
+// Toggles sidebar visibility and applies/removes blur effect based on sidebar state.
 const toggleSidebar = (display) => {
     const sidebar = document.getElementById("nav-links-container");
     if (display) {
@@ -44,7 +44,7 @@ const toggleSidebar = (display) => {
     }
 };
 
-//  Reloads the page when the school name is clicked, unless on mobile with the sidebar visible.
+// Reloads page on school name click unless on mobile with sidebar shown; then hides sidebar.
 const triggerReload = () => {
     const schoolName = document.getElementById("school-name-container");
     schoolName.addEventListener("click", () => {
@@ -108,7 +108,7 @@ const insertSidebarButton = () => {
     navBarCtn.insertBefore(sidebarBtn, navBarCtn.firstChild);
 };
 
-// Insert a close button on the upper right corner of the sidebar.
+// Insert a close sidebar button on the upper right corner of the sidebar.
 const insertCloseButton = () => {
     const navLinksCtn = document.getElementById("nav-links-container");
     const closeBtn = document.createElement("div");
@@ -138,7 +138,7 @@ const handleClicksOutsideSidebar = () => {
     }
 };
 
-// Manage the visibility of the sidebar button and close sidebar button based on whether the device is a mobile device.
+// Toggles sidebar button visibility and sidebar state based on device type (mobile or not).
 const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
@@ -161,8 +161,7 @@ const navBarMobileView = () => {
     handleClicksOutsideSidebar();
 };
 
-// Update the navigation bar.
-// removeBlurEffect is called to remove all blur effects when users forget to exit the sidebar while changing screen sizes.
+// Updates navigation bar, adjusts for mobile view, and removes blur on resize.
 const updateNavigationBar = () => {
     const navLinks = document.getElementsByClassName("nav-option");
     updateNavigationItem(navLinks);
@@ -196,6 +195,7 @@ const isFullyVisible = (container) => {
     }
 };
 
+// Toggles "selected" class on nav options based on selection.
 const handleSelectedStyles = (selectedOption) => {
     const navOptions = {
         aboutUsOption: document.getElementById("selected-about-us"),
@@ -212,7 +212,7 @@ const handleSelectedStyles = (selectedOption) => {
     }
 };
 
-// Adds or removes the "selected" class from navigation links based on the visibility of corresponding sections in the viewport as the user scrolls the page
+// Applies "selected" class to nav links based on scroll position and section visibility.
 const applySelectedStyle = () => {
     const sections = {
         aboutUsSection: document.getElementById("about-us-container"),
@@ -235,7 +235,7 @@ const applySelectedStyle = () => {
     });
 };
 
-// Detect a user's clicks on navigation links and scrolls the page to the corresponding section, updating the selected style and hiding the sidebar on mobile.
+// Handles nav link clicks, scrolls to sections, updates selected style, and hides sidebar on mobile.
 const scrollToPart = () => {
     const navOptionsCtn = document.getElementById("nav-links");
 
