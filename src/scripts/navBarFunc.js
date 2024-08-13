@@ -16,6 +16,34 @@ const isShown = (sidebar) => {
     );
 };
 
+// Apply blur effect to the non-sidebar sections.
+const applyBlurEffect = () => {
+    [
+        document.getElementById("school-name-container"),
+        document.getElementById("content-container"),
+        document.getElementById("footer-ctn"),
+    ].forEach((section) => section.classList.add("blurred"));
+};
+
+// Remove blur effect from the non-sidebar sections.
+const removeBlurEffect = () => {
+    document
+        .querySelectorAll(".blurred")
+        .forEach((el) => el.classList.remove("blurred"));
+};
+
+// Toggles the sidebar visibility and apply blur effect when sidebar is shown, otherwise removes the blur effect.
+const toggleSidebar = (display) => {
+    const sidebar = document.getElementById("nav-links-container");
+    if (display) {
+        sidebar.style.display = "block";
+        applyBlurEffect();
+    } else {
+        sidebar.style.display = "none";
+        removeBlurEffect();
+    }
+};
+
 //  Reloads the page when the school name is clicked, unless on mobile with the sidebar visible.
 const triggerReload = () => {
     const schoolName = document.getElementById("school-name-container");
@@ -24,7 +52,7 @@ const triggerReload = () => {
         if (!isMobile() || !isShown(sidebar)) {
             document.location.reload();
         } else {
-            // TODO: exit the sidebar, and apply the appropriate styling
+            toggleSidebar(false);
         }
     });
 };
@@ -61,34 +89,6 @@ const updateNavigationItem = (navLinks) => {
         }
     } else {
         addSlash(navLinks);
-    }
-};
-
-// Apply blur effect to the non-sidebar sections.
-const applyBlurEffect = () => {
-    [
-        document.getElementById("school-name-container"),
-        document.getElementById("content-container"),
-        document.getElementById("footer-ctn"),
-    ].forEach((section) => section.classList.add("blurred"));
-};
-
-// Remove blur effect from the non-sidebar sections.
-const removeBlurEffect = () => {
-    document
-        .querySelectorAll(".blurred")
-        .forEach((el) => el.classList.remove("blurred"));
-};
-
-// Toggles the sidebar visibility and apply blur effect when sidebar is shown, otherwise removes the blur effect.
-const toggleSidebar = (display) => {
-    const sidebar = document.getElementById("nav-links-container");
-    if (display) {
-        sidebar.style.display = "block";
-        applyBlurEffect();
-    } else {
-        sidebar.style.display = "none";
-        removeBlurEffect();
     }
 };
 
