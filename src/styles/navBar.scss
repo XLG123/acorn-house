@@ -233,4 +233,21 @@
       }
     }
   }
+
+  #nav-bar-container:has(.blurred) {
+    #school-name-container {
+      cursor: default;
+
+      #name-container {
+        filter: brightness(1);
+      }
+    }
+
+    #school-name-container:hover,
+    #school-name-container:focus {
+      #school-logo, #name-container {
+        filter: none;
+      }
+    }
+  }
 }

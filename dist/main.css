@@ -360,6 +360,17 @@ main .section-title .chn {
   #nav-bar-container #nav-links-container #nav-links {
     display: grid;
   }
+  #nav-bar-container:has(.blurred) #school-name-container {
+    cursor: default;
+  }
+  #nav-bar-container:has(.blurred) #school-name-container #name-container {
+    filter: brightness(1);
+  }
+  #nav-bar-container:has(.blurred) #school-name-container:hover #school-logo, #nav-bar-container:has(.blurred) #school-name-container:hover #name-container,
+  #nav-bar-container:has(.blurred) #school-name-container:focus #school-logo,
+  #nav-bar-container:has(.blurred) #school-name-container:focus #name-container {
+    filter: none;
+  }
 }
 #about-us-container {
   border-radius: 20px;
