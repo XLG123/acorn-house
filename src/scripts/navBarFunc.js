@@ -16,6 +16,17 @@ const isShown = (sidebar) => {
     );
 };
 
+// Return true if the container is fully visible, otheriwse return false.
+const isFullyVisible = (container) => {
+    const viewportHeight = window.innerHeight;
+    const pos = container.getBoundingClientRect();
+    if (pos.top < 0 || pos.bottom > viewportHeight) {
+        return false;
+    } else {
+        return true;
+    }
+};
+
 // Apply blur effect to the non-sidebar sections.
 const applyBlurEffect = () => {
     [
@@ -138,7 +149,7 @@ const handleClicksOutsideSidebar = () => {
     }
 };
 
-// Toggles sidebar button visibility and sidebar state based on device type (mobile or not).
+// Toggles sidebar buttons visibility and sidebar state based on device type (mobile or not).
 const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
@@ -182,17 +193,6 @@ const handleScrolling = (selectedSection) => {
     };
 
     sections[selectedSection].scrollIntoView();
-};
-
-// Return true if the container is fully visible, otheriwse return false.
-const isFullyVisible = (container) => {
-    const viewportHeight = window.innerHeight;
-    const pos = container.getBoundingClientRect();
-    if (pos.top < 0 || pos.bottom > viewportHeight) {
-        return false;
-    } else {
-        return true;
-    }
 };
 
 // Toggles "selected" class on nav options based on selection.
