@@ -16,6 +16,11 @@ const isShown = (sidebar) => {
     );
 };
 
+// 
+const isPaddingClick = () => {
+
+};
+
 // Return true if the container is fully visible, otheriwse return false.
 const isFullyVisible = (container) => {
     const viewportHeight = window.innerHeight;
@@ -135,16 +140,26 @@ const insertCloseButton = () => {
     navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
 };
 
+// 
+const handlePaddingClicks = (e) => {
+    const sidebarIsShown = isShown(document.querySelector(".sidebar"));
+    const navBarCtn = document.getElementById("nav-bar-container");
+    // console.log
+} 
+
 // Hides the sidebar when clicked outside.
 const handleClicksHelper = () => toggleSidebar(false);
 
-// Handle clicks outside the sidebar when sidebar is shown.
+// Handle clicks outside the sidebar when sidebar is created.
 const handleClicksOutsideSidebar = () => {
+    const navBarCtn = document.getElementById("nav-bar-container");
     const mainContentCtn = document.getElementById("content-container");
-    const sidebarIsShown = !!document.querySelector(".sidebar");
-    if (sidebarIsShown) {
+    const sidebarIsCreated = !!document.querySelector(".sidebar");
+    if (sidebarIsCreated) {
+        navBarCtn.addEventListener("click", handlePaddingClicks);
         mainContentCtn.addEventListener("click", handleClicksHelper);
     } else {
+        navBarCtn.removeEventListener("click", handlePaddingClicks);
         mainContentCtn.removeEventListener("click", handleClicksHelper);
     }
 };
