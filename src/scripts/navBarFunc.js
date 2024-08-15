@@ -16,9 +16,42 @@ const isShown = (sidebar) => {
     );
 };
 
-// 
-const isPaddingClick = () => {
+//
+const isPaddingClick = (ctnWidth, paddingLeft, paddingRight, xCoord) => {
+    return xCoord < paddingLeft || xCoord > ctnWidth - paddingRight;
+};
 
+//
+const getPadding = (el, side) => {
+    const paddingDirection = "padding-" + side;
+    return parseFloat(
+        window.getComputedStyle(el).getPropertyValue(paddingDirection)
+    );
+};
+
+//
+const handlePaddingClicks = (e) => {
+    const navBarCtn = document.getElementById("nav-bar-container");
+    const paddingLeft = getPadding(navBarCtn, "left");
+    const paddingRight = getPadding(navBarCtn, "right");
+
+    const ctnWidth = navBarCtn.offsetWidth;
+
+    const xCoord = parseFloat(e.offsetX);
+
+    if (isPaddingClick(ctnWidth, paddingLeft, paddingRight, xCoord)) {
+        console.log("Clicked on the padding");
+    }
+};
+
+//
+const togglePaddingClicksListener = (sidebarIsShown) => {
+    const navBarCtn = document.getElementById("nav-bar-container");
+    if (sidebarIsShown) {
+        navBarCtn.addEventListener("click", handlePaddingClicks);
+    } else {
+        navBarCtn.removeEventListener("click", handlePaddingClicks);
+    }
 };
 
 // Return true if the container is fully visible, otheriwse return false.
@@ -58,6 +91,7 @@ const toggleSidebar = (display) => {
         sidebar.style.display = "none";
         removeBlurEffect();
     }
+    togglePaddingClicksListener(display);
 };
 
 // Reloads page on school name click unless on mobile with sidebar shown; then hides sidebar.
@@ -140,26 +174,16 @@ const insertCloseButton = () => {
     navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
 };
 
-// 
-const handlePaddingClicks = (e) => {
-    const sidebarIsShown = isShown(document.querySelector(".sidebar"));
-    const navBarCtn = document.getElementById("nav-bar-container");
-    // console.log
-} 
-
 // Hides the sidebar when clicked outside.
 const handleClicksHelper = () => toggleSidebar(false);
 
 // Handle clicks outside the sidebar when sidebar is created.
 const handleClicksOutsideSidebar = () => {
-    const navBarCtn = document.getElementById("nav-bar-container");
     const mainContentCtn = document.getElementById("content-container");
     const sidebarIsCreated = !!document.querySelector(".sidebar");
     if (sidebarIsCreated) {
-        navBarCtn.addEventListener("click", handlePaddingClicks);
         mainContentCtn.addEventListener("click", handleClicksHelper);
     } else {
-        navBarCtn.removeEventListener("click", handlePaddingClicks);
         mainContentCtn.removeEventListener("click", handleClicksHelper);
     }
 };
