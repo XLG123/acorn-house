@@ -16,6 +16,11 @@ const isShown = (sidebar) => {
     );
 };
 
+// Return true if the click is within the pading area of the container, otherwise return false.
+const isPaddingClick = (ctnWidth, paddingLeft, paddingRight, xCoord) => {
+    return xCoord < paddingLeft || xCoord > ctnWidth - paddingRight;
+};
+
 // Return true if the container is fully visible, otheriwse return false.
 const isFullyVisible = (container) => {
     const viewportHeight = window.innerHeight;
@@ -43,6 +48,42 @@ const removeBlurEffect = () => {
         .forEach((el) => el.classList.remove("blurred"));
 };
 
+// Gets padding value for specified direction of an element.
+const getPadding = (el, direction) => {
+    const paddingDirection = "padding-" + direction;
+    return parseFloat(
+        window.getComputedStyle(el).getPropertyValue(paddingDirection)
+    );
+};
+
+// Handles padding clicks to hide sidebar if clicked outside sidebar.
+const handlePaddingClicks = (e) => {
+    const navBarCtn = document.getElementById("nav-bar-container");
+    const ctnWidth = navBarCtn.offsetWidth;
+    const paddingLeft = getPadding(navBarCtn, "left");
+    const paddingRight = getPadding(navBarCtn, "right");
+    const xCoord = parseFloat(e.offsetX);
+
+    if (
+        e.target.classList[1] !== "fa-bars" &&
+        isPaddingClick(ctnWidth, paddingLeft, paddingRight, xCoord)
+    ) {
+        const sidebar = document.getElementById("nav-links-container");
+        sidebar.style.display = "none";
+        removeBlurEffect();
+    }
+};
+
+// Toggles padding click listener based on sidebar visibility.
+const togglePaddingClicksListener = (sidebarIsShown) => {
+    const navBarCtn = document.getElementById("nav-bar-container");
+    if (sidebarIsShown) {
+        navBarCtn.addEventListener("click", handlePaddingClicks);
+    } else {
+        navBarCtn.removeEventListener("click", handlePaddingClicks);
+    }
+};
+
 // Toggles sidebar visibility and applies/removes blur effect based on sidebar state.
 const toggleSidebar = (display) => {
     const sidebar = document.getElementById("nav-links-container");
@@ -53,6 +94,7 @@ const toggleSidebar = (display) => {
         sidebar.style.display = "none";
         removeBlurEffect();
     }
+    togglePaddingClicksListener(display);
 };
 
 // Reloads page on school name click unless on mobile with sidebar shown; then hides sidebar.
@@ -138,11 +180,11 @@ const insertCloseButton = () => {
 // Hides the sidebar when clicked outside.
 const handleClicksHelper = () => toggleSidebar(false);
 
-// Handle clicks outside the sidebar when sidebar is shown.
+// Handle clicks outside the sidebar when sidebar is created.
 const handleClicksOutsideSidebar = () => {
     const mainContentCtn = document.getElementById("content-container");
-    const sidebarIsShown = !!document.querySelector(".sidebar");
-    if (sidebarIsShown) {
+    const sidebarIsCreated = !!document.querySelector(".sidebar");
+    if (sidebarIsCreated) {
         mainContentCtn.addEventListener("click", handleClicksHelper);
     } else {
         mainContentCtn.removeEventListener("click", handleClicksHelper);
