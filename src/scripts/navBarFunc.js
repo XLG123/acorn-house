@@ -1,10 +1,10 @@
 // Return true if screen size is less than or equal to 450px, otherwise return false.
-const isMobile = () => window.innerWidth <= 450;
+const isNonFoldableMobile = () => window.innerWidth <= 450;
 
 // Return true if screen size is greater than 450px but less than or equal to 600px, otherwise return false.
 const isFoldableMobile = () => {
     return window.innerWidth > 450 && window.innerWidth <= 600;
-}; 
+};
 
 // Return true if the display style of the navigation option is grid, otherwise return false.
 const isGrid = (navOption) => {
@@ -107,7 +107,8 @@ const triggerReload = () => {
     const schoolName = document.getElementById("school-name-container");
     schoolName.addEventListener("click", () => {
         const sidebar = document.querySelector(".sidebar");
-        if (!isMobile() || !isShown(sidebar)) {
+        const isNotMobile = !isNonFoldableMobile && !isFoldableMobile;
+        if (isNotMobile || !isShown(sidebar)) {
             document.location.reload();
         } else {
             toggleSidebar(false);
@@ -201,7 +202,7 @@ const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
     const navigationLinks = document.getElementById("nav-links-container");
-    if (isMobile() || isFoldableMobile()) {
+    if (isNonFoldableMobile() || isFoldableMobile()) {
         if (!sidebarBtn) {
             insertSidebarButton();
         }
@@ -297,7 +298,7 @@ const scrollToPart = () => {
             selectedSection = "contactInfo";
         }
 
-        if (isMobile() || isFoldableMobile()) {
+        if (isNonFoldableMobile() || isFoldableMobile()) {
             toggleSidebar(false);
         }
 
