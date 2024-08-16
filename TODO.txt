@@ -1,8 +1,7 @@
 TODO:
 
 1. NavBar Responsiveness
-    a. When sidebar is visible, clicking on the name/logo will only exit out of the sidebar navigation. No refreshing of the page.
-    b. Remove selected styles on navigation links on mobile screens.
+    a. Remove selected styles on navigation links on mobile screens.
 
 2. Refactor the code for navBarFunc.js and programs.js
 

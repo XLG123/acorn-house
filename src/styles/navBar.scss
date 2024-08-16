@@ -230,6 +230,15 @@
 
       #nav-links {
         display: grid;
+
+        .nav-option:hover,
+        .nav-option:focus {
+          background: rgba(118, 190, 168, 0.5);
+
+          span:last-child {
+            text-decoration: none;
+          }
+        }
       }
     }
   }
