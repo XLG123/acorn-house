@@ -192,31 +192,10 @@
   }
 }
 
-
-// Mobile Devices
-@media (max-width: 450px) {
+// For devices with a screen size less than or equal to 600px
+@media (max-width: 600px) {
   #nav-bar-container {
     padding: 0 2em;
-    
-    #school-name-container {
-      #name-container {
-        display: grid;
-        row-gap: 0.5em;
-        min-width: 200px;
-
-        .school-eng-name {
-          font-size: 24px;
-        }
-
-        .school-chn-name {
-          font-size: 22px;
-
-          span {
-            display: inline-block;
-          }
-        }
-      }
-    }
 
     #nav-links-container {
       position: absolute;
@@ -224,17 +203,17 @@
       left: 0;
       height: 100vh;
       background-color: #def1e2;
-      box-shadow:  5px 0px 100vw 25vw rgba(0, 0, 0, 0.6);
+      box-shadow: 5px 0px 100vw 25vw rgba(0, 0, 0, 0.6);
       display: none; // fallback
       // in case the js file is not loaded successfully
-
+  
       #nav-links {
         display: grid;
-
+  
         .nav-option:hover,
         .nav-option:focus {
           background: rgba(118, 190, 168, 0.5);
-
+  
           span:last-child {
             text-decoration: none;
           }
@@ -254,8 +233,60 @@
 
     #school-name-container:hover,
     #school-name-container:focus {
-      #school-logo, #name-container {
+
+      #school-logo,
+      #name-container {
         filter: none;
+      }
+    }
+  }
+}
+
+// Mobile Devices ONLY
+@media (max-width: 450px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        display: grid;
+        row-gap: 0.5em;
+        min-width: 200px;
+
+        .school-eng-name {
+          font-size: 24px;
+        }
+
+        .school-chn-name {
+          font-size: 22px;
+
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Foldable Mobile Devices ONLY
+@media (min-width: 451px) and (max-width: 600px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        .school-eng-name {
+          font-size: 26px;
+
+          div {
+            white-space: nowrap;
+          }
+        }
+
+        .school-chn-name {
+          font-size: 24px;
+
+          span:first-child {
+            margin-bottom: 0.25em;
+          }
+        }
       }
     }
   }

@@ -1,6 +1,11 @@
 // Return true if screen size is less than or equal to 450px, otherwise return false.
 const isMobile = () => window.innerWidth <= 450;
 
+// Return true if screen size is greater than 450px but less than or equal to 600px, otherwise return false.
+const isFoldableMobile = () => {
+    return window.innerWidth > 450 && window.innerWidth <= 600;
+}; 
+
 // Return true if the display style of the navigation option is grid, otherwise return false.
 const isGrid = (navOption) => {
     return (
@@ -196,7 +201,7 @@ const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
     const navigationLinks = document.getElementById("nav-links-container");
-    if (isMobile()) {
+    if (isMobile() || isFoldableMobile()) {
         if (!sidebarBtn) {
             insertSidebarButton();
         }
@@ -292,7 +297,7 @@ const scrollToPart = () => {
             selectedSection = "contactInfo";
         }
 
-        if (isMobile()) {
+        if (isMobile() || isFoldableMobile()) {
             toggleSidebar(false);
         }
 
