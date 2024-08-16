@@ -367,23 +367,41 @@ main .section-title .chn {
     filter: none;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  #nav-bar-container #school-name-container #school-logo {
+    width: 90px;
+  }
   #nav-bar-container #school-name-container #name-container {
     display: grid;
-    row-gap: 0.5em;
     min-width: 200px;
   }
   #nav-bar-container #school-name-container #name-container .school-eng-name {
-    font-size: 24px;
+    font-size: 22px;
   }
   #nav-bar-container #school-name-container #name-container .school-chn-name {
-    font-size: 22px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  #nav-bar-container #school-name-container #name-container {
+    row-gap: 0.5em;
   }
   #nav-bar-container #school-name-container #name-container .school-chn-name span {
     display: inline-block;
   }
 }
-@media (min-width: 451px) and (max-width: 600px) {
+@media (min-width: 451px) and (max-width: 500px) {
+  #nav-bar-container #school-name-container #name-container {
+    grid-template-columns: auto auto auto;
+  }
+  #nav-bar-container #school-name-container #name-container .school-eng-name div {
+    white-space: nowrap;
+  }
+  #nav-bar-container #school-name-container #name-container .school-chn-name span:first-child {
+    margin-bottom: 0.1em;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
   #nav-bar-container #school-name-container #name-container .school-eng-name {
     font-size: 26px;
   }
