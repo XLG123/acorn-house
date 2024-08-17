@@ -1,7 +1,7 @@
-// Return true if screen size is less than or equal to 900px, otherwise return false.
+// Return true if screen size <= 900px, else false.
 const isScreenSizeLessThan900px = () => window.innerWidth <= 900;
 
-// Return true if the display style of the navigation option is grid, otherwise return false.
+// Return true if display style of navigation option is grid, else false.
 const isGrid = (navOption) => {
     return (
         window.getComputedStyle(navOption).getPropertyValue("display") ===
@@ -9,30 +9,26 @@ const isGrid = (navOption) => {
     );
 };
 
-// Return true if the sidebar is shown as a block, otherwise return false.
+// Return true if sidebar is shown as block, else false.
 const isShown = (sidebar) => {
     return (
         window.getComputedStyle(sidebar).getPropertyValue("display") === "block"
     );
 };
 
-// Return true if the click is within the pading area of the container, otherwise return false.
+// Return true if click is within padding area, else false.
 const isPaddingClick = (ctnWidth, paddingLeft, paddingRight, xCoord) => {
     return xCoord < paddingLeft || xCoord > ctnWidth - paddingRight;
 };
 
-// Return true if the container is fully visible, otheriwse return false.
+// Return true if container is fully visible, else false.
 const isFullyVisible = (container) => {
     const viewportHeight = window.innerHeight;
     const pos = container.getBoundingClientRect();
-    if (pos.top < 0 || pos.bottom > viewportHeight) {
-        return false;
-    } else {
-        return true;
-    }
+    return !(pos.top < 0 || pos.bottom > viewportHeight)
 };
 
-// Apply blur effect to the non-sidebar sections.
+// Apply blur effect to non-sidebar sections.
 const applyBlurEffect = () => {
     [
         document.getElementById("school-name-container"),
@@ -41,14 +37,14 @@ const applyBlurEffect = () => {
     ].forEach((section) => section.classList.add("blurred"));
 };
 
-// Remove blur effect from the non-sidebar sections.
+// Remove blur effect from non-sidebar sections.
 const removeBlurEffect = () => {
     document
         .querySelectorAll(".blurred")
         .forEach((el) => el.classList.remove("blurred"));
 };
 
-// Gets padding value for specified direction of an element.
+// Get padding value for specified direction of an element.
 const getPadding = (el, direction) => {
     const paddingDirection = "padding-" + direction;
     return parseFloat(
@@ -56,7 +52,7 @@ const getPadding = (el, direction) => {
     );
 };
 
-// Handles padding clicks to hide sidebar if clicked outside sidebar.
+// Handle padding clicks to hide sidebar if clicked outside.
 const handlePaddingClicks = (e) => {
     const navBarCtn = document.getElementById("nav-bar-container");
     const ctnWidth = navBarCtn.offsetWidth;
@@ -74,7 +70,7 @@ const handlePaddingClicks = (e) => {
     }
 };
 
-// Toggles padding click listener based on sidebar visibility.
+// Toggle padding click listener based on sidebar visibility.
 const togglePaddingClicksListener = (sidebarIsShown) => {
     const navBarCtn = document.getElementById("nav-bar-container");
     if (sidebarIsShown) {
@@ -84,7 +80,7 @@ const togglePaddingClicksListener = (sidebarIsShown) => {
     }
 };
 
-// Toggles sidebar visibility and applies/removes blur effect based on sidebar state.
+// Toggle sidebar visibility and apply/remove blur effect.
 const toggleSidebar = (display) => {
     const sidebar = document.getElementById("nav-links-container");
     if (display) {
@@ -97,7 +93,7 @@ const toggleSidebar = (display) => {
     togglePaddingClicksListener(display);
 };
 
-// Reloads page on school name click unless on mobile with sidebar shown; then hides sidebar.
+// Reload page on school name click if screen size > 900px or sidebar hidden.
 const triggerReload = () => {
     const schoolName = document.getElementById("school-name-container");
     schoolName.addEventListener("click", () => {
@@ -110,7 +106,7 @@ const triggerReload = () => {
     });
 };
 
-// Remove the slash from the navigation link.
+// Remove slash from navigation link.
 const removeSlash = (navLinks) => {
     for (let i = 0; i < navLinks.length; ++i) {
         let link = navLinks[i].children[0].textContent;
@@ -121,7 +117,7 @@ const removeSlash = (navLinks) => {
     }
 };
 
-// Add slash to each of the navigation links.
+// Add slash to navigation links.
 const addSlash = (navLinks) => {
     for (let i = 0; i < navLinks.length; ++i) {
         let link = navLinks[i].children[0].textContent;
@@ -131,7 +127,7 @@ const addSlash = (navLinks) => {
     }
 };
 
-// Update the name of the navigation links depends on the screen sizes.
+// Update navigation link name based on screen size.
 const updateNavigationItem = (navLinks) => {
     if (
         window.innerWidth <= 1350 ||
@@ -145,7 +141,7 @@ const updateNavigationItem = (navLinks) => {
     }
 };
 
-// Insert a sidebar toggle button at the beginning of the navigation bar.
+// Insert sidebar toggle button at beginning of navigation bar.
 const insertSidebarButton = () => {
     const navBarCtn = document.getElementById("nav-bar-container");
     const sidebarBtn = document.createElement("div");
@@ -161,7 +157,7 @@ const insertSidebarButton = () => {
     navBarCtn.insertBefore(sidebarBtn, navBarCtn.firstChild);
 };
 
-// Insert a close sidebar button on the upper right corner of the sidebar.
+// Insert close sidebar button on upper right corner of sidebar.
 const insertCloseButton = () => {
     const navLinksCtn = document.getElementById("nav-links-container");
     const closeBtn = document.createElement("div");
@@ -177,10 +173,10 @@ const insertCloseButton = () => {
     navLinksCtn.insertBefore(closeBtn, navLinksCtn.firstChild);
 };
 
-// Hides the sidebar when clicked outside.
+// Hide sidebar when clicked outside.
 const handleClicksHelper = () => toggleSidebar(false);
 
-// Handle clicks outside the sidebar when sidebar is created.
+// Handle clicks outside sidebar when sidebar is created.
 const handleClicksOutsideSidebar = () => {
     const mainContentCtn = document.getElementById("content-container");
     const sidebarIsCreated = !!document.querySelector(".sidebar");
@@ -191,7 +187,7 @@ const handleClicksOutsideSidebar = () => {
     }
 };
 
-// Toggles sidebar buttons visibility and sidebar state based on device type (mobile or not).
+// Toggles buttons visibility and sidebar state based on device type.
 const navBarMobileView = () => {
     const sidebarBtn = document.getElementById("sidebar-btn");
     const closeBtn = document.getElementById("close-sidebar-btn");
@@ -214,7 +210,7 @@ const navBarMobileView = () => {
     handleClicksOutsideSidebar();
 };
 
-// Updates navigation bar, adjusts for mobile view, and removes blur on resize.
+// Update navigation bar and adjust for mobile view on resize.
 const updateNavigationBar = () => {
     const navLinks = document.getElementsByClassName("nav-option");
     updateNavigationItem(navLinks);
@@ -226,7 +222,7 @@ const updateNavigationBar = () => {
     });
 };
 
-// Scroll to the selected section on the page.
+// Scroll to selected section on the page.
 const handleScrolling = (selectedSection) => {
     const sections = {
         aboutUs: document.getElementById("about-us-container"),
@@ -237,7 +233,7 @@ const handleScrolling = (selectedSection) => {
     sections[selectedSection].scrollIntoView();
 };
 
-// Toggles "selected" class on nav options based on selection.
+// Toggle "selected" class on nav options based on selection.
 const handleSelectedStyles = (selectedOption) => {
     const navOptions = {
         aboutUsOption: document.getElementById("selected-about-us"),
@@ -254,7 +250,7 @@ const handleSelectedStyles = (selectedOption) => {
     }
 };
 
-// Applies "selected" class to nav links based on scroll position and section visibility.
+// Apply "selected" class to nav links based on scroll position.
 const applySelectedStyle = () => {
     const sections = {
         aboutUsSection: document.getElementById("about-us-container"),
@@ -277,7 +273,7 @@ const applySelectedStyle = () => {
     });
 };
 
-// Handles nav link clicks, scrolls to sections, updates selected style, and hides sidebar on mobile.
+// Handle nav link clicks, scroll to sections, and update selected style.
 const scrollToPart = () => {
     const navOptionsCtn = document.getElementById("nav-links");
 
