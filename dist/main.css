@@ -172,7 +172,7 @@ main .section-title .chn {
 }
 @media (width > 1500px) {
   main {
-    padding: 2em 16em;
+    padding: 2em 10em;
   }
 }
 .eng {
@@ -296,7 +296,7 @@ main .section-title .chn {
 
 @media (min-width: 1501px) {
   #nav-bar-container {
-    padding: 0 15em;
+    padding: 0 9em;
   }
 }
 @media (max-width: 1350px) or ((min-width: 1501px) and (max-width: 1600px)) {
