@@ -330,7 +330,7 @@ main .section-title .chn {
     margin-left: 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #nav-bar-container {
     padding: 0 2em;
   }
