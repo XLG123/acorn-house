@@ -27,14 +27,14 @@ main {
 }
 
 // Mobile View
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   main {
     padding: 2em;
   }
 }
 
 // Tablet/Laptop View
-@media (min-width: 601px) and (max-width: 1500px) {
+@media (min-width: 901px) and (max-width: 1500px) {
   main {
     padding: 2em 4em;
   }
