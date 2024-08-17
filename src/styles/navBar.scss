@@ -329,3 +329,15 @@
     }
   }
 }
+
+@media (min-width: 551px) and (max-width: 600px) {
+  #nav-bar-container {
+    #school-name-container {
+        column-gap: 1em;
+
+        #name-container {
+          column-gap: 1em;
+      }
+    }
+  }
+}

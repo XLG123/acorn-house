@@ -415,6 +415,14 @@ main .section-title .chn {
     margin-bottom: 0.25em;
   }
 }
+@media (min-width: 551px) and (max-width: 600px) {
+  #nav-bar-container #school-name-container {
+    column-gap: 1em;
+  }
+  #nav-bar-container #school-name-container #name-container {
+    column-gap: 1em;
+  }
+}
 #about-us-container {
   border-radius: 20px;
   background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
