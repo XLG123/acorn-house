@@ -1,7 +1,7 @@
 TODO:
 
 1. NavBar Responsiveness
-    a. Remove selected styles on navigation links on mobile screens.
+    - in progress, targetting tablet devices now.
 
 2. Refactor the code for navBarFunc.js and programs.js
 
