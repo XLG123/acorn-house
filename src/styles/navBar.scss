@@ -330,13 +330,101 @@
   }
 }
 
-@media (min-width: 551px) and (max-width: 600px) {
+// Adding column gaps between items on the top navigation bar
+@media (min-width: 551px) and (max-width: 700px) {
   #nav-bar-container {
     #school-name-container {
         column-gap: 1em;
 
         #name-container {
           column-gap: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 750px) {
+  #nav-bar-container {
+    #school-name-container {
+      column-gap: 2em;
+
+      #name-container {
+        column-gap: 2em;
+      }
+    }
+  }
+}
+
+@media (min-width: 751px) and (max-width: 800px) {
+  #nav-bar-container {
+    #school-name-container {
+      column-gap: 4em;
+
+      #name-container {
+        column-gap: 4em;
+      }
+    }
+  }
+}
+
+@media (min-width: 801px) and (max-width: 850px) {
+  #nav-bar-container {
+    #school-name-container {
+      column-gap: 4.5em;
+
+      #name-container {
+        column-gap: 4.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: 851px) and (max-width: 900px) {
+  #nav-bar-container {
+    #school-name-container {
+      column-gap: 6em;
+
+      #name-container {
+        column-gap: 6em;
+      }
+    }
+  }
+}
+// End of applying column gaps between items on the top navigation bar
+
+@media (min-width: 601px) and (max-width: 650px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        .school-chn-name {
+          span:first-child {
+            margin-bottom: 0.25em;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        .school-chn-name {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        .school-chn-name {
+          display: flex;
+        }
       }
     }
   }
