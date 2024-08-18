@@ -242,7 +242,6 @@
   }
 }
 
-// Mobile Devices ONLY
 @media (max-width: 500px) {
   #nav-bar-container {
     #school-name-container {
@@ -266,7 +265,6 @@
   }
 }
 
-// Non-foldable mobile devices ONLY
 @media (max-width: 450px) {
   #nav-bar-container {
     #school-name-container {
@@ -283,7 +281,6 @@
   }
 }
 
-// Foldable Mobile Devices ONLY
 @media (min-width: 451px) and (max-width: 500px) {
   #nav-bar-container {
     #school-name-container {
