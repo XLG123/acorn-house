@@ -470,6 +470,11 @@ main .section-title .chn {
     display: flex;
   }
 }
+@media (min-width: 901px) and (max-width: 1100px) {
+  #nav-bar-container #school-name-container #name-container .school-chn-name {
+    font-size: 26px;
+  }
+}
 #about-us-container {
   border-radius: 20px;
   background: linear-gradient(to bottom, #93d5c0, #e5e5c5);
