@@ -426,3 +426,33 @@
     }
   }
 }
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  #nav-bar-container {
+    #school-name-container {
+      #name-container {
+        justify-content: start;
+
+        .school-eng-name {
+          font-size: 24px;
+        }
+
+        .school-chn-name {
+          font-size: 24px;
+
+          span:first-child {
+            margin-bottom: 0.1em;
+          }
+        }
+      }
+    }
+
+    #nav-links-container {
+      #nav-links {
+        .nav-option {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
