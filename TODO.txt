@@ -1,8 +1,5 @@
 TODO:
 
-1. NavBar Responsiveness
-    - in progress, targetting tablet devices now.
+1. Refactor the code for navBarFunc.js and programs.js
 
-2. Refactor the code for navBarFunc.js and programs.js
-
-3. Provide comments to describe each function in the js files
+2. Provide comments to describe each function in the js files
