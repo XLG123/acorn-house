@@ -1,4 +1,4 @@
-// Add a margin to the bottom of the container if the container's height is not equal to 24px, otherwise set the bottom margin to 0px.
+// Add bottom margin to parent container if element height is not 24px.
 const addMargin = (el, parentCtn) => {
     if (el.offsetHeight !== 24) {
         parentCtn.style.marginBottom = "1em";
@@ -7,7 +7,7 @@ const addMargin = (el, parentCtn) => {
     }
 };
 
-// Observe the size of the Chinese subtitle, and restructure the subtitle container when the size changes.
+// Observe Chinese subtitle size and adjust subtitle container when it changes.
 const restructureSubtitle = () => {
     const subtitleCtn = document.getElementById("subtitle-content");
     const chnSubtitle = subtitleCtn.children[1].children[1];
