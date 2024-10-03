@@ -22,9 +22,7 @@ const adjustMobileViewAlignment = (boundingOne, boundingTwo, boundingThree) => {
 
 const alignPrograms = () => {
     const allPrograms = document.getElementsByClassName("programs");
-    // as: short for after school,
-    // ec: short for enrichment classes,
-    // ll: short for language learning
+    // Abbreviations: as = after school, ec = enrichment classes, ll = language learning
     let [asLeftPos, ecLeftPos, llLeftPos] = getAllLeftPos(allPrograms);
     adjustMobileViewAlignment(asLeftPos, ecLeftPos, llLeftPos);
 
