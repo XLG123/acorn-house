@@ -5,7 +5,7 @@ const adjustMobileViewAlignment = (boundingOne, boundingTwo, boundingThree) => {
     } else {
         mobileView = false;
     }
-
+    
     const allPrograms = document.getElementsByClassName("programs");
     for (const program of allPrograms) {
         program.classList.toggle("mobile-view-available-programs", mobileView);
