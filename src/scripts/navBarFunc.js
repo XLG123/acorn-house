@@ -242,11 +242,7 @@ const handleSelectedStyles = (selectedOption) => {
     };
 
     for (const [optionName, option] of Object.entries(navOptions)) {
-        if (optionName === selectedOption) {
-            option.classList.add("selected");
-        } else {
-            option.classList.remove("selected");
-        }
+        option.classList.toggle("selected", optionName === selectedOption);
     }
 };
 
