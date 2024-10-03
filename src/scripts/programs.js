@@ -1,19 +1,15 @@
-const adjustMobileViewAlignment = (mobileView) => {
-    const allPrograms = document.getElementsByClassName("programs");
-
-    for (const program of allPrograms) {
-        program.classList.toggle("mobile-view-available-programs", mobileView);
-    }
-};
-
-const alignProgramsHelper = (boundingOne, boundingTwo, boundingThree) => {
+const adjustMobileViewAlignment = (boundingOne, boundingTwo, boundingThree) => {
     let mobileView;
     if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
         mobileView = true;
     } else {
         mobileView = false;
     }
-    adjustMobileViewAlignment(mobileView);
+
+    const allPrograms = document.getElementsByClassName("programs");
+    for (const program of allPrograms) {
+        program.classList.toggle("mobile-view-available-programs", mobileView);
+    }
 };
 
 const alignPrograms = () => {
@@ -31,15 +27,13 @@ const alignPrograms = () => {
     ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
     ctnThreePos = languageLearning.getBoundingClientRect().left;
 
-    alignProgramsHelper(ctnOnePos, ctnTwoPos, ctnThreePos);
+    adjustMobileViewAlignment(ctnOnePos, ctnTwoPos, ctnThreePos);
 
     window.addEventListener("resize", () => {
         ctnOnePos = afterSchool.getBoundingClientRect().left;
         ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
         ctnThreePos = languageLearning.getBoundingClientRect().left;
-
-        // Call the alignProgramsHelper Function to check the alignment
-        alignProgramsHelper(ctnOnePos, ctnTwoPos, ctnThreePos);
+        adjustMobileViewAlignment(ctnOnePos, ctnTwoPos, ctnThreePos);
     });
 };
 
