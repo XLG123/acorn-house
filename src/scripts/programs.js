@@ -1,30 +1,25 @@
-const alignProgramsHelper = (
-    eleOne,
-    eleTwo,
-    eleThree,
-    eleFour,
-    boundingOne,
-    boundingTwo,
-    boundingThree,
-    verticalAlignment
-) => {
-    if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
-        verticalAlignment = true;
-    } else {
-        verticalAlignment = false;
-    }
+const adjustMobileViewAlignment = (mobileView) => {
+    const allPrograms = document.getElementsByClassName("programs");
 
-    if (verticalAlignment) {
-        eleOne.classList.add("mobile-view-available-programs");
-        eleTwo.classList.add("mobile-view-available-programs");
-        eleThree.classList.add("mobile-view-available-programs");
-        eleFour.classList.add("mobile-view-available-programs");
+    if (mobileView) {
+        for (const program of allPrograms) {
+            program.classList.add("mobile-view-available-programs");
+        }
     } else {
-        eleOne.classList.remove("mobile-view-available-programs");
-        eleTwo.classList.remove("mobile-view-available-programs");
-        eleThree.classList.remove("mobile-view-available-programs");
-        eleFour.classList.remove("mobile-view-available-programs");
+        for (const program of allPrograms) {
+            program.classList.remove("mobile-view-available-programs");
+        }
     }
+};
+
+const alignProgramsHelper = (boundingOne, boundingTwo, boundingThree) => {
+    let mobileView;
+    if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
+        mobileView = true;
+    } else {
+        mobileView = false;
+    }
+    adjustMobileViewAlignment(mobileView);
 };
 
 const alignPrograms = () => {
@@ -35,26 +30,14 @@ const alignPrograms = () => {
     const languageLearning = document.getElementById(
         "language-learning-container"
     );
-    const examPrep = document.getElementById("exam-prep-container");
 
     let ctnOnePos, ctnTwoPos, ctnThreePos;
-
-    let verticalAlign = false;
 
     ctnOnePos = afterSchool.getBoundingClientRect().left;
     ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
     ctnThreePos = languageLearning.getBoundingClientRect().left;
 
-    alignProgramsHelper(
-        afterSchool,
-        enrichmentClasses,
-        languageLearning,
-        examPrep,
-        ctnOnePos,
-        ctnTwoPos,
-        ctnThreePos,
-        verticalAlign
-    );
+    alignProgramsHelper(ctnOnePos, ctnTwoPos, ctnThreePos);
 
     window.addEventListener("resize", () => {
         ctnOnePos = afterSchool.getBoundingClientRect().left;
@@ -62,15 +45,7 @@ const alignPrograms = () => {
         ctnThreePos = languageLearning.getBoundingClientRect().left;
 
         // Call the alignProgramsHelper Function to check the alignment
-        alignProgramsHelper(
-            afterSchool,
-            enrichmentClasses,
-            languageLearning,
-            examPrep,
-            ctnOnePos,
-            ctnTwoPos,
-            ctnThreePos
-        );
+        alignProgramsHelper(ctnOnePos, ctnTwoPos, ctnThreePos);
     });
 };
 
