@@ -1,3 +1,11 @@
+const getAllLeftPos = (allPrograms) => {
+    const allLeftPos = [];
+    for (let i = 0; i < 3; ++i) {
+        allLeftPos.push(allPrograms[i].getBoundingClientRect().left);
+    }
+    return allLeftPos;
+};
+
 const adjustMobileViewAlignment = (boundingOne, boundingTwo, boundingThree) => {
     let mobileView;
     if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
@@ -14,19 +22,15 @@ const adjustMobileViewAlignment = (boundingOne, boundingTwo, boundingThree) => {
 
 const alignPrograms = () => {
     const allPrograms = document.getElementsByClassName("programs");
-    let ctnOnePos, ctnTwoPos, ctnThreePos;
-
-    ctnOnePos = allPrograms[0].getBoundingClientRect().left;
-    ctnTwoPos = allPrograms[1].getBoundingClientRect().left;
-    ctnThreePos = allPrograms[2].getBoundingClientRect().left;
-
-    adjustMobileViewAlignment(ctnOnePos, ctnTwoPos, ctnThreePos);
+    // as: short for after school,
+    // ec: short for enrichment classes,
+    // ll: short for language learning
+    let [asLeftPos, ecLeftPos, llLeftPos] = getAllLeftPos(allPrograms);
+    adjustMobileViewAlignment(asLeftPos, ecLeftPos, llLeftPos);
 
     window.addEventListener("resize", () => {
-        ctnOnePos = allPrograms[0].getBoundingClientRect().left;
-        ctnTwoPos = allPrograms[1].getBoundingClientRect().left;
-        ctnThreePos = allPrograms[2].getBoundingClientRect().left;
-        adjustMobileViewAlignment(ctnOnePos, ctnTwoPos, ctnThreePos);
+        [asLeftPos, ecLeftPos, llLeftPos] = getAllLeftPos(allPrograms);
+        adjustMobileViewAlignment(asLeftPos, ecLeftPos, llLeftPos);
     });
 };
 
