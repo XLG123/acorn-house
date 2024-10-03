@@ -2,11 +2,7 @@ const adjustMobileViewAlignment = (mobileView) => {
     const allPrograms = document.getElementsByClassName("programs");
 
     for (const program of allPrograms) {
-        if (mobileView) {
-            program.classList.add("mobile-view-available-programs");
-        } else {
-            program.classList.remove("mobile-view-available-programs");
-        }
+        program.classList.toggle("mobile-view-available-programs", mobileView);
     }
 };
 
