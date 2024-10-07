@@ -1,7 +1,5 @@
-const getAllLeftPos = (selectedPrograms) => {
-    return selectedPrograms.map(
-        (program) => program.getBoundingClientRect().left
-    );
+const getAllLeftPos = (programs) => {
+    return programs.map((program) => program.getBoundingClientRect().left);
 };
 
 const adjustMobileViewAlignment = (asLeftPos, ecLeftPos, llLeftPos) => {
