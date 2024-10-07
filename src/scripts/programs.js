@@ -1,7 +1,9 @@
+// Get left positions of program elements
 const getAllLeftPos = (programs) => {
     return programs.map((program) => program.getBoundingClientRect().left);
 };
 
+// Adjust alignment for mobile view
 const adjustMobileViewAlignment = (asLeftPos, ecLeftPos, llLeftPos) => {
     let mobileView;
     if (asLeftPos + 10 >= ecLeftPos && ecLeftPos + 5 >= llLeftPos) {
@@ -16,6 +18,7 @@ const adjustMobileViewAlignment = (asLeftPos, ecLeftPos, llLeftPos) => {
     }
 };
 
+// Align programs and handle window resize
 const alignPrograms = () => {
     const allPrograms = document.getElementsByClassName("programs");
     const selectedPrograms = Array.from(allPrograms).slice(0, 3);
