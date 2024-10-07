@@ -1,5 +1,0 @@
-TODO:
-
-1. Refactor the code for navBarFunc.js and programs.js
-
-2. Provide comments to describe each function in the js files
