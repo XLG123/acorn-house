@@ -1,76 +1,35 @@
-const alignProgramsHelper = (
-    eleOne,
-    eleTwo,
-    eleThree,
-    eleFour,
-    boundingOne,
-    boundingTwo,
-    boundingThree,
-    verticalAlignment
-) => {
-    if (boundingOne + 10 >= boundingTwo && boundingTwo + 5 >= boundingThree) {
-        verticalAlignment = true;
+// Get left positions of program elements
+const getAllLeftPos = (programs) => {
+    return programs.map((program) => program.getBoundingClientRect().left);
+};
+
+// Adjust alignment for mobile view
+const adjustMobileViewAlignment = (asLeftPos, ecLeftPos, llLeftPos) => {
+    let mobileView;
+    if (asLeftPos + 10 >= ecLeftPos && ecLeftPos + 5 >= llLeftPos) {
+        mobileView = true;
     } else {
-        verticalAlignment = false;
+        mobileView = false;
     }
 
-    if (verticalAlignment) {
-        eleOne.classList.add("mobile-view-available-programs");
-        eleTwo.classList.add("mobile-view-available-programs");
-        eleThree.classList.add("mobile-view-available-programs");
-        eleFour.classList.add("mobile-view-available-programs");
-    } else {
-        eleOne.classList.remove("mobile-view-available-programs");
-        eleTwo.classList.remove("mobile-view-available-programs");
-        eleThree.classList.remove("mobile-view-available-programs");
-        eleFour.classList.remove("mobile-view-available-programs");
+    const allPrograms = document.getElementsByClassName("programs");
+    for (const program of allPrograms) {
+        program.classList.toggle("mobile-view-available-programs", mobileView);
     }
 };
 
+// Align programs and handle window resize
 const alignPrograms = () => {
-    const afterSchool = document.getElementById("after-school-container");
-    const enrichmentClasses = document.getElementById(
-        "enrichment-classes-container"
-    );
-    const languageLearning = document.getElementById(
-        "language-learning-container"
-    );
-    const examPrep = document.getElementById("exam-prep-container");
+    const allPrograms = document.getElementsByClassName("programs");
+    const selectedPrograms = Array.from(allPrograms).slice(0, 3);
 
-    let ctnOnePos, ctnTwoPos, ctnThreePos;
-
-    let verticalAlign = false;
-
-    ctnOnePos = afterSchool.getBoundingClientRect().left;
-    ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
-    ctnThreePos = languageLearning.getBoundingClientRect().left;
-
-    alignProgramsHelper(
-        afterSchool,
-        enrichmentClasses,
-        languageLearning,
-        examPrep,
-        ctnOnePos,
-        ctnTwoPos,
-        ctnThreePos,
-        verticalAlign
-    );
+    // Abbreviations: as = after school, ec = enrichment classes, ll = language learning
+    let [asLeftPos, ecLeftPos, llLeftPos] = getAllLeftPos(selectedPrograms);
+    adjustMobileViewAlignment(asLeftPos, ecLeftPos, llLeftPos);
 
     window.addEventListener("resize", () => {
-        ctnOnePos = afterSchool.getBoundingClientRect().left;
-        ctnTwoPos = enrichmentClasses.getBoundingClientRect().left;
-        ctnThreePos = languageLearning.getBoundingClientRect().left;
-
-        // Call the alignProgramsHelper Function to check the alignment
-        alignProgramsHelper(
-            afterSchool,
-            enrichmentClasses,
-            languageLearning,
-            examPrep,
-            ctnOnePos,
-            ctnTwoPos,
-            ctnThreePos
-        );
+        [asLeftPos, ecLeftPos, llLeftPos] = getAllLeftPos(selectedPrograms);
+        adjustMobileViewAlignment(asLeftPos, ecLeftPos, llLeftPos);
     });
 };
 

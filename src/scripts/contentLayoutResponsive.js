@@ -1,8 +1,7 @@
 import { restructureSubtitle } from "./onlineContact";
 import { alignPrograms } from "./programs";
 
-// const cl = console.log.bind(console);
-
+// Adjusts program alignment and subtitle structure for responsive design.
 const responsiveLayout = () => {
     alignPrograms();
     restructureSubtitle();
